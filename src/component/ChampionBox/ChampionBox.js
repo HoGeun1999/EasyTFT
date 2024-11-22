@@ -1,7 +1,6 @@
-// src/ChampionBox.js
 import React, { useState, useEffect } from 'react';
-import ChampionComponent from '../ChampionComponent/ChampionComponent.js';
 import './ChampionBox.css';
+import ChampionComponent from '../ChampionComponent/ChampionComponent.js';
 const ChampionBox = () => {
   const [championList, setChampionList] = useState([]);  // 사용자 상태를 관리
   const [loading, setLoading] = useState(true);  // 로딩 상태를 관리
@@ -22,11 +21,15 @@ const ChampionBox = () => {
   }, []);  // 컴포넌트가 마운트될 때 한 번만 실행
 
 
+  // 버튼 관련 컴포넌트 만들고 championList << 리스트 재배열
+
   return (
   <div className='championBox'>
-        {championList.map(championData => (
-          <ChampionComponent data = {championData}/>
-        ))}
+      {championList.map(championData => (
+        //여기 시너지 관련 컴포넌트 추가 가능한지
+            <ChampionComponent data = {championData}/>
+          ))}
+
   </div>
   );
 };

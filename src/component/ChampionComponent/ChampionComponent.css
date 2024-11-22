@@ -2,7 +2,7 @@
 .championComponent {
   height: 65px;
   width: 65px;
-  margin: 5px 5px 5px 5px;
+  margin: 2px 2px 2px 2px;
   display: inline-table;
   /* position: relative; */
   cursor: pointer;
@@ -12,19 +12,23 @@
 .championComponent img {
   width: 100%;  /* 부모 div에 맞게 너비를 100%로 설정 */
 	vertical-align: middle;
-
 }
 
-/* p 태그 스타일 (위치, 텍스트 스타일 등) */
-.championComponent p {
-  position: absolute;
-  top: 5px; /* 위쪽에 위치 */
-  right: 5px; /* 오른쪽에 위치 */
-  color: white;
-  font-size: 15px;
+.championName{
+  text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translate( -48%, -25px );
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  margin: 0;
+  color: white;
+  font-size: 13px;
+  width: 70px;
+  height: 5px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.long{
+  font-size: 11px;
 }
 
 .cost-1 {
@@ -58,7 +62,6 @@ border: 3px solid #FFD700;  /* cost가 5일 때 노란색 테두리 */
   left: 100px;
   z-index: 10;
 }
-
 
 
  

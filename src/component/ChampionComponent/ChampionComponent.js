@@ -31,28 +31,33 @@ const ChampionComponent = (championData) => {
         );
     };
 
-    const borderClass = `cost-${championData.data.cost}`;
+    const championCost = `cost-${championData.data.cost}`;
+    const championNameLen = championData.data.name.length
+    let championNameClass = ''
+    if (championNameLen>=5){
+        championNameClass = 'long'
+    }
 
     return (
         <div className="championComponent">
             {championData ? (
                 <div
-                className={`championComponent ${borderClass}`}
-                    // className={`championComponent ${borderClass}`}
+                    className={`championComponent ${championCost}`}
                     onMouseEnter={handleMouseEnter}  // 마우스가 div 위에 들어가면 정보 표시
                     onMouseLeave={handleMouseLeave}  // 마우스가 div 밖으로 나가면 정보 숨김
                 >
                     <img src={`./img/${championData.data.characterName}.png`} alt={championData.name} />
-                    <p>{'$' + championData.data.cost}</p>
-                    {/* {showChampionInfo && <ChampionMouseOverINFO />} */}
+
                 </div>
+                
             ) : (
                 <p>No user found</p>
             )}
-            <div
-             >
-                
-            {showChampionInfo && <ChampionMouseOverINFO />}
+            <div>
+                {showChampionInfo && <ChampionMouseOverINFO />}
+            </div>
+            <div className={`championName ${championNameClass}`}>
+                {championData.data.name}
             </div>
         </div>
     );
