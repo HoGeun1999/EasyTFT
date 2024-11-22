@@ -1,0 +1,1247 @@
+[
+    {
+        "apiName": "TFT12_Witchcraft",
+        "desc": "마녀의 스킬이 @CurseDuration@초 동안 적에게 저주를 겁니다. 저주에 걸린 적이 처치되면 저주가 가장 가까운 적에게 옮겨갑니다.<br><br>저주의 효과:<br><br><row>(@MinUnits@) 크기가 작아지고, @MaxHealthReduce@ %i:scaleHealth% 감소</row><br><row>(@MinUnits@) 또한 초록색이 되고, 매초 최대 체력의 @CurseHealPct@%만큼 마법 피해를 입음</row><br><row>(@MinUnits@) 또한 허약해져, 마녀로부터 @TrueDamagePct@%의 추가 고정 피해를 입음</row><br><row>(@MinUnits@) 또한 개구리가 되어, @FrogPolymorphCooldown@초마다 @FrogPolymorphDuration@초 동안 기절. 다른 모든 저주의 효과가 @ChaseIncreasePercent@% 증가</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "ChaseIncreasePercent": null,
+                    "CurseDuration": 4.0,
+                    "CurseHealPct": null,
+                    "FrogPolymorphCooldown": null,
+                    "FrogPolymorphDuration": null,
+                    "MaxHealthReduce": 120.0,
+                    "TrueDamagePct": null
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "ChaseIncreasePercent": null,
+                    "CurseDuration": 4.0,
+                    "CurseHealPct": 6.0,
+                    "FrogPolymorphCooldown": null,
+                    "FrogPolymorphDuration": null,
+                    "MaxHealthReduce": 120.0,
+                    "TrueDamagePct": null
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "ChaseIncreasePercent": null,
+                    "CurseDuration": 4.0,
+                    "CurseHealPct": 6.0,
+                    "FrogPolymorphCooldown": null,
+                    "FrogPolymorphDuration": null,
+                    "MaxHealthReduce": 120.0,
+                    "TrueDamagePct": 25.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "ChaseIncreasePercent": 50.0,
+                    "CurseDuration": 4.0,
+                    "CurseHealPct": 6.0,
+                    "FrogPolymorphCooldown": 8.0,
+                    "FrogPolymorphDuration": 2.0,
+                    "MaxHealthReduce": 120.0,
+                    "TrueDamagePct": 25.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Witch.TFT_Set12.tex",
+        "name": "마녀"
+    },
+    {
+        "apiName": "TFT12_Arcana",
+        "desc": "아르카나 증표 아이템을 사용해 하이 아르카나 챔피언을 선택하세요. 각 아르카나는 서로 다른 조건에 따라 효과를 부여합니다.<br><br>효과 획득 조건:<br><scaleLevel>아리:</scaleLevel> 3성 챔피언 배치<br><scaleLevel>헤카림:</scaleLevel> 아이템 장착<br><scaleLevel>탐 켄치:</scaleLevel> 특성 활성화<br><scaleLevel>제라스:</scaleLevel> 주술 구매<br><scaleLevel>상징:</scaleLevel> 뒤집개 아이템 장착",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "AhriAbilityPowerBase": 10.0,
+                    "AhriAbilityPowerPer3Star": 5.0,
+                    "EmblemBonusDamageBase": 0.07999999821186066,
+                    "EmblemBonusDamagePerSpat": 0.019999999552965164,
+                    "HecarimDRAmount": 0.07999999821186066,
+                    "HecarimPercAD": 0.10000000149011612,
+                    "TahmKenchHPPerTrait": 20.0,
+                    "XerathNumCharms": 3.0,
+                    "XerathNumCharmsHR": 2.0,
+                    "XerathPVEDamage": 0.18000000715255737,
+                    "XerathScalingDamage": 0.019999999552965164
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 3,
+                "variables": {
+                    "AhriAbilityPowerBase": 15.0,
+                    "AhriAbilityPowerPer3Star": 8.0,
+                    "EmblemBonusDamageBase": 0.11999999731779099,
+                    "EmblemBonusDamagePerSpat": 0.029999999329447746,
+                    "HecarimDRAmount": 0.07999999821186066,
+                    "HecarimPercAD": 0.25,
+                    "TahmKenchHPPerTrait": 40.0,
+                    "XerathNumCharms": 3.0,
+                    "XerathNumCharmsHR": 2.0,
+                    "XerathPVEDamage": 0.30000001192092896,
+                    "XerathScalingDamage": 0.029999999329447746
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "AhriAbilityPowerBase": 20.0,
+                    "AhriAbilityPowerPer3Star": 12.0,
+                    "EmblemBonusDamageBase": 0.18000000715255737,
+                    "EmblemBonusDamagePerSpat": 0.03999999910593033,
+                    "HecarimDRAmount": 0.07999999821186066,
+                    "HecarimPercAD": 0.44999998807907104,
+                    "TahmKenchHPPerTrait": 60.0,
+                    "XerathNumCharms": 3.0,
+                    "XerathNumCharmsHR": 2.0,
+                    "XerathPVEDamage": 0.41999998688697815,
+                    "XerathScalingDamage": 0.04500000178813934
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "AhriAbilityPowerBase": 25.0,
+                    "AhriAbilityPowerPer3Star": 18.0,
+                    "EmblemBonusDamageBase": 0.25,
+                    "EmblemBonusDamagePerSpat": 0.05999999865889549,
+                    "HecarimDRAmount": 0.07999999821186066,
+                    "HecarimPercAD": 0.699999988079071,
+                    "TahmKenchHPPerTrait": 105.0,
+                    "XerathNumCharms": 3.0,
+                    "XerathNumCharmsHR": 2.0,
+                    "XerathPVEDamage": 0.6000000238418579,
+                    "XerathScalingDamage": 0.07000000029802322
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Arcana.TFT_Set12.tex",
+        "name": "아르카나"
+    },
+    {
+        "apiName": "TFT12_Frost",
+        "desc": "서리 챔피언이 주문력%i:scaleAP%과 공격력%i:scaleAD%을 얻습니다. 먼저 처치된 적 몇 명이 아군 얼음 병사가 됩니다. 얼음 병사는 적이 범위 내에서 대상을 재지정할 때 자신에게 기본 공격을 하도록 유도합니다.<br><br><row>(@MinUnits@) @BonusStats@ %i:scaleAP%%i:scaleAD%, 병사 @NumStatues@명</row><br><row>(@MinUnits@) @BonusStats@ %i:scaleAP%%i:scaleAD%, 병사 @NumStatues@명</row><br><row>(@MinUnits@) @BonusStats@ %i:scaleAP%%i:scaleAD%, 병사 @NumStatues@명, 병사가 처치되면 폭발함</row><br><row>(@MinUnits@) @BonusStats@ %i:scaleAP%%i:scaleAD%, 병사 @NumStatues@명, 폭발 위력이 2배로 증가</row><br><br><rules>병사 스테이지당 체력: @HealthPerStage@</rules>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "BonusStats": 16.0,
+                    "HealthPerStage": 200.0,
+                    "NumStatues": 1.0,
+                    "{559bdc3f}": null,
+                    "{76553676}": 110.0
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 3,
+                "variables": {
+                    "BonusStats": 40.0,
+                    "HealthPerStage": 200.0,
+                    "NumStatues": 2.0,
+                    "{559bdc3f}": null,
+                    "{76553676}": 110.0
+                }
+            },
+            {
+                "maxUnits": 8,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "BonusStats": 55.0,
+                    "HealthPerStage": 200.0,
+                    "NumStatues": 3.0,
+                    "{559bdc3f}": 1.0,
+                    "{76553676}": 110.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 9,
+                "style": 5,
+                "variables": {
+                    "BonusStats": 90.0,
+                    "HealthPerStage": 200.0,
+                    "NumStatues": 4.0,
+                    "{559bdc3f}": 1.0,
+                    "{76553676}": 110.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Winter.TFT_Set12.tex",
+        "name": "서리"
+    },
+    {
+        "apiName": "TFT12_Hunter",
+        "desc": "사냥꾼이 공격력%i:scaleAD%을 얻습니다. 각 전투에서 처음으로 처치에 관여할 때마다 공격력이 추가로 증가합니다.<br><br><row>(@MinUnits@) @BaseAD@% %i:scaleAD%, 처치 관여 후 @BonusADAfterTakedown@%</row><br><row>(@MinUnits@) @BaseAD@% %i:scaleAD%, 처치 관여 후 @BonusADAfterTakedown@%</row><br><row>(@MinUnits@) @BaseAD@% %i:scaleAD%, 처치 관여 후 @BonusADAfterTakedown@%, 또한 %i:scaleAS%를 @BaseAS*100@% 얻음</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BaseAD": 15.0,
+                    "BaseAS": null,
+                    "BonusADAfterTakedown": 35.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BaseAD": 40.0,
+                    "BaseAS": null,
+                    "BonusADAfterTakedown": 70.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BaseAD": 65.0,
+                    "BaseAS": 0.20000000298023224,
+                    "BonusADAfterTakedown": 100.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Hunter.TFT_Set12.tex",
+        "name": "사냥꾼"
+    },
+    {
+        "apiName": "TFT12_Explorer",
+        "desc": "노라가 아군을 돕기 위해 유미를 소환합니다! 유미를 아군 유닛 위에 올려 아군에게 밀착시킬 수 있습니다. 유미는 노라와 주문력을 공유하고 노라가 처치되면 함께 처치됩니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {}
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Explorer.TFT_Set12.tex",
+        "name": "단짝"
+    },
+    {
+        "apiName": "TFT12_Druid",
+        "desc": "오공은 특성 추가 효과가 없지만, 대신 스킬이 강력하고 능력치가 높습니다. ",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 5,
+                "variables": {}
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Druid.TFT_Set12.tex",
+        "name": "드루이드"
+    },
+    {
+        "apiName": "TFT12_Scholar",
+        "desc": "학자는 기본 공격 시 추가 마나%i:scaleMana%를 얻습니다. 또한 주문력%i:scaleAP%을 얻습니다.<br><br><row>(@MinUnits@) 기본 공격당 @ManaPerAttack@ %i:scaleMana%, @AP@ %i:scaleAP%</row><br><row>(@MinUnits@) 기본 공격당 @ManaPerAttack@ %i:scaleMana%, @AP@ %i:scaleAP%</row><br><row>(@MinUnits@) 기본 공격당 @ManaPerAttack@ %i:scaleMana%, @AP@ %i:scaleAP%, 스킬로 입힌 피해량의 @AllyHealing*100@%만큼 아군 1명의 체력을 회복시킴</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "AP": 10.0,
+                    "ManaPerAttack": 3.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "AP": 20.0,
+                    "ManaPerAttack": 5.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "AP": 20.0,
+                    "AllyHealing": 0.10000000149011612,
+                    "ManaPerAttack": 10.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Scholar.tex",
+        "name": "학자"
+    },
+    {
+        "apiName": "TFT12_Multistriker",
+        "desc": "쇄도자가 기본 공격 시 일정 확률로 @NumBonusAttacks@회 추가로 공격합니다.<br><br><row>(@MinUnits@) 확률 @ProcChance@%</row><br><row>(@MinUnits@) 확률 @ProcChance@%</row><br><row>(@MinUnits@) 확률 @ProcChance@%, 기본 공격할 때마다 최대 체력의 @OnHitHealPerc*100@% 회복</row><br><row>(@MinUnits@) 확률 @ProcChance@%, 기본 공격할 때마다 최대 체력의 @OnHitHealPerc*100@% 회복</row>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "NumBonusAttacks": 2.0,
+                    "OnHitHealPerc": null,
+                    "ProcChance": 25.0,
+                    "{d1702d87}": 5.0
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 3,
+                "variables": {
+                    "NumBonusAttacks": 2.0,
+                    "OnHitHealPerc": null,
+                    "ProcChance": 65.0,
+                    "{d1702d87}": 2.0
+                }
+            },
+            {
+                "maxUnits": 8,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "NumBonusAttacks": 2.0,
+                    "OnHitHealPerc": 0.029999999329447746,
+                    "ProcChance": 80.0,
+                    "{d1702d87}": 2.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 9,
+                "style": 5,
+                "variables": {
+                    "NumBonusAttacks": 2.0,
+                    "OnHitHealPerc": 0.10000000149011612,
+                    "ProcChance": 100.0,
+                    "{d1702d87}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Weaponmaster.TFT_Set12.tex",
+        "name": "쇄도자"
+    },
+    {
+        "apiName": "TFT12_BatQueen",
+        "desc": "모르가나의 박쥐가 적을 처치하면 @PercentChanceToAbduct@%의 확률로 해당 적의 1성 복사본을 납치합니다.<ShowIfCustom.Set=TFTSetEventCT><br><br>배불뚝이의 보물에서는 스테이지 3-1 및 4-1에서 납치 확률이 증가합니다.</ShowIfCustom.Set=TFTSetEventCT>",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "PercentChanceToAbduct": 40.0,
+                    "PercentChanceToAbductCTR2": 1.0,
+                    "PercentChanceToAbductCTR3": 20.0,
+                    "{bb84a0b7}": 100.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_BatQueen.TFT_Set12.tex",
+        "name": "박쥐 여왕"
+    },
+    {
+        "apiName": "TFT12_Warrior",
+        "desc": "전사가 모든 피해 흡혈%i:scaleSV%과 피해 증폭%i:scaleDA%을 얻습니다. 전사의 체력이 @HealthThreshold*100@% 아래로 떨어지면, %i:scaleDA%을 2배로 얻습니다.<br><br><row>(@MinUnits@) @Omnivamp*100@% %i:scaleSV%, @BonusDamage*100@% %i:scaleDA%</row><br><row>(@MinUnits@) @Omnivamp*100@% %i:scaleSV%, @BonusDamage*100@% %i:scaleDA%</row><br><row>(@MinUnits@) @Omnivamp*100@% %i:scaleSV%, @BonusDamage*100@% %i:scaleDA%, 또한 내구력%i:scaleDR%을 @DamageReduction*100@% 얻음</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusDamage": 0.10000000149011612,
+                    "HealthThreshold": 0.699999988079071,
+                    "Omnivamp": 0.10000000149011612,
+                    "{2c0ea008}": 2.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BonusDamage": 0.20000000298023224,
+                    "HealthThreshold": 0.699999988079071,
+                    "Omnivamp": 0.20000000298023224,
+                    "{2c0ea008}": 2.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BonusDamage": 0.25,
+                    "DamageReduction": 0.15000000596046448,
+                    "HealthThreshold": 0.699999988079071,
+                    "Omnivamp": 0.25,
+                    "{2c0ea008}": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Warrior.TFT_Set12.tex",
+        "name": "전사"
+    },
+    {
+        "apiName": "TFT12_Chrono",
+        "desc": "시공간이 주문력%i:scaleAP%을 @BaseAP@ 얻습니다. <br><br>전투 시작: @Timer@초의 초읽기가 시작되고, 시공간이 스킬을 사용할 때마다 @SecondsPerCast@초씩 줄어듭니다. 초읽기가 끝나면 특별한 효과를 얻습니다.<br><br><row>(@MinUnits@) 아군이 @MaxHealthHeal*100@% %i:scaleHealth% 회복, 시공간은 @BonusAP@ %i:scaleAP% 증가</row><br><row>(@MinUnits@) 또한 @FreezeDuration@초 동안 시간을 멈춤. 시공간은 시간 정지의 영향을 받지 않으며 @BonusAP@ %i:scaleAP% 증가</row><br><row>(@MinUnits@) @FreezeDuration@초 동안 시간을 멈추고 아군이 @TimeHeal*100@% %i:scaleHealth% 회복, 시공간은 시간 정지의 영향을 받지 않으며 %i:scaleAP%을 @BonusAP@, %i:scaleAS%를 @BonusAS@% 얻음</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BaseAP": 15.0,
+                    "BonusAP": 20.0,
+                    "BonusAS": null,
+                    "FreezeDuration": null,
+                    "MaxHealthHeal": 0.15000000596046448,
+                    "SecondsPerCast": 1.0,
+                    "TimeHeal": null,
+                    "Timer": 10.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BaseAP": 15.0,
+                    "BonusAP": 55.0,
+                    "BonusAS": null,
+                    "FreezeDuration": 3.0,
+                    "MaxHealthHeal": 0.15000000596046448,
+                    "SecondsPerCast": 1.0,
+                    "TimeHeal": null,
+                    "Timer": 10.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BaseAP": 15.0,
+                    "BonusAP": 70.0,
+                    "BonusAS": 35.0,
+                    "FreezeDuration": 4.0,
+                    "MaxHealthHeal": 0.15000000596046448,
+                    "SecondsPerCast": 1.0,
+                    "TimeHeal": 1.0,
+                    "Timer": 10.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Time.TFT_Set12.tex",
+        "name": "시공간"
+    },
+    {
+        "apiName": "TFT12_Incantor",
+        "desc": "아군이 주문력%i:scaleAP%을 @TeamwideAP@ 얻습니다. <br><br>마도사가 기본 공격을 하거나 스킬을 사용하면 모든 마도사가 %i:scaleAP% 중첩을 얻습니다. 최대 @MaxStacks@회 중첩됩니다. 기본 공격 2회마다 중첩을 @StacksPerAttack@회 얻고, 스킬을 사용할 때마다 중첩을 @StacksPerCast@회 얻습니다.<br><br><row>(@MinUnits@) 중첩당 @BonusAPPerStack@ %i:scaleAP%</row><br><row>(@MinUnits@) 중첩당 @BonusAPPerStack@ %i:scaleAP%, 아군 @TeamwideAP@ %i:scaleAP% 획득</row><br>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusAPPerStack": 1.0,
+                    "MaxStacks": 40.0,
+                    "StacksPerAttack": 1.0,
+                    "StacksPerCast": 5.0,
+                    "TeamwideAP": 10.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "BonusAPPerStack": 2.0,
+                    "MaxStacks": 40.0,
+                    "StacksPerAttack": 1.0,
+                    "StacksPerCast": 5.0,
+                    "TeamwideAP": 30.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Incantor.TFT_Set12.tex",
+        "name": "마도사"
+    },
+    {
+        "apiName": "TFT12_Ascendant",
+        "desc": "(1) 초월체 주술이 상점에 등장할 수 있습니다. 등장 확률은 플레이어 대상 전투가 끝나면 @PercentageChancePerPlayerCombat@% 증가하며, 최대 @MaxPercentageChance@% 증가합니다. 초월체 주술을 구매하면 이 확률은 초기화됩니다.<br><br>현재 확률: @TFTUnitProperty.trait:TFT12_AscendantOdds@%<br><br>",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "MaxPercentageChance": 50.0,
+                    "PercentageChancePerPlayerCombat": 12.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Ascendant.TFT_Set12.tex",
+        "name": "초월체"
+    },
+    {
+        "apiName": "TFT12_Faerie",
+        "desc": "요정이 체력%i:scaleHealth%을 얻고 특성 단계에 따라 더 강력해지는 특별한 아이템을 생성합니다. <br><br><row>(@MinUnits@) @BonusHealth@ %i:scaleHealth%, 피해 증폭%i:scaleDA%을 @DamageAmp*100@% 부여하는 요정 여왕의 왕관 획득</row><br><row>(@MinUnits@) @BonusHealth@ %i:scaleHealth%, 왕관 @DamageAmp*100@% %i:scaleDA%, 여왕 근위대의 갑옷 획득</row><br><row>(@MinUnits@) @BonusHealth@ %i:scaleHealth%, 왕관 @DamageAmp*100@% %i:scaleDA%, 두 번째 왕관 획득</row><br><row>(@MinUnits@) @BonusHealth@ %i:scaleHealth%, 왕관 @DamageAmp*100@% %i:scaleDA%, 아이템이 찬란한 아이템이 됨</row><br><br><rules>요정만 요정 아이템을 장착할 수 있습니다.</rules>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "BonusHealth": 150.0,
+                    "DamageAmp": 0.30000001192092896,
+                    "{10c8d947}": 1.0,
+                    "{d0c29d53}": null
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 3,
+                "variables": {
+                    "BonusHealth": 400.0,
+                    "DamageAmp": 0.44999998807907104,
+                    "{10c8d947}": 1.0,
+                    "{d0c29d53}": 1.0
+                }
+            },
+            {
+                "maxUnits": 8,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "BonusHealth": 700.0,
+                    "DamageAmp": 0.6000000238418579,
+                    "{10c8d947}": 2.0,
+                    "{d0c29d53}": 1.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 9,
+                "style": 5,
+                "variables": {
+                    "BonusHealth": 999.0,
+                    "DamageAmp": 0.6600000262260437,
+                    "{10c8d947}": 2.0,
+                    "{d0c29d53}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Faerie.TFT_Set12.tex",
+        "name": "요정"
+    },
+    {
+        "apiName": "TFT12_Relic",
+        "desc": "전투 후, 밀리오가 40/60/100%의 확률로 임시 유물 조합 아이템을 실제 조합 아이템으로 변환합니다.",
+        "effects": [
+            {
+                "maxUnits": 5,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {}
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_3_SpacePirate.tex",
+        "name": "유물"
+    },
+    {
+        "apiName": "TFT12_Preserver",
+        "desc": "@Duration@초마다 아군이 최대 체력%i:scaleHealth%의 일정 비율만큼 체력을 회복합니다. 체력이 최대라면, 대신 마나%i:scaleMana%를 회복합니다.<br><br>보호술사는 2배로 회복합니다.<br><br><br><expandRow>(@MinUnits@) @HealthPct*100@% %i:scaleHealth% 또는 @ManaPct*100@% %i:scaleMana%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "Duration": 3.0,
+                    "HealthPct": 0.019999999552965164,
+                    "ManaPct": 0.029999999329447746,
+                    "{f2de56c8}": 2.0
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 3,
+                "variables": {
+                    "Duration": 3.0,
+                    "HealthPct": 0.03999999910593033,
+                    "ManaPct": 0.05000000074505806,
+                    "{f2de56c8}": 2.0
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "Duration": 3.0,
+                    "HealthPct": 0.05999999865889549,
+                    "ManaPct": 0.07000000029802322,
+                    "{f2de56c8}": 2.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "Duration": 3.0,
+                    "HealthPct": 0.07999999821186066,
+                    "ManaPct": 0.10000000149011612,
+                    "{f2de56c8}": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Preserver.TFT_Set12.tex",
+        "name": "보호술사"
+    },
+    {
+        "apiName": "TFT12_Vanguard",
+        "desc": "선봉대가 보호막이 씌워졌을 때 내구력%i:scaleDR%을 @DamageReductionPct*100@% 얻습니다. <br><br>전투 시작 시 및 체력 @HealthThreshold*100@% 도달 시: @ShieldDuration@초 동안 최대 체력의 일부만큼 보호막을 얻습니다.<br><br><row>(@MinUnits@) 최대 체력의 @ShieldPercentAmount*100@%</row><br><row>(@MinUnits@) 최대 체력의 @ShieldPercentAmount*100@%</row><br><row>(@MinUnits@) 최대 체력의 @ShieldPercentAmount*100@%, 보호막이 씌워졌을 때 %i:scaleDR% 15%</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "DamageReductionPct": 0.10000000149011612,
+                    "HealthThreshold": 0.5,
+                    "ShieldDuration": 10.0,
+                    "ShieldPercentAmount": 0.18000000715255737
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "DamageReductionPct": 0.10000000149011612,
+                    "HealthThreshold": 0.5,
+                    "ShieldDuration": 10.0,
+                    "ShieldPercentAmount": 0.3499999940395355
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "DamageReductionPct": 0.15000000596046448,
+                    "HealthThreshold": 0.5,
+                    "ShieldDuration": 10.0,
+                    "ShieldPercentAmount": 0.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Vanguard.TFT_Set12.tex",
+        "name": "선봉대"
+    },
+    {
+        "apiName": "TFT12_Eldritch",
+        "desc": "아군이 체력을 @HealthRatio*100@% 잃으면 고대 신이 강림합니다. 고대 신은 섬뜩한 힘의 별 레벨당 체력을 @PercentHealthPerStarLevel*100@%, 주문력을 @APPerStarLevel*100@% 얻습니다.<br><br><row>(@MinUnits@) 더럽혀진 골렘</row><br><row>(@MinUnits@) 암흑 거석</row><br><row>(@MinUnits@) 수많은 눈의 짐승</row><br><row>(@MinUnits@) 폭풍을 부르는 자</row>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "APPerStarLevel": 0.10000000149011612,
+                    "HealthRatio": 0.20000000298023224,
+                    "PercentHealthPerStarLevel": 0.25,
+                    "{ded459ba}": 2.0
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 3,
+                "variables": {
+                    "APPerStarLevel": 0.10000000149011612,
+                    "HealthRatio": 0.20000000298023224,
+                    "PercentHealthPerStarLevel": 0.25,
+                    "{ded459ba}": 2.0
+                }
+            },
+            {
+                "maxUnits": 9,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "APPerStarLevel": 0.10000000149011612,
+                    "HealthRatio": 0.20000000298023224,
+                    "PercentHealthPerStarLevel": 0.25,
+                    "{ded459ba}": 2.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 10,
+                "style": 6,
+                "variables": {
+                    "APPerStarLevel": 0.10000000149011612,
+                    "HealthRatio": 0.20000000298023224,
+                    "PercentHealthPerStarLevel": 0.25,
+                    "{ded459ba}": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Eldritch.TFT_Set12.tex",
+        "name": "섬뜩한 힘"
+    },
+    {
+        "apiName": "TFT12_Shapeshifter",
+        "desc": "형상변환자가 최대 체력%i:scaleHealth%을 얻습니다. 스킬을 처음으로 사용하면 이 효과가 3배가 됩니다. <br><br><row>(@MinUnits@) @BonusHealthRatio*100@% %i:scaleHealth%</row><br><row>(@MinUnits@) @BonusHealthRatio*100@% %i:scaleHealth%</row><br><row>(@MinUnits@) @BonusHealthRatio*100@% %i:scaleHealth%</row><br><row>(@MinUnits@) @BonusHealthRatio*100@% %i:scaleHealth%, @HealDuration@초마다 @MaxHeal*100@% %i:scaleHealth% 회복</row><br><row>(@MinUnits@) @BonusHealthRatio*100@% %i:scaleHealth%, @HealDuration@초마다 @MaxHeal*100@% %i:scaleHealth% 회복</row><br>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusHealthRatio": 0.10000000149011612
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BonusHealthRatio": 0.18000000715255737
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BonusHealthRatio": 0.27000001072883606
+                }
+            },
+            {
+                "maxUnits": 9,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "BonusHealthRatio": 0.33000001311302185,
+                    "HealDuration": 2.0,
+                    "MaxHeal": 0.029999999329447746
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 10,
+                "style": 6,
+                "variables": {
+                    "BonusHealthRatio": 0.6600000262260437,
+                    "HealDuration": 2.0,
+                    "MaxHeal": 0.05000000074505806
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_Shapeshifter.tex",
+        "name": "형상변환자"
+    },
+    {
+        "apiName": "TFT12_Blaster",
+        "desc": "폭파단이 피해 증폭%i:scaleDA%을 얻으며, 스킬을 사용하면 @Duration@초 동안 피해 증폭이 더 증가합니다.<br><br><expandRow>(@MinUnits@) @BaseDamageAmp*100@% %i:scaleDA%, 스킬 사용 후 지속시간 동안 @DamageAmpAfterCasting*100@%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BaseDamageAmp": 0.15000000596046448,
+                    "DamageAmpAfterCasting": 0.30000001192092896,
+                    "Duration": 3.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BaseDamageAmp": 0.3499999940395355,
+                    "DamageAmpAfterCasting": 0.6499999761581421,
+                    "Duration": 3.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BaseDamageAmp": 0.6000000238418579,
+                    "DamageAmpAfterCasting": 1.0,
+                    "Duration": 3.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Artillerist.TFT_Set12.tex",
+        "name": "폭파단"
+    },
+    {
+        "apiName": "TFT12_Bastion",
+        "desc": "아군이 방어력%i:scaleArmor%과 마법 저항력%i:scaleMR%을 @TeamwideResists@ 얻습니다.<br><br>요새는 능력치를 더 얻습니다. 전투 시작 후 @Duration@초 동안, 요새는 추가 수치를 2배로 얻습니다.<br><br><row>(@MinUnits@) @BonusArmor@ %i:scaleArmor%%i:scaleMR%</row><br><row>(@MinUnits@) @BonusArmor@ %i:scaleArmor%%i:scaleMR%</row><br><row>(@MinUnits@) @BonusArmor@ %i:scaleArmor%%i:scaleMR%</row><br><row>(@MinUnits@) @BonusArmor@ %i:scaleArmor%%i:scaleMR%, 요새 유닛 4명이 처치될 때까지 후방 가로 2열에서 전투를 시작한 챔피언 @NumUnits@명이 무적이 됨</row> ",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusArmor": 15.0,
+                    "BonusMR": 15.0,
+                    "BonusPercent": 1.0,
+                    "Duration": 10.0,
+                    "StatMultiplier": 2.0,
+                    "TeamwideResists": 10.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BonusArmor": 45.0,
+                    "BonusMR": 45.0,
+                    "BonusPercent": 1.0,
+                    "Duration": 10.0,
+                    "StatMultiplier": 2.0,
+                    "TeamwideResists": 10.0
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BonusArmor": 100.0,
+                    "BonusMR": 100.0,
+                    "BonusPercent": 1.0,
+                    "Duration": 10.0,
+                    "StatMultiplier": 2.0,
+                    "TeamwideResists": 10.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "BonusArmor": 200.0,
+                    "BonusMR": 200.0,
+                    "BonusPercent": 1.0,
+                    "Duration": 10.0,
+                    "NumUnits": 2.0,
+                    "StatMultiplier": 2.0,
+                    "TeamwideResists": 10.0,
+                    "{bbbf5140}": 4.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Bastion.tex",
+        "name": "요새"
+    },
+    {
+        "apiName": "TFT12_Ravenous",
+        "desc": "잃은 플레이어 체력당 브라이어가 피해 증폭%i:scaleDA%을 @TOOLTIPDamageAmpPerHealth*100@% 얻습니다. 라운드마다 플레이어 체력을 @TacticianHealthToFeed@ 소모해 브라이어에게 <scaleHealth>%i:scaleHealth%을 @BriarHealthGain@</scaleHealth> 부여할 수 있는 간식을 1개 획득합니다.<ShowIfCustom.Set=TFTSetEventCT><br><br>배불뚝이의 보물에서는 스테이지 3-1 및 4-1에서 간식의 효과가 강화됩니다.</ShowIfCustom.Set=TFTSetEventCT>",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "BriarHealthGain": 180.0,
+                    "BriarHealthGainCTR2": 60.0,
+                    "BriarHealthGainCTR3": 120.0,
+                    "BriarHealthGainDU": 250.0,
+                    "BriarHealthGainHR": 250.0,
+                    "GoldToFeedPvE": 3.0,
+                    "TOOLTIPDamageAmpPerHealth": 0.00800000037997961,
+                    "TOOLTIPDamageAmpPerHealthDU": 0.00800000037997961,
+                    "TOOLTIPDamageAmpPerHealthHR": 0.03999999910593033,
+                    "TOOLTIPDamageAmpPvE": 0.4000000059604645,
+                    "TacticianHealthToFeed": 3.0,
+                    "TacticianHealthToFeedCTR2": 1.0,
+                    "TacticianHealthToFeedCTR3": 2.0,
+                    "TacticianHealthToFeedDU": 2.0,
+                    "TacticianHealthToFeedHR": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Ravenous.TFT_Set12.tex",
+        "name": "허기"
+    },
+    {
+        "apiName": "TFT12_Dragon",
+        "desc": "<row>(@MinUnits@) 용의 기본 공격과 스킬이 @BurnWoundDuration@초 동안 적에게 <TFTKeyword>불태우기</TFTKeyword>와 <TFTKeyword>상처</TFTKeyword>를 @BurnPercent@% 적용</row><br><row>(@MinUnits@) 우정의 힘으로 모든 용의 스킬 강화!</row><br><br><rules>불태우기: 매초 대상 최대 체력의 일정 비율만큼 고정 피해</rules>",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 3,
+                "variables": {
+                    "BurnPercent": 1.0,
+                    "BurnWoundDuration": 5.0,
+                    "WoundPercent": 33.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 3,
+                "style": 5,
+                "variables": {
+                    "BurnPercent": 2.0,
+                    "BurnWoundDuration": 5.0,
+                    "WoundPercent": 33.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Dragon.TFT_Set12.tex",
+        "name": "용"
+    },
+    {
+        "apiName": "TFT12_Honeymancy",
+        "desc": "벌꿀술사가 꿀벌 @MiniCount@마리를 얻습니다. 꿀벌은 @Period@초마다 대상에게 마법 피해를 입힙니다. 각 꿀벌은 벌꿀술사가 입힌 피해 및 받은 피해에 따라 피해를 입힙니다.<br><br>벌꿀술사가 처치되면 전투가 끝날 때까지 근처 벌꿀술사를 따라다니는 꿀벌 @NumTransfers@마리를 남깁니다.<br><br><row>(@MinUnits@) 입힌 피해량의 @BonusDamage*100@%, 받은 피해량의 @DamageReceived*100@%</row><br><row>(@MinUnits@) 입힌 피해량의 @BonusDamage*100@%, 받은 피해량의 @DamageReceived*100@%</row><br><row>(@MinUnits@) 입힌 피해량의 @BonusDamage*100@%, 받은 피해량의 @DamageReceived*100@%, 꿀벌의 피해 빈도가 두 배로 증가</row>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "BonusDamage": 0.07000000029802322,
+                    "DamageReceived": 0.029999999329447746,
+                    "MiniCount": 5.0,
+                    "NumTransfers": 2.0,
+                    "Period": 3.0
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "BonusDamage": 0.12999999523162842,
+                    "DamageReceived": 0.05000000074505806,
+                    "MiniCount": 5.0,
+                    "NumTransfers": 2.0,
+                    "Period": 3.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "BonusDamage": 0.20000000298023224,
+                    "DamageReceived": 0.10000000149011612,
+                    "MiniCount": 5.0,
+                    "NumTransfers": 2.0,
+                    "Period": 1.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Bee.TFT_Set12.tex",
+        "name": "벌꿀술사"
+    },
+    {
+        "apiName": "TFT12_Portal",
+        "desc": "전투 시작: @ShieldDuration@초 동안 차원문 챔피언들이 보호막을 얻습니다. <br><br>몇 초마다 다른 차원의 물체가 차원문에서 날아와 아군을 돕고 적을 방해합니다. 차원문의 효과는 차원문 챔피언의 별 레벨당 @IncreasePerStarLevel*100@% 더 강력해집니다.<br><br><row>(@MinUnits@) @ShieldAmount@의 보호막, 소형 차원문</row><br><row>(@MinUnits@) @ShieldAmount@의 보호막, 중형 차원문</row><br><row>(@MinUnits@) @ShieldAmount@의 보호막, 대형 차원문</row><br><row>(@MinUnits@) @ShieldAmount@의 보호막, 특대형 차원문</row>",
+        "effects": [
+            {
+                "maxUnits": 5,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "IncreasePerStarLevel": 0.07999999821186066,
+                    "ShieldAmount": 200.0,
+                    "ShieldDuration": 15.0,
+                    "{1c398cc4}": -1.0,
+                    "{1cef2dd3}": -1.0,
+                    "{3046ead5}": 20.0,
+                    "{45159ecf}": null,
+                    "{5434973a}": 6.0,
+                    "{5ef635e6}": -1.0,
+                    "{701cab4b}": 4.0,
+                    "{712aea13}": 3.0,
+                    "{8dda82aa}": 1.0,
+                    "{b3ce40a1}": 0.07000000029802322,
+                    "{bd89f2be}": null,
+                    "{f5e12b9a}": 75.0
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 3,
+                "variables": {
+                    "IncreasePerStarLevel": 0.07999999821186066,
+                    "ShieldAmount": 450.0,
+                    "ShieldDuration": 15.0,
+                    "{1c398cc4}": -1.0,
+                    "{1cef2dd3}": -1.0,
+                    "{3046ead5}": 30.0,
+                    "{45159ecf}": null,
+                    "{5434973a}": 6.0,
+                    "{5ef635e6}": 1.0,
+                    "{701cab4b}": 3.0,
+                    "{712aea13}": 4.0,
+                    "{8dda82aa}": 1.0,
+                    "{b3ce40a1}": 0.09000000357627869,
+                    "{bd89f2be}": null,
+                    "{f5e12b9a}": 200.0
+                }
+            },
+            {
+                "maxUnits": 9,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "IncreasePerStarLevel": 0.07999999821186066,
+                    "ShieldAmount": 700.0,
+                    "ShieldDuration": 15.0,
+                    "{1c398cc4}": 1.0,
+                    "{1cef2dd3}": -1.0,
+                    "{3046ead5}": 40.0,
+                    "{45159ecf}": 2.0,
+                    "{5434973a}": 6.0,
+                    "{5ef635e6}": 2.0,
+                    "{701cab4b}": 3.0,
+                    "{712aea13}": 4.0,
+                    "{8dda82aa}": 1.0,
+                    "{b3ce40a1}": 0.10999999940395355,
+                    "{bd89f2be}": null,
+                    "{f5e12b9a}": 250.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 10,
+                "style": 6,
+                "variables": {
+                    "IncreasePerStarLevel": 0.07999999821186066,
+                    "ShieldAmount": 1500.0,
+                    "ShieldDuration": 15.0,
+                    "{1c398cc4}": 2.0,
+                    "{1cef2dd3}": 1.0,
+                    "{3046ead5}": 55.0,
+                    "{45159ecf}": 5.0,
+                    "{5434973a}": 6.0,
+                    "{5ef635e6}": 3.0,
+                    "{701cab4b}": 2.25,
+                    "{712aea13}": 10.0,
+                    "{8dda82aa}": 1.0,
+                    "{b3ce40a1}": 0.15000000596046448,
+                    "{bd89f2be}": null,
+                    "{f5e12b9a}": 800.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Portal.TFT_Set12.tex",
+        "name": "차원문"
+    },
+    {
+        "apiName": "TFT12_Mage",
+        "desc": "요술사는 스킬을 2번 사용하고 주문력%i:scaleAP%의 총합이 조정됩니다.<br><br><row>(@MinUnits@) @APMultiplier*100@% %i:scaleAP%</row><br><row>(@MinUnits@) @APMultiplier*100@% %i:scaleAP%</row><br><row>(@MinUnits@) @APMultiplier*100@% %i:scaleAP%</row><br><row>(@MinUnits@) @APMultiplier*100@% %i:scaleAP%, 요술사가 스킬을 훨씬 더 자주 사용함</row>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "APMultiplier": 0.8500000238418579
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 3,
+                "variables": {
+                    "APMultiplier": 0.949999988079071
+                }
+            },
+            {
+                "maxUnits": 9,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "APMultiplier": 1.100000023841858
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 10,
+                "style": 6,
+                "variables": {
+                    "APMultiplier": 2.0,
+                    "MaxMana": 20.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_2_Mage.tex",
+        "name": "요술사"
+    },
+    {
+        "apiName": "TFT12_Sugarcraft",
+        "desc": "달콤술사가 설탕으로 케이크를 겹겹이 쌓아 올립니다. 플레이어 대상 전투 후 아군 챔피언이 장착한 조합 아이템 1개당 설탕을 얻습니다.<br><br>달콤술사가 공격력%i:scaleAD%과 주문력%i:scaleAP%을 얻으며 케이크 한 층당 추가 능력치가 @BonusRatio*100@% 증가합니다. 케이크가 @MaxLayers@층까지 쌓이면, 대신 간식을 얻습니다!<br><br><row>(@MinUnits@) 설탕 @SugarMultiplier@개, @BaseAPAD@ %i:scaleAD%%i:scaleAP%</row><br><row>(@MinUnits@) 설탕 @SugarMultiplier@개, @BaseAPAD@ %i:scaleAD%%i:scaleAP%</row><br><row>(@MinUnits@) 설탕 @SugarMultiplier@개, @BaseAPAD@ %i:scaleAD%%i:scaleAP%, 아군 %i:scaleHealth% @BonusHealth@ 증가</row><br><row>(@MinUnits@) 설탕 @SugarMultiplier@개, @BaseAPAD@ %i:scaleAD%%i:scaleAP%, 아군 %i:scaleHealth% @BonusHealth@ 증가</row><br><br>합계: <TFTBonus>@TFTUnitProperty.trait:TFT12_Pastry_BonusStats@</TFTBonus> %i:scaleAD%%i:scaleAP%<br>층: <TFTBonus>@TFTUnitProperty.trait:TFT12_Pastry_NumLayers@</TFTBonus>/@MaxLayers@<br>라운드당 설탕: <TFTBonus>@TFTUnitProperty.trait:TFT12_Pastry_SugarToAdd@</TFTBonus>=조합 아이템 @TFTUnitProperty.trait:TFT12_Pastry_TotalComponents@x특성으로부터 @TFTUnitProperty.trait:TFT12_Pastry_TraitSugarMult@<br><br>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BaseAPAD": 22.0,
+                    "BonusRatio": 0.10000000149011612,
+                    "MaxLayers": 7.0,
+                    "SugarMultiplier": 3.0,
+                    "SugarMultiplierHR": 6.0,
+                    "SugarMultiplierPVE": 1.0,
+                    "{b552d0f6}": 400.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BaseAPAD": 33.0,
+                    "BonusRatio": 0.10000000149011612,
+                    "MaxLayers": 7.0,
+                    "SugarMultiplier": 4.0,
+                    "SugarMultiplierHR": 8.0,
+                    "SugarMultiplierPVE": 3.0,
+                    "{b552d0f6}": 400.0
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BaseAPAD": 36.0,
+                    "BonusHealth": 100.0,
+                    "BonusRatio": 0.10000000149011612,
+                    "MaxLayers": 7.0,
+                    "SugarMultiplier": 6.0,
+                    "SugarMultiplierHR": 12.0,
+                    "SugarMultiplierPVE": 5.0,
+                    "{b552d0f6}": 400.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 6,
+                "variables": {
+                    "BaseAPAD": 50.0,
+                    "BonusHealth": 500.0,
+                    "BonusRatio": 0.10000000149011612,
+                    "MaxLayers": 7.0,
+                    "SugarMultiplier": 10.0,
+                    "SugarMultiplierHR": 20.0,
+                    "SugarMultiplierPVE": 7.0,
+                    "{b552d0f6}": 400.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Sugarcraft.TFT_Set12.tex",
+        "name": "달콤술사"
+    },
+    {
+        "apiName": "TFT12_Pyro",
+        "desc": "아군이 공격 속도%i:scaleAS%를 @BaseASPct@% 얻습니다. 화염 챔피언이 %i:scaleAS%를 얻고 체력이 @ExecutePct@% 아래인 적을 처형합니다.<br><br>적을 처치할 때마다 화염 챔피언이 다음 라운드에 수집할 수 있는 지옥 잉걸불을 생성합니다. 잉걸불을 @NumCinders@개 수집할 때마다 아군의 %i:scaleAS%가 @ASPctPerNumCinders@% 더 증가합니다.<br><br><row>(@MinUnits@) @PyroUnitAS@% %i:scaleAS%</row><br><row>(@MinUnits@) @PyroUnitAS@% %i:scaleAS%</row><br><row>(@MinUnits@) @PyroUnitAS@% %i:scaleAS%</row><br><row>(@MinUnits@) @PyroUnitAS@% %i:scaleAS% 및 체력 @ExecutePct@% 아래 적 처형</row><br><br>수집한 잉걸불: @TFTUnitProperty.trait:TFT12_PyroCindersCollected@<br>아군 %i:scaleAS%: @TFTUnitProperty.trait:TFT12_PyroAttackSpeed@%",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "ASPctPerNumCinders": 2.0,
+                    "BaseASPct": 3.0,
+                    "ExecutePct": 10.0,
+                    "NumCinders": 5.0,
+                    "NumCindersHR": 3.0,
+                    "PyroUnitAS": 5.0
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 3,
+                "variables": {
+                    "ASPctPerNumCinders": 2.0,
+                    "BaseASPct": 3.0,
+                    "ExecutePct": 10.0,
+                    "NumCinders": 5.0,
+                    "NumCindersHR": 3.0,
+                    "PyroUnitAS": 25.0
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "ASPctPerNumCinders": 2.0,
+                    "BaseASPct": 3.0,
+                    "ExecutePct": 10.0,
+                    "NumCinders": 5.0,
+                    "NumCindersHR": 3.0,
+                    "PyroUnitAS": 50.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "ASPctPerNumCinders": 2.0,
+                    "BaseASPct": 3.0,
+                    "ExecutePct": 15.0,
+                    "NumCinders": 5.0,
+                    "NumCindersHR": 3.0,
+                    "PyroUnitAS": 65.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_12_Pyrokinesis.TFT_Set12.tex",
+        "name": "화염"
+    }
+]

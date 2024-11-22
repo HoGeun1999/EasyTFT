@@ -1,0 +1,64 @@
+/* 각 자식 요소 컴포넌트 스타일 */
+.championComponent {
+  height: 65px;
+  width: 65px;
+  margin: 5px 5px 5px 5px;
+  display: inline-table;
+  /* position: relative; */
+  cursor: pointer;
+}
+
+/* 이미지가 부모 div에 맞게 크기 조정 */
+.championComponent img {
+  width: 100%;  /* 부모 div에 맞게 너비를 100%로 설정 */
+	vertical-align: middle;
+
+}
+
+/* p 태그 스타일 (위치, 텍스트 스타일 등) */
+.championComponent p {
+  position: absolute;
+  top: 5px; /* 위쪽에 위치 */
+  right: 5px; /* 오른쪽에 위치 */
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.cost-1 {
+border: 3px solid #808080;  /* cost가 1일 때 빨간색 테두리 */
+}
+
+.cost-2 {
+border: 3px solid #90EE90;  /* cost가 2일 때 초록색 테두리 */
+}
+
+.cost-3 {
+border: 3px solid #3993b1;  /* cost가 3일 때 파란색 테두리 */
+}
+
+.cost-4 {
+border: 3px solid #800080;  /* cost가 4일 때 보라색 테두리 */
+}
+
+.cost-5 {
+border: 3px solid #FFD700;  /* cost가 5일 때 노란색 테두리 */
+}
+
+.championINFO {
+  background-color: rgba(0, 0, 0, 0.8);  /* 검은색 배경, 투명도 */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 150px;
+  left: 100px;
+  z-index: 10;
+}
+
+
+
+ 

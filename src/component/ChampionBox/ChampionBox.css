@@ -1,0 +1,7 @@
+/* championBox를 화면 중앙에 배치하고 크기와 테두리를 설정 */
+.championBox {
+    border: 1px solid black;
+    height: 300px;
+    width: 500px;
+    overflow-x: hidden;
+  }
