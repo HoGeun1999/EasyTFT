@@ -4,3 +4,7 @@
     height: 90%;
     overflow-x: hidden;
 }
+
+.championBoxTool{
+    border: 1px solid black;
+}
