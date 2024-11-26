@@ -129,7 +129,11 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
                 championData.name.toLowerCase().includes(searchInput.toLowerCase())
               )
               .map((championData) => (
-                <ChampionComponent data={championData} SetChampionBoxList={SetChampionBoxList} SettingChampionBoxList={SettingChampionBoxList}/>
+                <ChampionComponent 
+                  data={championData} 
+                  SetChampionBoxList={SetChampionBoxList} 
+                  SettingChampionBoxList={SettingChampionBoxList} 
+                  />
               ))}
           </div>
         );
@@ -156,7 +160,11 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
                     championData.name.toLowerCase().includes(searchInput.toLowerCase())
                   )
                   .map((championData) => (
-                    <ChampionComponent data={championData} SetChampionBoxList={SetChampionBoxList} SettingChampionBoxList={SettingChampionBoxList}/>
+                    <ChampionComponent 
+                      data={championData} 
+                      SetChampionBoxList={SetChampionBoxList} 
+                      SettingChampionBoxList={SettingChampionBoxList} 
+                      />
                   ))}
               </div>
           );
@@ -169,8 +177,12 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
           championData.name.toLowerCase().includes(searchInput.toLowerCase()) // 이름에 searchInput이 포함된 챔피언만 필터링
         )
         .map(championData => (
-          <ChampionComponent data={championData} SetChampionBoxList={SetChampionBoxList} SettingChampionBoxList={SettingChampionBoxList}/> // 각 챔피언에 고유 key를 부여
-        ))
+          <ChampionComponent 
+            data={championData} 
+            SetChampionBoxList={SetChampionBoxList} 
+            SettingChampionBoxList={SettingChampionBoxList} 
+          />
+          ))
       }
     </div>
     )}

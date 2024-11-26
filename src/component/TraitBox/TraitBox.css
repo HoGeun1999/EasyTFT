@@ -1,0 +1,96 @@
+.TraitBox{
+    background-color: black;
+}
+
+/* Trait 전체 컨테이너 */
+.Trait {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background-color: #1a1a1a; /* 전체 배경 */
+    width: 90%;
+  }
+  
+  /* 6각형 모양의 div */
+  .TraitImgContainer {
+    width: 65px;
+    height: 60px;
+    background-color: gray; /* 배경색 */
+    clip-path: polygon(
+      50% 0%,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0% 75%,
+      0% 25%
+    ); /* 6각형 모양 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+  }
+    
+  /* 이미지 스타일 */
+  .TraitImg {
+    width: 70%; /* 이미지 크기 */
+    height: 70%; /* 이미지 크기 */
+    object-fit: cover; /* 이미지가 부모 컨테이너 안에 잘 맞게 */
+    clip-path: inherit; /* 6각형 모양 유지 */
+    border-radius: 6px; /* 약간의 둥근 테두리 */
+    filter: grayscale(100%) brightness(0%); /* 이미지 색상 검은색 */    
+
+  }
+.traitName{
+    color: white;
+    width: 150px;
+  }
+.traitLevel{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.TraitContainer{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid white;  /* 화살표 모양을 만들기 위해 왼쪽에 흰색 border 설정 */
+    margin: 5px 5px 5px 5px;
+  }
+
+.effectWithArrow{
+    display: flex;
+    flex-direction: row;
+}
+
+.highlight{
+    color: blue;
+}
+
+.traitStyle1{
+    background-color: RGB(223, 133, 78);
+}
+
+.traitStyle3{
+    background-color: silver;
+}
+
+.traitStyle4{
+    background-color: RGB(252, 122, 87);
+}
+
+.traitStyle5{
+    background-color: gold;
+}
+
+.traitStyle6{
+    background-color: RGB(222, 253, 249);
+}

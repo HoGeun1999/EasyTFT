@@ -25,6 +25,7 @@
   width: 70px;
   height: 5px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 }
 
 .long{
@@ -33,6 +34,7 @@
 
 .cost-1 {
 border: 3px solid #808080;  /* cost가 1일 때 빨간색 테두리 */
+
 }
 
 .cost-2 {
@@ -52,16 +54,81 @@ border: 3px solid #FFD700;  /* cost가 5일 때 노란색 테두리 */
 }
 
 .championINFO {
-  background-color: rgba(0, 0, 0, 0.8);  /* 검은색 배경, 투명도 */
+  background-color: rgba(0, 0, 0, 0.9);  /* 검은색 배경, 투명도 */
   color: white;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   position: absolute;
-  width: 150px;
+  width: 300px;
   left: 100px;
   z-index: 10;
 }
 
+.championINFOname{
+  margin-bottom: 10px;
+}
 
- 
+.championINFOtraits {
+  display: flex;
+  flex-direction: column; /* 각 trait 항목을 세로로 배치 */
+  gap: 8px; /* 항목 간 간격 */
+  margin-bottom: 10px;
+}
+
+.championINFOtraits div {
+  display: flex;
+  align-items: center; /* 이미지와 텍스트를 수직 정렬 */
+  width: 20px;
+  height: 20px;
+}
+
+.championINFOtraitImg {
+  width: 100%;
+  height: 100%;
+  margin-right: 8px; /* 이미지와 텍스트 사이의 간격 */
+  object-fit: cover; /* 이미지가 정사각형 크기에 맞도록 조정 */
+}
+
+.championINFOtraits div span {
+  white-space: nowrap; /* 텍스트를 한 줄로 유지 */
+  text-align: left; /* 텍스트를 왼쪽 정렬 */
+}
+
+
+.championINFOskill {
+  display: flex;
+  flex-direction: column; 
+  gap: 8px; /* 이미지와 텍스트 사이에 간격 추가 */
+}
+
+.skillWrap {
+  display: flex;
+  align-items: center; 
+  gap: 8px; 
+  width: 60px;
+  height: 60px;
+  
+}
+
+.championINFOskillImg {
+  width: 100%; /* 이미지 크기 지정 */
+  height: 100%;
+  object-fit: cover; /* 이미지가 정사각형 크기에 맞도록 조정 */
+}
+
+.championINFOskill div span {
+  display: block; /* span을 block으로 만들어 세로로 배치 */
+  white-space: nowrap; /* 텍스트를 한 줄로 유지 */
+  text-align: left; /* 텍스트를 왼쪽 정렬 */
+  line-height: 1.5;
+  margin-left: 10px;
+  letter-spacing: 1.5px;
+}
+
+.skillINFO{
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+

@@ -12,3 +12,12 @@ useSelector = 읽기  useDispatch = 쓰기(변경)
 
 
 
+"관통하는 얼음 파편을 발사해 @SunderDuration@초 동안 <TFTKeyword>파열</TFTKeyword>을 적용하고 <physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다. 적중한 적 하나당 피해량이 @FalloffDamage*100@%씩 감소합니다. <br><br><tftitemrules><tftbold>파열:</tftbold> 방어력 감소</tftitemrules>"
+
+
+
+챔피언박스
+-------------------
+버튼이랑 검색툴 css 정리하기
+챔피언 컴포넌트에 마우스 올렸을때 챔피언 정보 추가하기
+챔피언 클릭 이벤트 클릭한 위치에 따라 변경하기 ( 부모에 클릭하는 챔피언 위치 state 만들고 전달해가면서 값 변경하기)

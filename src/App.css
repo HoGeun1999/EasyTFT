@@ -82,6 +82,7 @@ grid-area: I;
 
 .grid-item-TraitBox{
 grid-area: T;
+/* overflow-x: hidden; */
 }
 
 .grid-item-RecommendDeckBox{

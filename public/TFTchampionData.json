@@ -1,7 +1,7 @@
 [
     {
         "ability": {
-            "desc": "대상에게 폭탄을 설치해 <magicDamage>@ModifiedInitialDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @StunDuration@초 동안 <TFTKeyword>기절</TFTKeyword>시킵니다. 기절이 끝나거나 대상이 처치되면 폭탄이 폭발해 대상에게는 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 대상 주변 적에게는 <magicDamage>@ModifiedSecondaryDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. ",
+            "desc": "대상에게 폭탄을 설치해 마법 피해를 입히고 몇초 동안 기절시킵니다. 기절이 끝나거나 대상이 처치되면 폭탄이 폭발해 대상에게는 마법 피해를 입히고 대상 주변 적에게 범위 마법 피해를 입힙니다. ",
             "icon": "ASSETS/Characters/TFT12_Zilean/HUD/Icons2D/Zilean_Q.TFT_Set12.tex",
             "name": "시한 폭탄",
             "variables": [
@@ -106,7 +106,7 @@
     },
     {
         "ability": {
-            "desc": "관통하는 얼음 파편을 발사해 @SunderDuration@초 동안 <TFTKeyword>파열</TFTKeyword>을 적용하고 <physicalDamage>@TotalDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다. 적중한 적 하나당 피해량이 @FalloffDamage*100@%씩 감소합니다. <br><br><tftitemrules><tftbold>파열:</tftbold> 방어력 감소</tftitemrules>",
+            "desc": "관통하는 얼음 파편을 발사해 몇초 동안 파열을 적용하고 물리 피해를 입힙니다. 적중한 적 하나당 피해량이 일정 감소합니다. 파열: 방어력 감소",
             "icon": "ASSETS/Characters/TFT12_Twitch/HUD/Icons2D/Twitch_R.TFT_Set12.tex",
             "name": "얼음 파편",
             "variables": [
@@ -198,7 +198,7 @@
     },
     {
         "ability": {
-            "desc": "<spellPassive>기본 지속 효과</spellPassive>: 처치한 챔피언 하나당 공격 속도와 이동 속도를 영구히 <TFTBonus>@TFTUnitProperty.:TFT12_WarwickASAmountToGain@%</TFTBonus> 얻습니다. 기본 공격 시 체력을 <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth> 회복하고 <physicalDamage>@BonusOnAttackDamage@(%i:scaleAD%)</physicalDamage>의 추가 물리 피해를 입힙니다. 대상의 체력이 <scaleLevel>@HealthThreshold*100@%</scaleLevel> 아래라면 체력 회복량과 물리 피해량이 2배가 됩니다.<br><br><TFTTrackerLabel>(현재 추가 효과: 공격 속도 및 이동 속도 +@TFTUnitProperty.:TFT12_WarwickBonusAS@%)</TFTTrackerLabel>",
+            "desc": "기본 지속 효과: 처치한 챔피언 하나당 공격 속도와 이동 속도를 영구히 얻습니다. 기본 공격 시 체력을 회복하고 추가 물리 피해를 입힙니다. 대상의 체력이 일정량 아래라면 체력 회복량과 물리 피해량이 2배가 됩니다.",
             "icon": "ASSETS/Characters/TFT12_Warwick/HUD/TFT12_WarwickW.TFT_Set12.tex",
             "name": "굶주린 사냥꾼",
             "variables": [
@@ -302,7 +302,7 @@
     },
     {
         "ability": {
-            "desc": "대상 위에 번개를 그립니다. 잠시 후 번개가 내리쳐 대상에게 <magicDamage>@ModifiedBoltDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고, 주변 적에게는 <magicDamage>@ModifiedAreaDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 스킬을 3회 사용할 때마다 남은 체력 비율이 가장 낮은 적에게 추가로 번개를 @NumExtraBolts@개 그립니다.",
+            "desc": "대상 위에 번개를 그립니다. 잠시 후 번개가 내리쳐 대상에게 마법 피해를 입히고, 주변 적에게는 범위 마법 피해를 입힙니다. 스킬을 3회 사용할 때마다 남은 체력 비율이 가장 낮은 적에게 추가로 번개를 그립니다.",
             "icon": "ASSETS/Characters/TFT12_Hwei/HUD/Icons2D/HweiQW.TFT_Set12.tex",
             "name": "주제: 폭풍",
             "variables": [
@@ -370,7 +370,7 @@
     },
     {
         "ability": {
-            "desc": "@DashRangeInHexes@칸 내 가장 많은 적을 타격할 수 있는 위치로 돌진하고 체력을 <scaleHealth>@ModifiedBonusSnowHeal@ (%i:scaleAP%)</scaleHealth> 회복합니다. 초과 체력 회복량은 @ShieldDuration@초 동안 지속되는 보호막으로 전환됩니다. 이후 주변 적에게 <magicDamage>@ModifiedInnerRingDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @SpellRadiusInHexes@칸 멀리 있는 적에게 <magicDamage>@ModifiedOuterRingDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. <br><br>스킬을 @SnowfallCasts@회 사용할 때마다 폭설을 내려 모든 적이 <TFTKeyword>동상</TFTKeyword>에 걸리게 하고 @HealDuration@초에 걸쳐 모든 아군의 체력을 <scaleHealth>@ModifiedSnowHeal@ (%i:scaleAP%)</scaleHealth> 회복시킵니다. 또한 초과 체력 회복량은 @ShieldDuration@초 동안 지속되는 보호막으로 전환됩니다.<br><br><rules>동상: 공격 속도 20% 감소</rules>",
+            "desc": "2칸 내 가장 많은 적을 타격할 수 있는 위치로 돌진하고 체력을 회복합니다. 초과 체력 회복량은 3초 동안 지속되는 보호막으로 전환됩니다. 이후 주변 적에게 마법 피해를 입히고 2칸 멀리 있는 적에게 마법 피해를 입힙니다. <br><br>스킬을 2회 사용할 때마다 폭설을 내려 모든 적이 동상에 걸리게 하고 3초에 걸쳐 모든 아군의 체력을 회복시킵니다. 또한 초과 체력 회복량은 3초 동안 지속되는 보호막으로 전환됩니다.<br><br>동상: 공격 속도 20% 감소",
             "icon": "ASSETS/Characters/TFT12_Diana/HUD/Icons2D/TFT12_Diana_Ability.tex",
             "name": "폭설",
             "variables": [
@@ -510,7 +510,7 @@
     },
     {
         "ability": {
-            "desc": "주변 적에게 <magicDamage>@ModifiedMagicDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히고 @Duration@초 동안 방어력과 마법 저항력을 <TFTBonus>@ModifiedBonusResists@ (%i:scaleAP%)</TFTBonus> 얻습니다. 그동안 기본 공격이 <magicDamage>@ModifiedBonusDamage@(%i:scaleArmor% %i:scaleMR%)</magicDamage>의 추가 마법 피해를 입힙니다.",
+            "desc": "주변 적에게 마법 피해를 입히고 6초 동안 방어력과 마법 저항력을 얻습니다. 그동안 기본 공격이 추가 마법 피해를 입힙니다.",
             "icon": "ASSETS/Characters/Jax/HUD/Icons2D/JaxE.TFT_Set12.tex",
             "name": "무기의 달인",
             "variables": [
@@ -590,7 +590,7 @@
     },
     {
         "ability": {
-            "desc": "@ShieldDuration@초 동안 <TFTBonus>@ModifiedShieldAmount@(%i:scaleAP%)</TFTBonus>의 보호막을 얻습니다. 이 보호막은 벡스를 대상으로 지정한 적마다 @ShieldInc*100@% 증가합니다. 보호막이 사라지면 2칸 내 적에게 <magicDamage>@ModifiedBaseDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다.",
+            "desc": "4초 동안 보호막을 얻습니다. 이 보호막은 벡스를 대상으로 지정한 적마다 증가합니다. 보호막이 사라지면 2칸 내 적에게 마법 피해를 입힙니다.",
             "icon": "ASSETS/Characters/TFT12_Vex/HUD/Icons2D/Icons_Vex_W01.TFT_Set12.tex",
             "name": "거리 두기",
             "variables": [
@@ -694,7 +694,7 @@
     },
     {
         "ability": {
-            "desc": "<spellPassive>기본 지속 효과:</spellPassive> 주변을 날며 가장 가까운 적을 공격합니다.<br><br><spellActive>사용 시:</spellActive> 다음 기본 공격 <TFTBonus>@NumFireballs@</TFTBonus>회 동안 공격 속도를 <scaleLevel>@BonusAttackSpeed*100@%</scaleLevel> 얻습니다. 이 기본 공격을 하면 화염구를 발사해 <physicalDamage>@ModifiedDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다.<br><br><specialRules>용 업그레이드:</specialRules> 대신 다음 기본 공격을 <TFTBonus>@DragonNumFireballs@</TFTBonus>회 강화합니다. 화염구는 <physicalDamage>@ModifiedDragonDamage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다.",
+            "desc": "기본 지속 효과: 주변을 날며 가장 가까운 적을 공격합니다. 사용 시: 다음 기본 공격 4회 동안 공격 속도를 얻습니다. 이 기본 공격을 하면 화염구를 발사해 물리 피해를 입힙니다. 용 업그레이드: 대신 다음 기본 공격을 6회 강화합니다. 화염구는 물리 피해를 입힙니다.",
             "icon": "ASSETS/Characters/TFT12_Smolder/HUD/Icons2D/Icons_Smolder_E.TFT_Set12.tex",
             "name": "비행 연습",
             "variables": [
@@ -822,7 +822,7 @@
     },
     {
         "ability": {
-            "desc": "대상 및 영향을 받지 않은 가장 가까운 적에게 @RiftDuration@초에 걸쳐 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입히는 시간의 균열을 부착합니다. 적에게 부착된 다른 모든 균열의 지속시간을 초기화합니다.",
+            "desc": "대상 및 영향을 받지 않은 가장 가까운 적에게 몇초에 걸쳐 마법 피해를 입히는 시간의 균열을 부착합니다. 적에게 부착된 다른 모든 균열의 지속시간을 초기화합니다.",
             "icon": "ASSETS/Characters/TFT12_Karma/HUD/Icons2D/Zilean_E.TFT_Set12.tex",
             "name": "시간 임박",
             "variables": [
@@ -890,7 +890,7 @@
     },
     {
         "ability": {
-            "desc": "<spellPassive>기본 지속 효과:</spellPassive> 현재 대상이 처치되면 @HookshotHexRange@칸 내 남은 체력 비율이 가장 낮은 적에게 갈고리를 발사해 <physicalDamage>@IsolationZoneDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 갈고리를 발사하거나 스킬을 사용하면 다음 기본 공격이 <trueDamage>@TrueDamage@(%i:scaleAD%%i:scaleAP%)</trueDamage>의 고정 피해를 입힙니다. <br><br><spellActive>사용 시:</spellActive> 대상 주변 적을 뒤로 밀어내고 @StunDuration@초 동안 <TFTKeyword>기절</TFTKeyword>시키며 <physicalDamage>@IsolationZoneDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. @IsolationDuration@초 동안 대상 주변에 격리 구역을 생성합니다. 구역 내에 있을 때 내구력을 <TFTBonus>@ZoneDamageReduction*100@%</TFTBonus>, 공격력을 <TFTBonus>@ZoneBonusAD*100@%</TFTBonus> 얻습니다. ",
+            "desc": "기본 지속 효과: 현재 대상이 처치되면 3칸 내 남은 체력 비율이 가장 낮은 적에게 갈고리를 발사해 물리 피해를 입힙니다. 갈고리를 발사하거나 스킬을 사용하면 다음 기본 공격이 고정 피해를 입힙니다. 사용 시: 대상 주변 적을 뒤로 밀어내고 1초 동안 기절시키며 물리 피해를 입힙니다. 몇초 동안 대상 주변에 격리 구역을 생성합니다. 구역 내에 있을 때 내구력, 공격력을 얻습니다. ",
             "icon": "ASSETS/Characters/TFT12_Camille/HUD/Icons2D/Camille_R.TFT_Set12.tex",
             "name": "시간의 변칙",
             "variables": [
@@ -1018,7 +1018,7 @@
     },
     {
         "ability": {
-            "desc": "@ShieldDuration@초 동안 <TFTBonus>@ModifiedShield@(%i:scaleAP%%i:scaleHealth%)</TFTBonus>의 보호막을 얻습니다. ",
+            "desc": "4초 동안 보호막을 얻습니다. ",
             "icon": "ASSETS/Characters/TFT12_Blitzcrank/HUD/TFT12_Blitzcrank_Icon.TFT_Set12.tex",
             "name": "벌꿀 방어막",
             "variables": [
@@ -1146,7 +1146,7 @@
     },
     {
         "ability": {
-            "desc": "거미로 변신하고 이 스킬을 석화독으로 교체한 후 스킬을 사용합니다. <br><br>석화독: 대상을 @StunDuration@초 동안 <TFTKeyword>기절</TFTKeyword>시키고 <magicDamage>@ModifiedDamage@(%i:scaleHealth%%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 체력을 <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth> 회복합니다.",
+            "desc": "거미로 변신하고 이 스킬을 석화독으로 교체한 후 스킬을 사용합니다. 석화독: 대상을 1.5초 동안 기절시키고 마법 피해를 입힙니다. 체력을 일정 회복합니다.",
             "icon": "ASSETS/Characters/Elise/HUD/Icons2D/EliseSpiderQ.TFT_Set12.tex",
             "name": "거미 형태",
             "variables": [
@@ -1262,7 +1262,7 @@
     },
     {
         "ability": {
-            "desc": "해머 형태로 변환해 방어력과 마법 저항력을 <TFTBonus>@ModifiedResistGain@(%i:scaleAP%)</TFTBonus> 얻습니다. 이 스킬을 해머 슬램으로 교체하고 즉시 스킬을 사용합니다. <br><br>해머 슬램: 대상에게 도약해 <physicalDamage>@Damage@(%i:scaleAD%%i:scaleAP%)</physicalDamage>의 물리 피해를 입힙니다.",
+            "desc": "해머 형태로 변환해 방어력과 마법 저항력을 얻습니다. 이 스킬을 해머 슬램으로 교체하고 즉시 스킬을 사용합니다. 해머 슬램: 대상에게 도약해 물리 피해를 입힙니다.",
             "icon": "ASSETS/Characters/TFT12_Jayce/HUD/Icons2D/JayceQ_Melee.TFT_Set12.tex",
             "name": "해머 형태",
             "variables": [
@@ -1330,7 +1330,7 @@
     },
     {
         "ability": {
-            "desc": "대상에게 대포알을 발사해 처음으로 적중한 적에게 <physicalDamage>@TotalDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 해당 적이 트리스티나의 2칸 내에 있다면 뒤로 <scaleLevel>@HexKnockback@</scaleLevel>칸 밀려나고 <TFTKeyword>기절</TFTKeyword>합니다.",
+            "desc": "대상에게 대포알을 발사해 처음으로 적중한 적에게 물리 피해를 입힙니다. 해당 적이 트리스티나의 2칸 내에 있다면 뒤로 <scaleLevel>@HexKnockback@</scaleLevel>칸 밀려나고 <TFTKeyword>기절</TFTKeyword>합니다.",
             "icon": "ASSETS/Characters/TFT12_Tristana/HUD/Tristana_R.TFT_Set12.tex",
             "name": "폭발 화약",
             "variables": [

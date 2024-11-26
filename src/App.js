@@ -9,9 +9,9 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const [SetChampionBoxList, SettingChampionBoxList] = useState([])
-
   const [championList, setChampionList] = useState([]);  // 사용자 상태를 관리
-  
+  const [traitsData, setTraitsData] = useState(null); // 데이터를 저장할 상태 변수
+
   useEffect(() => {
     fetch('/TFTchampionData.json')  // '/'는 public 폴더의 루트 경로
       .then((response) => response.json())  // JSON으로 변환
@@ -26,24 +26,40 @@ function App() {
       });
   }, []); 
 
+  useEffect(() => {
+    // public 폴더에 있는 TFTtraitsData.json 파일을 가져옵니다.
+    fetch('/TFTtraitsData.json')
+      .then((response) => response.json()) // JSON으로 파싱
+      .then((data) => setTraitsData(data))  // 데이터를 상태에 저장
+      .catch((error) => console.error("데이터를 가져오는 데 오류가 발생했습니다.", error)); // 에러 처리
+  }, []); // 컴포넌트가 처음 렌더링될 때만 실행
+
 
   return (
     <div className="App">
       <div className="grid-container">
         <div className="grid-item-ChampionBox">
-          <ChampionBox championList={championList} setChampionList={setChampionList} SetChampionBoxList={SetChampionBoxList} SettingChampionBoxList={SettingChampionBoxList}/>
+          <ChampionBox 
+          championList={championList} 
+          setChampionList={setChampionList} 
+          SetChampionBoxList={SetChampionBoxList} 
+          SettingChampionBoxList={SettingChampionBoxList}/>
         </div>
         <div className="grid-item-ItemBox">
           <ItemBox />
         </div>
         <div className="grid-item-TraitBox">
-          <TraitBox />
+          <TraitBox 
+          SetChampionBoxList={SetChampionBoxList}
+          traitsData={traitsData}/>
         </div>
         <div className="grid-item-RecommendDeckBox">
           <RecommendDeckBox />
         </div>
         <div className="grid-item-SetChampionBox">
-          <SetChampionBox SetChampionBoxList={SetChampionBoxList} SettingChampionBoxList={SettingChampionBoxList}/>
+          <SetChampionBox 
+          SetChampionBoxList={SetChampionBoxList} 
+          SettingChampionBoxList={SettingChampionBoxList} />
         </div>
       </div>
     </div>
