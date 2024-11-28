@@ -1,0 +1,9 @@
+.ItemBox{
+    display: inline;
+}
+
+.ItemBoxButtonWrap{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}

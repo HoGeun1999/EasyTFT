@@ -1,5 +1,6 @@
 .TraitBox{
     background-color: black;
+    width: 200px;
 }
 
 /* Trait 전체 컨테이너 */
@@ -8,13 +9,12 @@
     flex-direction: row;
     padding: 5px;
     background-color: #1a1a1a; /* 전체 배경 */
-    width: 90%;
   }
   
   /* 6각형 모양의 div */
   .TraitImgContainer {
-    width: 65px;
-    height: 60px;
+    width: 45px;
+    height: 40px;
     background-color: gray; /* 배경색 */
     clip-path: polygon(
       50% 0%,
@@ -29,6 +29,7 @@
     align-items: center;
     position: relative;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+    margin-left: 5px;
   }
     
   /* 이미지 스타일 */
@@ -43,7 +44,7 @@
   }
 .traitName{
     color: white;
-    width: 150px;
+    width: 80px;
   }
 .traitLevel{
     color: white;
@@ -72,7 +73,7 @@
 }
 
 .highlight{
-    color: blue;
+    color: red;
 }
 
 .traitStyle1{
@@ -93,4 +94,18 @@
 
 .traitStyle6{
     background-color: RGB(222, 253, 249);
+}
+
+
+.TraitINFO{
+  color: white;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);  /* 검은색 배경, 투명도 */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  left: 300px;
+  z-index: 10;
+  font-size: 14px;
 }

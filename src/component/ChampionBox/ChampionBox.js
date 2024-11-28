@@ -97,19 +97,19 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
 
 
   return (
-  <div className='championBox'>
-    <div className='championBoxTool'>
-      <ChampionBoxNameButton
-        championList={championList}/>
-      <ChampionBoxCostButton/>
-      <ChampionBoxLineButton/>
-      <ChampionBoxJobButton/>
-      <ChampionBoxSearchBox
-          inputValue={searchInput}   // 부모 컴포넌트의 상태를 props로 전달
-          onInputChange={handleInputChange} // input 값 변경 시 부모로 전달하는 함수
+    <div className='championBoxWrap'>
+      <div className='championBoxTool'>
+        <ChampionBoxNameButton
+          championList={championList}/>
+        <ChampionBoxCostButton/>
+        <ChampionBoxLineButton/>
+        <ChampionBoxJobButton/>
+        <ChampionBoxSearchBox
+            inputValue={searchInput}   // 부모 컴포넌트의 상태를 props로 전달
+            onInputChange={handleInputChange} // input 값 변경 시 부모로 전달하는 함수
         />
-    </div>
-
+      </div>
+    <div className='championBox'>
     {lineButton ? (
       <div className="championBoxSet">
          {sortedKeys.map((key) => {
@@ -187,7 +187,9 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
     </div>
     )}
       </div>
+  </div>
       );
+      
 };
 
 

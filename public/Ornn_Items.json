@@ -1,0 +1,805 @@
+[
+    {
+        "apiName": "TFT_Item_Artifact_InnervatingLocket",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "공격을 당할 때마다 총 마나의 @PercentMana@%씩 획득합니다.<br><br>스킬을 사용할 때마다 @Duration@초 동안 최대 체력의 @PercentHealth@%씩 회복합니다.",
+        "effects": {
+            "Duration": 3.0,
+            "Health": 150.0,
+            "Mana": 15.0,
+            "PercentHealth": 20.0,
+            "PercentMana": 2.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_InnervatingLocket.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "활력증진의 펜던트",
+        "unique": false
+    },
+    {
+        "apiName": "TFT9_Item_OrnnHullbreaker",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투 시작: 인접한 아군이 없다면 체력 @ExtraHealth@, 공격력 @ExtraADandAP@, 주문력 @ExtraADandAP@ 획득",
+        "effects": {
+            "AS": 30.0,
+            "Armor": 35.0,
+            "ExtraADandAP": 25.0,
+            "ExtraHealth": 600.0,
+            "MagicResist": 35.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_Hullbreaker.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "선체분쇄자",
+        "unique": false
+    },
+    {
+        "apiName": "TFT9_Item_OrnnDuskbladeOfDraktharr",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투 시작: 적의 후방으로 도약 <br><br>스킬 피해에 치명타 적용 가능<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AS": 20.0,
+            "CritChance": 35.0,
+            "ProcADPercent": 1.5
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_ProwlersClaw.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "배불뚝이표 자객의 발톱",
+        "unique": true
+    },
+    {
+        "apiName": "TFT4_Item_OrnnMuramana",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투 중 처음으로 스킬을 사용하면 @ManaDuration@초 동안 마나 @ManaRestore@ 획득<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AD": 0.15000000596046448,
+            "AP": 10.0,
+            "AS": 15.0,
+            "Mana": 15.0,
+            "ManaDuration": 5.0,
+            "ManaRestore": 120.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT4_OrnnItem_Marksman_T3_Muramana.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "마나자네",
+        "unique": true
+    },
+    {
+        "apiName": "TFT7_Item_ShimmerscaleGoldmancersStaff",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "보유 중인 %i:goldCoins% 골드마다 주문력 %i:scaleAP% @AbilityPowerPerGold@ 획득. (최대 %i:goldCoins% @AbilityPowerGoldMax@골드) 적을 처치할 때마다 @OnKillProcChance*100@% 확률로 %i:goldCoins% @OnKillProcGold@골드 획득<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules><br><tftitemrules>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>",
+        "effects": {
+            "AP": 45.0,
+            "AbilityPowerGoldMax": 30.0,
+            "AbilityPowerPerGold": 1.0,
+            "Mana": 15.0,
+            "OnKillProcChance": 0.4000000059604645,
+            "OnKillProcGold": 1.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/GoldmancersStaff.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "황금술사의 지팡이",
+        "unique": true
+    },
+    {
+        "apiName": "TFT7_Item_ShimmerscaleMogulsMail_HR",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "피해를 입으면 방어력 @BaseResistsPerStack@, 마법 저항력 @BaseResistsPerStack@, 체력 @BaseHealthPerStack@ 획득. (최대 @StackCap@회 중첩)<br><br>최대 중첩 시 @GoldAtFullStacks@골드%i:goldCoins% 획득. 이후 @GoldInterval@초마다 1골드%i:goldCoins% 획득<br><br><tftitemrules>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@<br>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "BaseHealthPerStack": 7.0,
+            "BaseResistsPerStack": 1.0,
+            "GoldAtFullStacks": 3.0,
+            "GoldInterval": 9.0,
+            "Health": 50.0,
+            "StackCap": 35.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/Moguls_Mail.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "거물의 갑옷",
+        "unique": true
+    },
+    {
+        "apiName": "TFT7_Item_ShimmerscaleMogulsMail",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "피해를 입으면 방어력 @BaseResistsPerStack@, 마법 저항력 @BaseResistsPerStack@, 체력 @BaseHealthPerStack@ 획득. (최대 @StackCap@회 중첩)<br><br>최대 중첩 시 @GoldAtFullStacks@골드%i:goldCoins% 획득. 이후 @GoldInterval@초마다 1골드%i:goldCoins% 획득<br><br><tftitemrules>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@<br>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "BaseHealthPerStack": 7.0,
+            "BaseResistsPerStack": 1.0,
+            "GoldAtFullStacks": 1.0,
+            "GoldInterval": 9.0,
+            "Health": 50.0,
+            "StackCap": 35.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/Moguls_Mail.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "거물의 갑옷",
+        "unique": true
+    },
+    {
+        "apiName": "TFT7_Item_ShimmerscaleGamblersBlade_HR",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "보유 중인 %i:goldCoins% 골드마다 추가 공격 속도 %i:scaleAS% @AttackSpeedPerGold*100@% 획득 (최대 %i:goldCoins% @AttackSpeedGoldLimit@골드)<br><br>공격할 때마다 @ChanceToProc*100@% 확률로 %i:goldCoins% @GoldPerProc@골드 획득<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules><br><tftitemrules>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>",
+        "effects": {
+            "AP": 10.0,
+            "AS": 15.0,
+            "AttackSpeedGoldLimit": 15.0,
+            "AttackSpeedPerGold": 0.029999999329447746,
+            "ChanceToProc": 0.10000000149011612,
+            "GoldPerProc": 1.0,
+            "{46736b3f}": 4.0,
+            "{b38e1643}": 10.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT10_GamblersBlade.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "도박꾼의 칼날",
+        "unique": true
+    },
+    {
+        "apiName": "TFT7_Item_ShimmerscaleDiamondHands_HR",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투당 한 번: 체력이 @HPThreshold1*100@%일 때 @BaseDamageImmunityTime@초 동안 무적 상태가 되고 %i:goldCoins% @GoldPerImmunityProc@골드 획득<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AP": 25.0,
+            "BaseDamageImmunityTime": 1.5,
+            "GoldPerImmunityProc": 2.0,
+            "HPThreshold1": 0.5,
+            "Health": 200.0,
+            "{3205531e}": -2.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT10_DiamondHands.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "다이아몬드 손",
+        "unique": true
+    },
+    {
+        "apiName": "TFT7_Item_ShimmerscaleGamblersBlade",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "보유 중인 %i:goldCoins% 골드마다 추가 공격 속도 %i:scaleAS% @AttackSpeedPerGold*100@% 획득 (최대 %i:goldCoins% @AttackSpeedGoldLimit@골드)<br><br>공격할 때마다 @ChanceToProc*100@% 확률로 %i:goldCoins% @GoldPerProc@골드 획득<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules><br><tftitemrules>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>",
+        "effects": {
+            "AP": 10.0,
+            "AS": 45.0,
+            "AttackSpeedGoldLimit": 30.0,
+            "AttackSpeedPerGold": 0.009999999776482582,
+            "ChanceToProc": 0.05000000074505806,
+            "GoldPerProc": 1.0,
+            "{46736b3f}": 4.0,
+            "{b38e1643}": 20.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT10_GamblersBlade.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "도박꾼의 칼날",
+        "unique": true
+    },
+    {
+        "apiName": "TFT7_Item_ShimmerscaleGoldmancersStaff_HR",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "보유 중인 %i:goldCoins% 골드마다 주문력 %i:scaleAP% @AbilityPowerPerGold@ 획득. (최대 %i:goldCoins% @AbilityPowerGoldMax@골드) 적을 처치할 때마다 @OnKillProcChance*100@% 확률로 %i:goldCoins% @OnKillProcGold@골드 획득<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules><br><tftitemrules>이번 게임에서 획득한 골드: @TFTUnitProperty.item:TFT_Item_GoldGenerated@</tftitemrules>",
+        "effects": {
+            "AP": 30.0,
+            "AbilityPowerGoldMax": 0.5,
+            "AbilityPowerPerGold": 15.0,
+            "Mana": 15.0,
+            "OnKillProcChance": 4.0,
+            "OnKillProcGold": 2.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/GoldmancersStaff.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "황금술사의 지팡이",
+        "unique": true
+    },
+    {
+        "apiName": "TFT7_Item_ShimmerscaleDiamondHands",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투당 한 번: 체력이 @HPThreshold1*100@%일 때 @BaseDamageImmunityTime@초 동안 무적 상태가 되고 %i:goldCoins% @GoldPerImmunityProc@골드 획득<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AP": 25.0,
+            "BaseDamageImmunityTime": 1.5,
+            "GoldPerImmunityProc": 1.0,
+            "HPThreshold1": 0.5,
+            "Health": 200.0,
+            "{3205531e}": -2.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT10_DiamondHands.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "다이아몬드 손",
+        "unique": true
+    },
+    {
+        "apiName": "TFT9_Item_OrnnTrickstersGlass",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "장착 유닛의 분신 소환. 분신은 @HealthPercent@%의 최대 체력, +@ManaIncrease*100@%의 최대 마나를 가지며 아이템 장착 불가<br><br><tftitemrules>분신에게도 특성 효과 적용</tftitemrules><br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules><br>",
+        "effects": {
+            "AS": 10.0,
+            "Armor": 10.0,
+            "CritChance": 15.0,
+            "HealthPercent": 70.0,
+            "MagicResist": 10.0,
+            "ManaIncrease": 0.10000000149011612
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_TrickstersGlass.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "속임수 거울",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_Artifact_LichBane",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "스킬을 사용한 후 첫 번째 기본 공격 시 @TFTUnitProperty.item:TFT_Item_Artifact_LichBane_Damage@의 추가 마법 피해를 입힘<br><br><tftitemrules>스테이지에 비례해 피해량 증가</tftitemrules>",
+        "effects": {
+            "AP": 30.0,
+            "AS": 20.0,
+            "{9b6d43b2}": 480.0,
+            "{9d6d46d8}": 480.0,
+            "{9e6d486b}": 480.0,
+            "{9f6d49fe}": 340.0,
+            "{a06d4b91}": 410.0,
+            "{a16d4d24}": 200.0,
+            "{a26d4eb7}": 270.0,
+            "{a46d51dd}": 200.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_LichBane.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "리치베인",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_ForbiddenIdol",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "보호막 흡수량의 @PercentShieldConversion@%가 최대 체력으로 전환됩니다.",
+        "effects": {
+            "Armor": 25.0,
+            "Health": 200.0,
+            "MagicResist": 25.0,
+            "PercentShieldConversion": 50.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_ForbiddenIdol.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "금지된 우상",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_Fishbones",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "공격 사거리가 두 배로 증가하고 공격할 때마다 무작위 적을 대상으로 지정합니다.",
+        "effects": {
+            "AD": 0.4000000059604645,
+            "AS": 40.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_Fishbones.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "생선대가리",
+        "unique": false
+    },
+    {
+        "apiName": "TFT4_Item_OrnnAnimaVisage",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "매초 최대 체력의 @PercentHealthRegen@% 회복",
+        "effects": {
+            "Armor": 20.0,
+            "Health": 400.0,
+            "MagicResist": 20.0,
+            "PercentHealthRegen": 3.5
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT4_OrnnItem_Tank_T3_SpiritVisage.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "영혼의 형상",
+        "unique": false
+    },
+    {
+        "apiName": "TFT4_Item_OrnnRocketPropelledFist",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투 시작: 가장 멀리 있는 적을 근접 공격이 가능한 거리로 끌어당기고 @StunDuration@초 동안 <TFTKeyword>기절</TFTKeyword>시킵니다. 범위 내의 아군은 해당 적을 우선적으로 공격합니다.<br><br><tftitemrules>[고유 - 중복 적용 불가]<br><tftbold>기절</tftbold>: 이동, 공격, 스킬 사용 불가</tftitemrules>",
+        "effects": {
+            "Armor": 25.0,
+            "Health": 150.0,
+            "Mana": 15.0,
+            "StunDuration": 1.5
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT4_OrnnItem_RocketPropelledFist.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "배불뚝이의 로켓 주먹",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_Artifact_UnendingDespair",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "장착 유닛에게 적용된 보호막이 깨질 때마다 해당 보호막 최초 피해 흡수량의 @PercentDamage@%에 해당하는 마법 피해를 가장 가까운 적에게 입힙니다.",
+        "effects": {
+            "Armor": 40.0,
+            "Health": 400.0,
+            "PercentDamage": 160.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_UnendingDespair.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "끝없는 절망",
+        "unique": false
+    },
+    {
+        "apiName": "TFT4_Item_OrnnEternalWinter",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "장착한 유닛에게 피해를 입힌 적에게 @SlowDuration@초 동안 @AttackSpeedSlowPercent@%의 <TFTKeyword>동상</TFTKeyword> 부여. 이 아이템으로 @NumApplications@번 <TFTKeyword>동상</TFTKeyword>을 입은 적은 다음번에 <TFTKeyword>기절</TFTKeyword> (재사용 대기시간: @FreezeCooldown@초)<br><br><tftitemrules>[고유 - 중복 적용 불가]<br><tftbold>동상</tftbold>: 공격 속도 감소<br><tftbold>기절</tftbold>: 이동, 공격, 스킬 사용 불가</tftitemrules>",
+        "effects": {
+            "Armor": 20.0,
+            "AttackSpeedSlowPercent": 20.0,
+            "FreezeCooldown": 15.0,
+            "FreezeDuration": 1.5,
+            "Health": 200.0,
+            "NumApplications": 7.0,
+            "SlowDuration": 1.5
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT4_OrnnItem_Mage_T4_Everfrost.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "영원한 겨울",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_Artifact_CursedBlade",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "기본 공격 시 대상의 최대 체력이 @MaxHealthPercent@% 감소합니다. 같은 대상에게 @HitCount@회 기본 공격 시 대상의 별 레벨이 1성 감소합니다.",
+        "effects": {
+            "AS": 35.0,
+            "HitCount": 13.0,
+            "MagicResist": 20.0,
+            "MaxHealthPercent": 3.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_CursedBlade.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "저주받은 칼날",
+        "unique": false
+    },
+    {
+        "apiName": "TFT4_Item_OrnnZhonyasParadox",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투당 한 번, 체력이 @PercentHealthThreshold@%일 때 @InvulnDuration@초 동안 대상으로 지정할 수 없는 무적 상태 진입<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AP": 40.0,
+            "Armor": 30.0,
+            "InvulnDuration": 3.0,
+            "MagicResist": 30.0,
+            "PercentHealthThreshold": 40.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT4_OrnnItem_Mage_T3_ZhonyasHourglass.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "존야의 역설",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_Artifact_LudensTempest",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "대상 처치 후 남는 피해량의 @PercentOfOverkill@%+@BaseDamage@에 해당하는 마법 피해를 대상과 가장 가까운 적 세 명에게 입힙니다.",
+        "effects": {
+            "AD": 0.4000000059604645,
+            "AP": 40.0,
+            "BaseDamage": 100.0,
+            "PercentOfOverkill": 100.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_LudensTempest.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "루덴의 폭풍",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_SpectralCutlass",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투 시작: 장착 유닛이 적 전장의 정반대 칸으로 순간이동. @Duration@초 후 원래 위치로 복귀",
+        "effects": {
+            "AD": 0.4000000059604645,
+            "Armor": 40.0,
+            "CritChance": 20.0,
+            "Duration": 8.0,
+            "MagicResist": 40.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_SpectralCutlass.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "망령 해적검",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_RapidFirecannon",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "공격 사거리가 +1 증가하며 적을 처치할 때마다 1씩 증가합니다.",
+        "effects": {
+            "AS": 75.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_RapidFirecannon.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "고속 연사포",
+        "unique": false
+    },
+    {
+        "apiName": "TFT9_Item_OrnnHorizonFocus",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "공격 사거리 %i:scaleRange% @HexRangeIncrease@칸 증가. 장착 유닛과 대상 사이에 놓인 칸 하나당 피해 증폭 @DamageAmpPerHex*100@% 획득",
+        "effects": {
+            "AD": 0.15000000596046448,
+            "AP": 15.0,
+            "AS": 15.0,
+            "DamageAmpPerHex": 0.09000000357627869,
+            "HexRangeIncrease": 2.0,
+            "PercentDamageIncrease": 9.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_SnipersFocus.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "저격수의 집중",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_LightshieldCrest",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "@TriggerRate@초마다 체력 비율이 가장 낮은 아군에게 방어력과 마법 저항력을 합한 수치의 @PercentOfResists@%만큼 피해를 흡수하는 보호막을 씌웁니다.<br><br>사망 시 모든 아군에게 이 보호막을 부여합니다.",
+        "effects": {
+            "Armor": 70.0,
+            "MagicResist": 70.0,
+            "PercentOfResists": 70.0,
+            "TriggerRate": 3.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_LightshieldCrest.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "라이트실드 문장",
+        "unique": false
+    },
+    {
+        "apiName": "TFT4_Item_OrnnDeathsDefiance",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "받는 피해량의 @IgnorePainPercent@%를 @BleedDuration@초 동안 치명적이지 않은 피해로 받음<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AD": 0.10000000149011612,
+            "AS": 25.0,
+            "Armor": 30.0,
+            "BaseHeal": 25.0,
+            "BleedDuration": 4.0,
+            "IgnorePainPercent": 50.0,
+            "StatOmnivamp": 0.25
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT4_OrnnItem_Fighter_T3_DeathsDance.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "죽음의 저항",
+        "unique": true
+    },
+    {
+        "apiName": "TFT9_Item_OrnnPrototypeForge",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "매 라운드: 무작위 오른 아이템 2개 장착<br><br><tftitemrules>[아이템 슬롯 3개 차지]</tftitemrules>",
+        "effects": {
+            "CritChance": 30.0,
+            "Health": 200.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_BlacksmithsGloves.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "대장장이의 장갑",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_BlightingJewel",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "마법 피해를 입히면 대상의 마법 저항력이 @MRReduction@ 감소. 대상의 마법 저항력이 0이면 대신 장착 유닛이 마나 @ManaGain@ 획득",
+        "effects": {
+            "AP": 40.0,
+            "MRReduction": 4.0,
+            "ManaGain": 5.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_BlightingJewel.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "역병의 보석",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_TalismanOfAscension",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "@Seconds@초 후 전투가 끝날 때까지 최대 체력의 @MaxHealthPercent@%와 피해 증폭 @DamageAmp*100@% 획득",
+        "effects": {
+            "AD": 0.20000000298023224,
+            "AP": 20.0,
+            "DamageAmp": 1.2000000476837158,
+            "DamageIncreasePercent": 120.0,
+            "Health": 300.0,
+            "MaxHealthPercent": 100.0,
+            "Seconds": 22.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_TalismanOfAscension.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "승천의 부적",
+        "unique": false
+    },
+    {
+        "apiName": "TFT4_Item_OrnnInfinityForce",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "<tftitemrules>없는 게 없습니다!</tftitemrules>",
+        "effects": {
+            "AD": 0.25,
+            "AP": 25.0,
+            "AS": 25.0,
+            "Armor": 25.0,
+            "Health": 250.0,
+            "MagicResist": 25.0,
+            "Mana": 25.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT4_OrnnItem_Fighter_T4_TrinityForce.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "무한한 삼위일체",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_SuspiciousTrenchCoat",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투당 1회 체력이 @PercentHealthTrigger@%일 때 각각 최대 체력의 @PercentHealthOfCopies@%를 보유한 3명으로 나뉨<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AS": 25.0,
+            "Health": 100.0,
+            "PercentHealthOfCopies": 33.0,
+            "PercentHealthTrigger": 50.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_SuspiciousTrenchCoat.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "수상한 외투",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_Artifact_Mittens",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "착용자의 몸집이 줄고 이동 속도가 증가하며 <TFTKeyword>동상</TFTKeyword> 효과에 면역이 됨<br><br><tftitemrules><tftbold>동상</tftbold>: 공격 속도 감소</tftitemrules>",
+        "effects": {
+            "AS": 60.0,
+            "PercentDR": 25.0,
+            "{cd951938}": 0.25
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_Mittens.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "방한 장갑",
+        "unique": false
+    },
+    {
+        "apiName": "TFT9_Item_OrnnDeathfireGrasp",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "전투 시작: 현재 대상에게 대상 최대 체력의 @PercentMaxHealthDamage@%만큼 마법 피해를 입힘. 이 효과를 @RepeatTime@초마다 반복",
+        "effects": {
+            "AP": 30.0,
+            "Mana": 30.0,
+            "PercentMaxHealthDamage": 40.0,
+            "RepeatTime": 13.0,
+            "{1543aa48}": 0.30000001192092896
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT9_OrnnItem_DeathfireGrasp.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "죽음불꽃 손아귀",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_CursedVampiricScepter",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "기본 공격 시 공격력%i:scaleAD%의 @PercentDamage@%만큼 추가 물리 피해를 입히고 입힌 피해량만큼 장착 유닛의 체력 회복<br><br><TFTShadowItemBonus>장착 시 스킬 사용 또는 마나 획득 불가</TFTShadowItemBonus><br>",
+        "effects": {
+            "AS": 60.0,
+            "PercentDamage": 60.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_CursedVampiricScepter.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "타락한 흡혈의 낫",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_WitsEnd",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "기본 공격 시 @TFTUnitProperty.item:TFT_Item_Artifact_WitsEnd_Damage@의 추가 마법 피해를 입힘<br><br>입히는 모든 마법 피해량의 @PercentHealing@%만큼 장착 유닛이 체력 회복<br><br><tftitemrules>스테이지에 비례해 피해량 증가</tftitemrules>",
+        "effects": {
+            "AS": 30.0,
+            "MagicResist": 30.0,
+            "PercentHealing": 35.0,
+            "{54f90860}": 90.0,
+            "{55f909f3}": 75.0,
+            "{56f90b86}": 100.0,
+            "{57f90d19}": 100.0,
+            "{58f90eac}": 42.0,
+            "{5af911d2}": 60.0,
+            "{5bf91365}": 42.0,
+            "{61f91cd7}": 100.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_WitsEnd.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "마법사의 최후",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_HorizonFocus",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "적을 기절시키면 벼락을 떨어뜨려 대상 최대 체력의 @PercentHealthDamage@%에 해당하는 마법 피해를 입힙니다.<br>",
+        "effects": {
+            "Armor": 20.0,
+            "Health": 250.0,
+            "MagicResist": 20.0,
+            "Mana": 15.0,
+            "PercentHealthDamage": 30.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_HorizonFocus.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "지평선의 초점",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_ProwlersClaw",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "대상 처치 후 해로운 효과를 제거하고 @HexRange@칸 내 가장 멀리 있는 대상에게 돌진. 다음 치명타 공격 2회가 @CritDamageBonusPercent@%의 추가 치명타 피해를 입힘",
+        "effects": {
+            "AD": 0.4000000059604645,
+            "CritChance": 50.0,
+            "CritDamageBonusPercent": 60.0,
+            "Health": 200.0,
+            "HexRange": 4.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_ProwlersClaw.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "자객의 발톱",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_SilvermereDawn",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "기절에 면역이 되며 기본 공격 시 대상을 @StunDuration@초 동안 기절시킴<br><br><TFTShadowItemBonus>장착 유닛의 공격 속도는 @AttackSpeedCap@에서 고정</TFTShadowItemBonus>",
+        "effects": {
+            "AD": 1.2000000476837158,
+            "Armor": 75.0,
+            "AttackSpeedCap": 0.5,
+            "MagicResist": 75.0,
+            "StunDuration": 0.800000011920929
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_SilvermereDawn.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "은빛 여명",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Artifact_SeekersArmguard",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "처치 관여 시 방어력, 마법 저항력, 주문력이 @StatsPerTakedown@씩 증가합니다. 처치 달성 시 @StatsPerKill@씩 증가합니다.",
+        "effects": {
+            "AP": 30.0,
+            "Armor": 30.0,
+            "MagicResist": 30.0,
+            "StatsPerKill": 20.0,
+            "StatsPerTakedown": 15.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT_Item_Artifact_SeekersArmguard.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "추적자의 팔목 보호대",
+        "unique": false
+    },
+    {
+        "apiName": "TFT4_Item_OrnnTheCollector",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "기본 공격 및 스킬로 최대 체력의 @ExecutePercent@%보다 체력이 낮은 적을 처형합니다. 처형 시 @GoldChance@% 확률로 %i:goldCoins% 1골드가 떨어집니다.<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AD": 0.30000001192092896,
+            "CritChance": 30.0,
+            "ExecutePercent": 12.0,
+            "GoldChance": 40.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Ornn_Items/TFT4_OrnnItem_Marksman_T3_TheCollector.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "황금 징수의 총",
+        "unique": true
+    }
+]

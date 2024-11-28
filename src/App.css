@@ -56,7 +56,7 @@ grid-template-areas:
     "T S S S S R R R"
     "T S S S S R R R"
     "T S S S S R R R"
-    "T C C C C I I I"
+    "T C C C C R R R" 
     "T C C C C I I I"
     "T C C C C I I I";
 gap: 10px; /* 각 그리드 항목 사이의 간격 */
@@ -78,11 +78,13 @@ grid-area: C;
 
 .grid-item-ItemBox{
 grid-area: I;
+display: flex;
+flex-direction: row;
 }
 
 .grid-item-TraitBox{
 grid-area: T;
-/* overflow-x: hidden; */
+overflow-x: hidden;
 }
 
 .grid-item-RecommendDeckBox{

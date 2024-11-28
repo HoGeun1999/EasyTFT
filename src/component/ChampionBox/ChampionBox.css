@@ -1,3 +1,7 @@
+.championBoxWrap{
+    display: inline;
+}
+
 .championBox{
     border: 1px solid black;
     width: 100%;
@@ -7,4 +11,6 @@
 
 .championBoxTool{
     border: 1px solid black;
+    display: flex;
+    flex-direction: row;
 }
