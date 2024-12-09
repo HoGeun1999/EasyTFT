@@ -63,19 +63,6 @@
         "unique": false
     },
     {
-        "apiName": "TFT_Assist_Spatula",
-        "associatedTraits": [],
-        "composition": [],
-        "desc": "뒤집개",
-        "effects": {},
-        "from": null,
-        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Spatula.tex",
-        "id": null,
-        "incompatibleTraits": [],
-        "name": "뒤집개",
-        "unique": false
-    },
-    {
         "apiName": "TFT_Item_Redemption",
         "associatedTraits": [],
         "composition": [
@@ -248,26 +235,6 @@
         "id": null,
         "incompatibleTraits": [],
         "name": "방패파괴자",
-        "unique": false
-    },
-    {
-        "apiName": "TFTTutorial_Item_GuinsoosRageblade",
-        "associatedTraits": [],
-        "composition": [
-            "TFTTutorial_Item_NeedlesslyLargeRod",
-            "TFTTutorial_Item_RecurveBow"
-        ],
-        "desc": "기본 공격 시 추가 공격 속도 %i:scaleAS% @AttackSpeedPerStack@% 증가 (중첩 가능)",
-        "effects": {
-            "AP": 10.0,
-            "AS": 18.0,
-            "AttackSpeedPerStack": 4.0
-        },
-        "from": null,
-        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Guinsoos_Rageblade.tex",
-        "id": null,
-        "incompatibleTraits": [],
-        "name": "구인수의 격노검",
         "unique": false
     },
     {
@@ -509,7 +476,7 @@
             "Armor": 20.0,
             "BonusResistsAtStackCap": 20.0,
             "StackCap": 25.0,
-            "StackingAD": 0.019999999552965164,
+            "StackingAD": 0.02,
             "StackingSP": 2.0
         },
         "from": null,
@@ -749,7 +716,7 @@
         "composition": [],
         "desc": "공격력 %i:scaleAD%+@AD*100@%",
         "effects": {
-            "AD": 0.10000000149011612
+            "AD": 0.1
         },
         "from": null,
         "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/BF_Sword.tex",
@@ -857,7 +824,7 @@
         "effects": {
             "Health": 150.0
         },
-        "from": null,
+        "from": null,   
         "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Gaints_Belt.tex",
         "id": null,
         "incompatibleTraits": [],
@@ -996,6 +963,22 @@
         "id": null,
         "incompatibleTraits": [],
         "name": "전략가의 방패",
+        "unique": false
+    },
+    {
+        "apiName": "TFT11_Item_ThiefsGlovesSupport",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "매 라운드: 무작위 지원 아이템 2개 장착<br><br><tftitemrules>[아이템 슬롯 3개 차지]</tftitemrules>",
+        "effects": {
+            "CritChance": 20.0,
+            "Health": 150.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Thieves_Gloves.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "공범의 장갑",
         "unique": false
     },
     {

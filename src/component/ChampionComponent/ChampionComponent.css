@@ -132,3 +132,6 @@ border: 3px solid #FFD700;  /* cost가 5일 때 노란색 테두리 */
   margin-bottom: 15px;
 }
 
+.not-matched{
+  opacity: 0.6;
+}

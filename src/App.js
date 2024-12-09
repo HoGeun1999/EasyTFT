@@ -54,7 +54,9 @@ function App() {
           traitsData={traitsData}/>
         </div>
         <div className="grid-item-RecommendDeckBox">
-          <RecommendDeckBox />
+          <RecommendDeckBox 
+          SetChampionBoxList={SetChampionBoxList} 
+          SettingChampionBoxList={SettingChampionBoxList}/>
         </div>
         <div className="grid-item-SetChampionBox">
           <SetChampionBox 

@@ -56,12 +56,7 @@ const TraitBox = ({SetChampionBoxList,traitsData}) => {
       );
 }
 
-
-
-
-
 const TraitDiv = ({data}) => {
-    console.log(data[0]);  // data 배열 확인용
     const [showInfo, setShowInfo] = useState(false); // 상태 추가
     const traitName = data[0].name;  // data 배열의 첫 번째 요소에서 name을 가져옵니다.
     

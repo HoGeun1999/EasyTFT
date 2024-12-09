@@ -5,7 +5,6 @@ import ItemComponent from "./ItemComponent.js";
 const ItemBox = () => {
   const [ItemDataList, setItemDataList] = useState([]); // 데이터를 저장할 상태
   const [ItemType, setItemType] = useState('')
-  const ItemTypeList = ['Ornn_Items', 'Radiant', 'Standard', 'TFT9_SupportItems']; // 타입 리스트
 
   const fetchData = async (type) => {
     try {

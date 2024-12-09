@@ -7,8 +7,8 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
   const [lineButton, setLineButton] = useState(false);
   const [jobButton, setJobButton] = useState(false);
   // *************** 밑에 두 변수는 수작업 해야함(시즌별로 1번 버전별로는 안바뀜) ************
-  const lineList = ['달콤술사','드루이드','마녀','벌꿀술사','서리','섬뜩한 힘','시공간','아르카나','요정','용','차원문','허기','화염']
-  const jobList = ['단짝','마도사','박쥐여왕','보호술사','사냥꾼','선봉대','쇄도자','요새','요술사','전사','초월체','폭파단','학자','형상변환자']
+  const lineList = ['가족','검은 장미단','고물상','고물의 왕','기계화의 전령관','도박꾼','반군','사절','실험체','아카데미','자동기계','점화단','정복자','집행자','추방된 마법사','피의 사냥꾼','화공 남작']
+  const jobList = ['감시자','기동타격대','난동꾼','마법사','매복자','선도자','저격수','주시자','지배자','투사','포수','형태전환자']
   const [result, setResult] = useState({});
   const [sortedKeys, setSortedKeys] = useState([]);
   const [searchInput, setSearchInput] = useState('');  // 부모에서 상태 관리
@@ -161,9 +161,9 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
                   )
                   .map((championData) => (
                     <ChampionComponent 
-                      data={championData} 
-                      SetChampionBoxList={SetChampionBoxList} 
-                      SettingChampionBoxList={SettingChampionBoxList} 
+                      data={championData}
+                      SetChampionBoxList={SetChampionBoxList}
+                      SettingChampionBoxList={SettingChampionBoxList}
                       />
                   ))}
               </div>
