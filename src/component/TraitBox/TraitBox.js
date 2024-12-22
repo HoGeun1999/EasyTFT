@@ -1,135 +1,242 @@
 import { useState } from "react";
-import './TraitBox.css'
-const TraitBox = ({SetChampionBoxList,traitsData}) => {
-    const newSetChampionBoxList = [...new Set(SetChampionBoxList)];  // Set을 사용하여 중복 제거
-    const traitCount = {}
-    newSetChampionBoxList.forEach((item) => {
-        // 2. item['traits']을 순회
-        item.traits.forEach((trait) => {
-          // 3. traits를 key로 갯수를 세는 객체 만들기
-          if (traitCount[trait]) {
-            traitCount[trait] += 1; // 이미 존재하면 갯수 증가
-          } else {
-            traitCount[trait] = 1; // 없으면 초기화
-          }
-        });
-      });
+import './TraitBox.css';
 
-      const getTraitDataWithCount = () => {
-        return Object.keys(traitCount)
-          .map((key) => {
-            // traitsData에서 name이 key와 일치하는 항목을 찾기
-            const selectedTrait = traitsData.find((trait) => trait.name === key);
-            if (selectedTrait) {
-              // 1. traitsData['effects']를 순회하여 minUnits <= traitCount[key] <= maxUnits 인지 체크
-              const matchingStyle = selectedTrait.effects
-                .filter(effect => effect.minUnits <= traitCount[key] && traitCount[key] <= effect.maxUnits)
-                .map(effect => effect.style);  // 해당 조건에 맞는 style 값을 추출
+const TraitBox = ({ SetChampionBoxList, traitsData }) => {
+  const newSetChampionBoxList = [...new Set(SetChampionBoxList)];
+  const traitCount = {};
 
-              // 2. 선택된 traitsData와 matchingStyle을 함께 반환
-              return [selectedTrait, traitCount[key], matchingStyle];
-            }
-            return null;  // 일치하는 traitsData가 없으면 null 반환
-          })
-          .filter(Boolean)
-      };
-      
+  newSetChampionBoxList.forEach((item) => {
+    item.traits.forEach((trait) => {
+      if (traitCount[trait]) {
+        traitCount[trait] += 1;
+      } else {
+        traitCount[trait] = 1;
+      }
+    });
+  });
 
-    const traitDataWithCount = getTraitDataWithCount();
+  const getTraitDataWithCount = () => {
+    return Object.keys(traitCount)
+      .map((key) => {
+        const selectedTrait = traitsData.find((trait) => trait.name === key);
+        if (selectedTrait) {
+          // 해당 trait의 count와 맞는 효과(style) 계산
+          const matchingStyle = selectedTrait.effects
+            .filter(effect => effect.minUnits <= traitCount[key] && traitCount[key] <= effect.maxUnits)
+            .map(effect => effect.style);
 
-    const sortedTraitDataWithCount = traitDataWithCount.sort((a, b) => {
-        // matchingStyle 배열의 최대값을 비교
-        const maxStyleA = Math.max(...a[2]); // a의 matchingStyle에서 최대값
-        const maxStyleB = Math.max(...b[2]); // b의 matchingStyle에서 최대값
-        return maxStyleB - maxStyleA; // 내림차순 정렬
-      });
+          // 중복된 스타일 제거
+          const uniqueStyles = [...new Set(matchingStyle)];
 
-      
+          return [selectedTrait, traitCount[key], uniqueStyles];
+        }
+        return null;
+      })
+      .filter(Boolean);
+  };
 
+  const traitDataWithCount = getTraitDataWithCount();
+  const sortedTraitDataWithCount = traitDataWithCount.sort((a, b) => {
+    const maxStyleA = Math.max(...a[2]);
+    const maxStyleB = Math.max(...b[2]);
+    return maxStyleB - maxStyleA;
+  });
 
-    return (
-        <div className="TraitBox">
-          {sortedTraitDataWithCount.map((traitData, index) => (
-            <TraitDiv key={index} data={traitData} />
-          ))}
+  return (
+    <div className="TraitBox">
+      {sortedTraitDataWithCount.map((traitData, index) => (
+        <TraitDiv key={index} data={traitData} />
+      ))}
+    </div>
+  );
+};
+
+const TraitDiv = ({ data }) => {
+  const championAbilityDesc = {
+    '%i:scaleAP%': '주문력',
+    '%i:scaleAD%': '공격력',
+    '%i:scaleHealth%': '체력',
+    '%i:scaleArmor%': '방어력',
+    '%i:scaleMR%': '마법저항력',
+    '%i:scaleAS%' : '공격속도',
+    '%i:scaleDR%' : '내구력',
+    '%i:scaleDA%' : '피해증폭',
+    '%i:scaleMana%' : '추가마나'
+  };
+
+  const [showInfo, setShowInfo] = useState(false);
+  const [infoPosition, setInfoPosition] = useState({ x: 0, y: 0 });
+  const traitName = data[0].name;
+
+  const handleMouseEnter = (event) => {
+    setShowInfo(true);
+    const rect = event.target.getBoundingClientRect();
+    setInfoPosition({
+      x: rect.right + 20,
+      y: rect.top - 20
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setShowInfo(false);
+  };
+
+  let traitLevel = "";
+
+  if (Array.isArray(data[2]) && data[2].length === 0 && data[0].effects && data[0].effects[0]) {
+    traitLevel = <div className="traitLevel">{data[1]} / {data[0].effects[0].minUnits}</div>;
+  } else {
+    traitLevel = data[0].effects.map((effect, index) => {
+      const isStyleMatch = data[2].includes(effect.style); // 스타일 일치 여부 확인
+      // 조건에 맞는 값에 대해 하이라이트 여부 확인
+      const isInRange = data[1] >= effect.minUnits && data[1] <= effect.maxUnits;
+    
+      return (
+        <div className={`effectWithArrow ${isInRange ? "highlight" : ""}`} key={index}>
+          <div>{effect.minUnits}</div>
+          {index < data[0].effects.length - 1 && <div className="arrow"></div>}
         </div>
       );
-}
-
-const TraitDiv = ({data}) => {
-    const [showInfo, setShowInfo] = useState(false); // 상태 추가
-    const traitName = data[0].name;  // data 배열의 첫 번째 요소에서 name을 가져옵니다.
-    
-    let traitLevel = "";  // 기본 값 설정
-
-    if (Array.isArray(data[2]) && data[2].length === 0 && data[0].effects && data[0].effects[0]) {
-        traitLevel = <div className="traitLevel">{data[1]} / {data[0].effects[0].minUnits}</div>
-      }
-    else {
-    traitLevel = data[0].effects.map((effect, index) => {
-        // 2. data[0].effects.style 값과 data[2] 값이 일치할 경우에만 class 추가
-        const isStyleMatch = data[2].includes(effect.style);
-        return (
-        <div
-            className={`effectWithArrow ${isStyleMatch ? "highlight" : ""}`}
-            key={index}
-        >
-            <div>{effect.minUnits}</div>
-            {index < data[0].effects.length - 1 && <div className="arrow"></div>} {/* 마지막 요소에는 화살표를 추가하지 않음 */}
-        </div>
-        );
     });
-    }
-
-    const TraitINFO = () => {
-
-      const replaceVariablesInDesc = () => {
-        // 정규 표현식: @key@ 형태의 문자열을 찾기
-        const regex = /@([a-zA-Z0-9_]+)@/g;
     
-        return data[0].desc.replace(regex, (_, key) => {
-          // data[0].effects 배열에서 key가 존재하는지 확인하고 해당 값으로 치환
-          for (let effect of data[0].effects) {
-            if (effect.variables && key in effect.variables) {
-              return effect.variables[key];
-            }
+  }
+
+  const replaceVariablesInDesc = () => {
+    let descWithoutTags = data[0].desc
+      .replace(/<(?!br\s*\/?)[^>]+>/g, '')
+      .replace(/<br\s*\/?>/g, '\n');
+
+    const extractValuesBetweenAt = (text) => {
+      const matches = [];
+      let i = 0;
+      while (i < text.length) {
+        if (text[i] === '@') {
+          let j = i + 1;
+          while (j < text.length && text[j] !== '@') {
+            j++;
           }
-          // key가 없다면 원래의 @key@를 그대로 반환
-          return `@${key}@`;
-        });
-      };
+          if (j < text.length && text[j] === '@') {
+            matches.push(text.slice(i + 1, j));
+            i = j;
+          }
+        }
+        i++;
+      }
+      return matches;
+    };
 
-      return(
-        <div className="TraitINFO">
-          <div className="TraitINFOName">{data[0].name}</div>
-          <div className="TraitINFOData">{replaceVariablesInDesc()}</div>
-        </div>
-      )
-    }
+    const variables = extractValuesBetweenAt(descWithoutTags);
 
+    const effectKeys = data[0].effects.reduce((acc, effect) => {
+      Object.keys(effect).forEach(key => acc.push(key));
+      if (effect.variables) {
+        Object.keys(effect.variables).forEach(variableKey => acc.push(variableKey));
+      }
+      return acc;
+    }, []);
+
+    const variableObject = variables.reduce((obj, key) => {
+      const lowerCaseKey = key.toLowerCase();
+      const matchingEffectKey = effectKeys.find(effectKey => lowerCaseKey.includes(effectKey.toLowerCase()));
+
+      if (matchingEffectKey) {
+        obj[key] = [matchingEffectKey, 0];
+      }
+      return obj;
+    }, {});
+
+    let replacedDesc = descWithoutTags.replace(/%i:([^%]+)%/g, (match, key) => {
+      return championAbilityDesc[`%i:${key}%`] || match;
+    });
+
+    replacedDesc = replacedDesc.replace(/@([a-zA-Z0-9_]+(?:\*[\d\.]+)?)@/g, (match, key) => {
+      const value = variableObject[key];
+      const effects = data[0].effects;
+
+      const [_, multiplier] = key.split("*");
+
+      const currentIndex = value[1];
+      const currentKey = value[0];
+      if (multiplier) {
+        for (let i = currentIndex; i < effects.length; i++) {
+          let effectValue = undefined;
+
+          if (effects[i]?.[currentKey] !== undefined) {
+            effectValue = effects[i][currentKey];
+          } else if (effects[i]?.variables?.[currentKey] !== undefined) {
+            effectValue = effects[i].variables[currentKey];
+          }
+
+          if (effectValue !== undefined) {
+            variableObject[key][1] = i + 1;
+            return (Math.round(effectValue * parseFloat(multiplier) * 10) / 10).toString();
+          }
+        }
+      } else {
+        for (let i = currentIndex; i < effects.length; i++) {
+          if (effects[i]?.[currentKey] !== undefined) {
+            variableObject[key][1] = i + 1;
+            return (Math.round(effects[i][currentKey] * 10) / 10).toString();
+          } else if (effects[i]?.variables?.[currentKey] !== undefined) {
+            variableObject[key][1] = i + 1;
+            return (Math.round(effects[i].variables[currentKey] * 10) / 10).toString();
+          }
+        }
+      }
+
+      variableObject[key][1] += 1;
+
+      return match;
+    });
+
+    return replacedDesc;
+  };
+
+  const TraitINFO = () => {
     return (
-      <div
-        className="Trait"
-        onMouseEnter={() => setShowInfo(true)} // 마우스를 올렸을 때
-        onMouseLeave={() => setShowInfo(false)} // 마우스가 떠났을 때
-      > 
-        <div className={`TraitImgContainer traitStyle${data[2]}`}>
-            <img 
-            src={`./traitImg/${traitName}.png`}
-            className="TraitImg"  // name을 파일명으로 사용
-          />
+      <div className="TraitINFO"
+        style={{
+          top: `${infoPosition.y}px`,
+          left: `${infoPosition.x}px`,
+        }}
+      >
+        <div className="TraitINFOName">{data[0].name}</div>
+        <div className="TraitINFOData" style={{ whiteSpace: 'pre-wrap' }}>
+          {replaceVariablesInDesc()}
         </div>
-        <div className="TraitContainer">
-            <div className="traitName">
-                {data[0].name}
-            </div>
-            <div className="traitLevel">
-                {traitLevel}
-            </div>
-        </div>
-        {showInfo && <TraitINFO/>}
       </div>
     );
   };
 
-export default TraitBox
+  return (
+    <div className="TraitBoxWrap">
+      <div className="Trait">
+        <div 
+          className={`TraitImgContainer traitStyle${data[2]}`}
+          onMouseEnter={handleMouseEnter} 
+          onMouseLeave={handleMouseLeave} 
+        >
+          <img
+            src={`./traitImg/${traitName}.png`}
+            className="TraitImg"
+          />
+        </div>
+        <div
+          className="TraitContainer"
+          onMouseEnter={handleMouseEnter} 
+          onMouseLeave={handleMouseLeave}  
+        >
+          <div className="traitName">
+            {data[0].name}
+          </div>
+          <div className="traitLevel">
+            {traitLevel}
+          </div>
+        </div>
+      </div>
+      {showInfo && <TraitINFO />}
+    </div>
+  );
+};
+
+export default TraitBox;

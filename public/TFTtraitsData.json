@@ -10,7 +10,7 @@
                 "variables": {
                     "ConversionDamagePct": 0.25,
                     "MagicDamage": 150.0,
-                    "Resists": 20.0,
+                    "Resists": 25.0,
                     "TriggerNumCrystals": 20.0,
                     "{a142f31c}": 1.0
                 }
@@ -21,8 +21,8 @@
                 "style": 3,
                 "variables": {
                     "ConversionDamagePct": 0.25,
-                    "MagicDamage": 350.0,
-                    "Resists": 50.0,
+                    "MagicDamage": 400.0,
+                    "Resists": 60.0,
                     "TriggerNumCrystals": 20.0,
                     "{a142f31c}": 1.0
                 }
@@ -33,8 +33,8 @@
                 "style": 5,
                 "variables": {
                     "ConversionDamagePct": 0.25,
-                    "MagicDamage": 800.0,
-                    "Resists": 100.0,
+                    "MagicDamage": 1100.0,
+                    "Resists": 140.0,
                     "TriggerNumCrystals": 20.0,
                     "{a142f31c}": 1.0
                 }
@@ -86,7 +86,7 @@
                 "minUnits": 6,
                 "style": 5,
                 "variables": {
-                    "BaseAP": 85.0,
+                    "BaseAP": 95.0,
                     "TeamAP": 10.0
                 }
             },
@@ -95,7 +95,7 @@
                 "minUnits": 8,
                 "style": 5,
                 "variables": {
-                    "BaseAP": 100.0,
+                    "BaseAP": 110.0,
                     "DamageDecrease": 0.25,
                     "DamageDecreaseDuration": 3.0,
                     "TeamAP": 10.0
@@ -107,7 +107,7 @@
     },
     {
         "apiName": "TFT13_Scrap",
-        "desc": "전투 시작: 고물상 유닛이 장착한 조합 아이템이 일시적으로 완성 아이템으로 변합니다. 고물상 유닛은 완성 아이템으로 변한 조합 아이템을 포함해 아군이 장착한 조합 아이템 하나당 @ShieldDuration@초 동안 보호막을 얻습니다.<br><br><row>(@MinUnits@) 조합 아이템 @NumComponents@개, 보호막 @HPShieldAmount@</row><br><row>(@MinUnits@) 조합 아이템 @NumComponents@개, 보호막 @HPShieldAmount@</row><br><row>(@MinUnits@) 모든 조합 아이템, 완성 아이템에 행운이 깃듬! 보호막 @HPShieldAmount@</row><br><row>(@MinUnits@) 찬란한 아이템 생성! 보호막 @HPShieldAmount@</row><br><br><rules>보호막 흡수량: @TFTUnitProperty.:TFT13_Trait_Scrap_ShieldTotal@ </rules> <br>",
+        "desc": "전투 시작: 고물상 유닛이 장착한 조합 아이템이 일시적으로 완성 아이템으로 변합니다. 고물상 유닛은 완성 아이템으로 변한 조합 아이템을 포함해 아군이 장착한 조합 아이템 하나당 @ShieldDuration@초 동안 보호막을 얻습니다.<br><br><row>(@MinUnits@) 조합 아이템 @NumComponents@개, 보호막 @HPShieldAmount@</row><br><row>(@MinUnits@) 조합 아이템 @NumComponents@개, 보호막 @HPShieldAmount@</row><br><row>(@MinUnits@) 모든 조합 아이템, 완성 아이템에 행운이 깃듦! 보호막 @HPShieldAmount@</row><br><row>(@MinUnits@) 찬란한 아이템 생성! 보호막 @HPShieldAmount@</row><br><br><rules>보호막 흡수량: @TFTUnitProperty.:TFT13_Trait_Scrap_ShieldTotal@ </rules> <br>",
         "effects": [
             {
                 "maxUnits": 3,
@@ -116,7 +116,7 @@
                 "variables": {
                     "HPShieldAmount": 25.0,
                     "NumComponents": 1.0,
-                    "ShieldDuration": 30.0,
+                    "ShieldDuration": 20.0,
                     "{659aef8d}": null,
                     "{7e2474c8}": null
                 }
@@ -126,9 +126,9 @@
                 "minUnits": 4,
                 "style": 3,
                 "variables": {
-                    "HPShieldAmount": 40.0,
+                    "HPShieldAmount": 35.0,
                     "NumComponents": 3.0,
-                    "ShieldDuration": 30.0,
+                    "ShieldDuration": 20.0,
                     "{659aef8d}": null,
                     "{7e2474c8}": null
                 }
@@ -138,9 +138,9 @@
                 "minUnits": 6,
                 "style": 5,
                 "variables": {
-                    "HPShieldAmount": 60.0,
+                    "HPShieldAmount": 50.0,
                     "NumComponents": 20.0,
-                    "ShieldDuration": 30.0,
+                    "ShieldDuration": 20.0,
                     "{659aef8d}": 1.0,
                     "{7e2474c8}": null
                 }
@@ -150,9 +150,9 @@
                 "minUnits": 9,
                 "style": 5,
                 "variables": {
-                    "HPShieldAmount": 70.0,
+                    "HPShieldAmount": 60.0,
                     "NumComponents": 20.0,
-                    "ShieldDuration": 30.0,
+                    "ShieldDuration": 20.0,
                     "{659aef8d}": 1.0,
                     "{7e2474c8}": 1.0
                 }
@@ -160,6 +160,29 @@
         ],
         "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Scrap.tex",
         "name": "고물상"
+    },
+    {
+        "apiName": "TFT13_MissMageTrait",
+        "desc": "처음 탈락하는 상황에 놓였을 때 멜이 이번 게임의 플레이어 대상 전투에서 스킬을 @MinimumCasts@회 사용했다면 멜이 플레이어를 구해 생존합니다. <br><br>이후 멜은 영구적으로 피해 증폭을 @ProcDamageAmp*100@% 얻습니다.<br><br>@TFTUnitProperty.:TFT13_MissMageTrait_TrackerTRA@",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "MinimumCasts": 12.0,
+                    "MinimumCastsDU": 12.0,
+                    "MinimumCastsHR": 6.0,
+                    "MissMageHealDU": 15.0,
+                    "ProcDamageAmp": 0.10000000149011612,
+                    "ProcDamageAmpDU": 0.10000000149011612,
+                    "ProcDamageAmpHR": 0.10000000149011612,
+                    "{00885e86}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_BanishedMage.TFT_Set13.tex",
+        "name": "추방된 마법사"
     },
     {
         "apiName": "TFT13_Martialist",
@@ -180,7 +203,7 @@
                 "minUnits": 4,
                 "style": 5,
                 "variables": {
-                    "AD": 0.4000000059604645,
+                    "AD": 0.44999998807907104,
                     "NumOfAttacks": 5.0,
                     "PercentDamage": 1.25
                 }
@@ -190,7 +213,7 @@
                 "minUnits": 6,
                 "style": 5,
                 "variables": {
-                    "AD": 0.5,
+                    "AD": 0.6000000238418579,
                     "NumOfAttacks": 4.0,
                     "PercentDamage": 2.5
                 }
@@ -239,7 +262,7 @@
                     "BonusAS": null,
                     "BonusHealth": 200.0,
                     "CCImmuneDuration": 8.0,
-                    "GarenHealthPercent": 0.20000000298023224,
+                    "GarenHealthPercent": 0.11999999731779099,
                     "NamiMana": 2.0,
                     "SelfishDamageAmp": 0.20000000298023224,
                     "StarAS": 0.05999999865889549,
@@ -258,7 +281,7 @@
                     "BonusAS": null,
                     "BonusHealth": 200.0,
                     "CCImmuneDuration": 8.0,
-                    "GarenHealthPercent": 0.20000000298023224,
+                    "GarenHealthPercent": 0.11999999731779099,
                     "NamiMana": 2.0,
                     "SelfishDamageAmp": 0.20000000298023224,
                     "StarAS": 0.05999999865889549,
@@ -342,7 +365,7 @@
     },
     {
         "apiName": "TFT13_Family",
-        "desc": "가족 구성원들이 서로를 지원해 최대 마나를 감소시키고 추가 효과를 얻습니다.<br><br><row>(@MinUnits@) @ManaReduction*100@% 감소, @DamageReduction*100@% %i:scaleDR%</row><br><row>(@MinUnits@) @ManaReduction*100@% 감소, @AttackSpeed*100@% %i:scaleAS%</row><br><row>(@MinUnits@) @ManaReduction*100@% 감소, 윗동네 강탈! 전투 후 강탈을 진행하며 생존한 가족 구성원 한 명당 수치 증가!</row>",
+        "desc": "가족 구성원들이 서로를 지원해 최대 마나를 감소시키고 추가 효과를 얻습니다.<br><br><row>(@MinUnits@) @ManaReduction*100@% 감소, @DamageReduction*100@% %i:scaleDR%</row><br><row>(@MinUnits@) @ManaReduction*100@% 감소, @AttackSpeed*100@% %i:scaleAS%</row><br><row>(@MinUnits@) @ManaReduction*100@% 감소, 윗동네 강탈! 전투 후 강탈을 진행하며 생존한 가족 구성원 한 명당 수치 증가!</row><br><br><rules>@TFTUnitProperty.trait:TFT13_JunkerKing_SelfDestructTRA@</rules>",
         "effects": [
             {
                 "maxUnits": 3,
@@ -350,7 +373,7 @@
                 "style": 5,
                 "variables": {
                     "AttackSpeed": 0.20000000298023224,
-                    "DamageReduction": 0.15000000596046448,
+                    "DamageReduction": 0.20000000298023224,
                     "ManaReduction": 0.25
                 }
             },
@@ -360,7 +383,7 @@
                 "style": 5,
                 "variables": {
                     "AttackSpeed": 0.20000000298023224,
-                    "DamageReduction": 0.15000000596046448,
+                    "DamageReduction": 0.20000000298023224,
                     "ManaReduction": 0.30000001192092896
                 }
             },
@@ -370,7 +393,7 @@
                 "style": 5,
                 "variables": {
                     "AttackSpeed": 0.20000000298023224,
-                    "DamageReduction": 0.15000000596046448,
+                    "DamageReduction": 0.20000000298023224,
                     "ManaReduction": 0.4000000059604645,
                     "{01fcc30b}": 0.75,
                     "{217874f1}": 2.5,
@@ -395,7 +418,7 @@
                 "minUnits": 2,
                 "style": 1,
                 "variables": {
-                    "CritChance": 0.20000000298023224,
+                    "CritChance": 0.25,
                     "CritDamage": 0.10000000149011612
                 }
             },
@@ -404,7 +427,7 @@
                 "minUnits": 3,
                 "style": 3,
                 "variables": {
-                    "CritChance": 0.30000001192092896,
+                    "CritChance": 0.3499999940395355,
                     "CritDamage": 0.20000000298023224
                 }
             },
@@ -413,8 +436,8 @@
                 "minUnits": 4,
                 "style": 3,
                 "variables": {
-                    "CritChance": 0.4000000059604645,
-                    "CritDamage": 0.30000001192092896
+                    "CritChance": 0.44999998807907104,
+                    "CritDamage": 0.25
                 }
             },
             {
@@ -423,7 +446,7 @@
                 "style": 5,
                 "variables": {
                     "CritChance": 0.550000011920929,
-                    "CritDamage": 0.3499999940395355,
+                    "CritDamage": 0.25,
                     "DamageReductionPct": 0.15000000596046448
                 }
             }
@@ -535,7 +558,7 @@
                 "minUnits": 2,
                 "style": 1,
                 "variables": {
-                    "ADAPBase": 0.1599999964237213,
+                    "ADAPBase": 0.18000000715255737,
                     "PercentIncreasePerChest": 0.029999999329447746,
                     "StacksPerKill": 1.0
                 }
@@ -573,6 +596,20 @@
         ],
         "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Conqueror.TFT_Set13.tex",
         "name": "정복자"
+    },
+    {
+        "apiName": "TFT13_RammusTrait",
+        "desc": "람머스는 어느 팀에서나 자신을 위한 자리를 만듭니다. <br><br>람머스가 팀에 있을 때 팀 규모가 +1 증가합니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {}
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Threat.tex",
+        "name": "람머스"
     },
     {
         "apiName": "TFT13_HighRoller",
@@ -637,7 +674,7 @@
                 "variables": {
                     "BaseValues": 0.05000000074505806,
                     "NumOfItems": 3.0,
-                    "PercentIncreaseSponsored": 0.03999999910593033
+                    "PercentIncreaseSponsored": 0.05000000074505806
                 }
             },
             {
@@ -647,7 +684,7 @@
                 "variables": {
                     "BaseValues": 0.05000000074505806,
                     "NumOfItems": 3.0,
-                    "PercentIncreaseSponsored": 0.07999999821186066
+                    "PercentIncreaseSponsored": 0.09000000357627869
                 }
             }
         ],
@@ -667,7 +704,7 @@
                     "MinStreakLength": 3.0,
                     "ShimmerBreakpoint": 100.0,
                     "ShimmerPerCombat": 15.0,
-                    "ShimmerPerCombatStreaking": 30.0,
+                    "ShimmerPerCombatStreaking": 35.0,
                     "ShimmerPerCombatStreaking_HR": 50.0,
                     "ShimmerPerCombat_HR": 25.0,
                     "ShimmerPerDeath_PVE": 1.0,
@@ -680,11 +717,11 @@
                 "minUnits": 4,
                 "style": 3,
                 "variables": {
-                    "HealthPerSkip": 50.0,
+                    "HealthPerSkip": 60.0,
                     "MinStreakLength": 3.0,
                     "ShimmerBreakpoint": 100.0,
                     "ShimmerPerCombat": 20.0,
-                    "ShimmerPerCombatStreaking": 40.0,
+                    "ShimmerPerCombatStreaking": 45.0,
                     "ShimmerPerCombatStreaking_HR": 60.0,
                     "ShimmerPerCombat_HR": 30.0,
                     "ShimmerPerDeath_PVE": 1.0,
@@ -697,11 +734,11 @@
                 "minUnits": 5,
                 "style": 5,
                 "variables": {
-                    "HealthPerSkip": 90.0,
+                    "HealthPerSkip": 110.0,
                     "MinStreakLength": 3.0,
                     "ShimmerBreakpoint": 100.0,
                     "ShimmerPerCombat": 20.0,
-                    "ShimmerPerCombatStreaking": 50.0,
+                    "ShimmerPerCombatStreaking": 55.0,
                     "ShimmerPerCombatStreaking_HR": 70.0,
                     "ShimmerPerCombat_HR": 35.0,
                     "ShimmerPerDeath_PVE": 2.0,
@@ -714,7 +751,7 @@
                 "minUnits": 6,
                 "style": 5,
                 "variables": {
-                    "HealthPerSkip": 125.0,
+                    "HealthPerSkip": 160.0,
                     "MinStreakLength": 3.0,
                     "ShimmerBreakpoint": 100.0,
                     "ShimmerPerCombat": 25.0,
@@ -731,7 +768,7 @@
                 "minUnits": 7,
                 "style": 5,
                 "variables": {
-                    "HealthPerSkip": 180.0,
+                    "HealthPerSkip": 220.0,
                     "MinStreakLength": 3.0,
                     "ShimmerBreakpoint": 100.0,
                     "ShimmerPerCombat": 30.0,
@@ -758,10 +795,10 @@
                 "variables": {
                     "ADAP": 0.20000000298023224,
                     "BurstAS": 0.6000000238418579,
-                    "BurstDuration": 4.0,
+                    "BurstDuration": 5.0,
                     "ForceDuration": null,
                     "MaxHealthIncrease": 0.11999999731779099,
-                    "PercentHealthTrigger": 0.30000001192092896,
+                    "PercentHealthTrigger": 0.25,
                     "PercentMaxHealthBonus": null,
                     "StunDuration": null,
                     "{1ec59053}": null
@@ -774,10 +811,10 @@
                 "variables": {
                     "ADAP": 0.4000000059604645,
                     "BurstAS": 0.6000000238418579,
-                    "BurstDuration": 4.0,
+                    "BurstDuration": 5.0,
                     "ForceDuration": null,
                     "MaxHealthIncrease": 0.11999999731779099,
-                    "PercentHealthTrigger": 0.30000001192092896,
+                    "PercentHealthTrigger": 0.25,
                     "PercentMaxHealthBonus": 0.11999999731779099,
                     "StunDuration": null,
                     "{1ec59053}": null
@@ -790,10 +827,10 @@
                 "variables": {
                     "ADAP": 0.44999998807907104,
                     "BurstAS": 0.6000000238418579,
-                    "BurstDuration": 4.0,
+                    "BurstDuration": 5.0,
                     "ForceDuration": null,
                     "MaxHealthIncrease": 0.11999999731779099,
-                    "PercentHealthTrigger": 0.30000001192092896,
+                    "PercentHealthTrigger": 0.25,
                     "PercentMaxHealthBonus": 0.15000000596046448,
                     "StunDuration": 2.0,
                     "{1ec59053}": null
@@ -806,10 +843,10 @@
                 "variables": {
                     "ADAP": 0.5,
                     "BurstAS": 0.6000000238418579,
-                    "BurstDuration": 4.0,
-                    "ForceDuration": 8.0,
+                    "BurstDuration": 5.0,
+                    "ForceDuration": 12.0,
                     "MaxHealthIncrease": 0.11999999731779099,
-                    "PercentHealthTrigger": 0.30000001192092896,
+                    "PercentHealthTrigger": 0.25,
                     "PercentMaxHealthBonus": 0.30000001192092896,
                     "StunDuration": 2.0,
                     "{1ec59053}": 1.0
@@ -903,10 +940,10 @@
                 "style": 5,
                 "variables": {
                     "Duration": 2.0,
-                    "HealPercent": 0.9900000095367432,
+                    "HealPercent": 0.800000011920929,
                     "HealthThreshold": 0.5,
                     "OmnivampPercent": 0.15000000596046448,
-                    "TrueDamagePercent": 0.5
+                    "TrueDamagePercent": 0.4000000059604645
                 }
             }
         ],
@@ -932,7 +969,7 @@
     },
     {
         "apiName": "TFT13_Squad",
-        "desc": "전투 시작: 집행자가 보호막 및 피해 증폭을 얻습니다. 체력이 가장 많은 적이 <i>현상수배!</i> 상태가 됩니다. <br><br>현상수배 상태인 적이 사망하면 집행자가 공격 속도를 @AttackSpeedPerWantedKill*100@% 얻습니다.<br><br><row>(@MinUnits@) @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 모든 적, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%, 전투 시작: 모든 적의 아이템을 압수함!</row>",
+        "desc": "전투 시작: 집행자가 보호막 및 피해 증폭을 얻습니다. 체력이 가장 많은 적이 <i>현상수배!</i> 상태가 됩니다. <br><br>현상수배 상태인 적이 사망하면 집행자가 공격 속도를 @AttackSpeedPerWantedKill*100@% 얻습니다.<br><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 모든 적, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%, 전투 시작: 모든 적의 아이템을 압수함!</row>",
         "effects": [
             {
                 "maxUnits": 3,
@@ -1013,7 +1050,7 @@
                 "style": 1,
                 "variables": {
                     "Duration": 6.0,
-                    "PercentDamageTakenHeal": 0.25,
+                    "PercentDamageTakenHeal": 0.20000000298023224,
                     "{0a9a9714}": null,
                     "{3c0d594a}": 1.0
                 }
@@ -1024,7 +1061,7 @@
                 "style": 5,
                 "variables": {
                     "Duration": 6.0,
-                    "PercentDamageTakenHeal": 0.4000000059604645,
+                    "PercentDamageTakenHeal": 0.33000001311302185,
                     "{0a9a9714}": null,
                     "{3c0d594a}": 1.0
                 }
@@ -1035,7 +1072,7 @@
                 "style": 5,
                 "variables": {
                     "Duration": 6.0,
-                    "PercentDamageTakenHeal": 0.44999998807907104,
+                    "PercentDamageTakenHeal": 0.4000000059604645,
                     "{0a9a9714}": 3.5,
                     "{3c0d594a}": 1.0
                 }
@@ -1062,6 +1099,22 @@
         ],
         "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_UnlikelyDuo.TFT_Set13.tex",
         "name": "뜻밖의 2인조"
+    },
+    {
+        "apiName": "TFT13_Teamup_Betrayal",
+        "desc": "매디의 스킬 및 기본 공격은 항상 암베사의 대상을 대상으로 지정합니다. 매디 또는 암베사가 @NumKills@명 이상 처치한 라운드마다 매디를 1명 획득합니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 2,
+                "style": 4,
+                "variables": {
+                    "NumKills": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_Betrayal.TFT_Set13.tex",
+        "name": "배신"
     },
     {
         "apiName": "TFT13_Experiment",
@@ -1095,7 +1148,7 @@
                 "style": 5,
                 "variables": {
                     "ExperimentBonusIncrease": 1.0,
-                    "MaxHealth": 200.0,
+                    "MaxHealth": 300.0,
                     "NumLaboratory": 3.0,
                     "{a02e81c2}": 1.5
                 }
@@ -1103,6 +1156,25 @@
         ],
         "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Experiment.TFT_Set13.tex",
         "name": "실험체"
+    },
+    {
+        "apiName": "TFT13_MachineHerald",
+        "desc": "빅토르는 초당 @AS@회의 고정된 공격 속도를 가지며 모든 추가 공격력, 공격 속도 및 마나를 주문력으로 전환합니다. <br><br>마나 대신, 빅토르는 기본 공격당 혼돈 에너지를 1 얻으며 @MaxMana@에 도달 시 스킬을 사용합니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "AS": 0.550000011920929,
+                    "MaxMana": 8.0,
+                    "startingmana": 4.0,
+                    "{80af2f77}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_MachineHerald.TFT_Set13.tex",
+        "name": "기계화의 전령관"
     },
     {
         "apiName": "TFT13_Bruiser",
@@ -1138,6 +1210,25 @@
         ],
         "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Bruiser.tex",
         "name": "난동꾼"
+    },
+    {
+        "apiName": "TFT13_BloodHunter",
+        "desc": "워윅이 체력이 @EnemyHealthPercentThreshold*100@% 아래로 떨어진 적을 집어삼켜 체력을 @DevourHealing@ 회복하고 마나를 @ManaPerKill@ 얻습니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "DevourHealing": 400.0,
+                    "EnemyHealthPercentThreshold": 0.15000000596046448,
+                    "ManaPerKill": 50.0,
+                    "{84534a47}": 5.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_BloodHunter.TFT_Set13.tex",
+        "name": "피의 사냥꾼"
     },
     {
         "apiName": "TFT13_JunkerKing",
@@ -1187,7 +1278,7 @@
                     "PercentHealthPerStarLevel": 0.15000000596046448,
                     "PercentHealthUnlock": 0.6499999761581421,
                     "{2c6be05c}": 0.11999999731779099,
-                    "{2e45fc86}": 60.0,
+                    "{2e45fc86}": 45.0,
                     "{85b293ec}": 0.3499999940395355,
                     "{92ef9cd7}": 4.0
                 }
@@ -1201,7 +1292,7 @@
                     "PercentHealthPerStarLevel": 0.15000000596046448,
                     "PercentHealthUnlock": 0.6499999761581421,
                     "{2c6be05c}": 0.11999999731779099,
-                    "{2e45fc86}": 90.0,
+                    "{2e45fc86}": 50.0,
                     "{85b293ec}": 0.3499999940395355,
                     "{92ef9cd7}": 4.0
                 }
@@ -1215,7 +1306,7 @@
                     "PercentHealthPerStarLevel": 0.15000000596046448,
                     "PercentHealthUnlock": 0.6499999761581421,
                     "{2c6be05c}": 0.11999999731779099,
-                    "{2e45fc86}": 120.0,
+                    "{2e45fc86}": 100.0,
                     "{85b293ec}": 0.3499999940395355,
                     "{92ef9cd7}": 4.0
                 }
@@ -1279,7 +1370,7 @@
                     "NumEkkoAfterImages": 3.0,
                     "NumHeimerMissiles": 3.0,
                     "ReducedEkkoDamage": 0.33000001311302185,
-                    "ReducedHeimerDamage": 1.0499999523162842
+                    "ReducedHeimerDamage": 1.2000000476837158
                 }
             }
         ],

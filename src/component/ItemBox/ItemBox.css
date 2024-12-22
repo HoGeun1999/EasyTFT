@@ -3,7 +3,29 @@
 }
 
 .ItemBoxButtonWrap{
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.button{
+    width: 120px;
+    height: 35px;
+    font-size: 16x;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #242322;
+    color: gray;
+    border: 0;
+    cursor: pointer;
+}
+
+.button.active {
+    background-color: #407c42;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.button:hover {
+    color: white; 
 }

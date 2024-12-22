@@ -238,27 +238,6 @@
         "unique": false
     },
     {
-        "apiName": "TFTTutorial_Item_GuardianAngel",
-        "associatedTraits": [],
-        "composition": [
-            "TFTTutorial_Item_BFSword",
-            "TFTTutorial_Item_ChainVest"
-        ],
-        "desc": "처음 사망 시 @StasisDuration@초 동안 경직된 후 해로운 효과가 사라지고 @HealthRestore@의 체력을 지닌 채 부활<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
-        "effects": {
-            "AD": 10.0,
-            "Armor": 20.0,
-            "HealthRestore": 400.0,
-            "StasisDuration": 2.0
-        },
-        "from": null,
-        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Guardian_Angel.tex",
-        "id": null,
-        "incompatibleTraits": [],
-        "name": "수호 천사",
-        "unique": true
-    },
-    {
         "apiName": "TFT_Item_GargoyleStoneplate",
         "associatedTraits": [],
         "composition": [
@@ -310,7 +289,7 @@
         "apiName": "TFT_Item_ChainVest",
         "associatedTraits": [],
         "composition": [],
-        "desc": "방어력 %i:scaleArmor% +@Armor@",
+        "desc": "방어력 +@Armor@",
         "effects": {
             "Armor": 20.0
         },
@@ -325,7 +304,7 @@
         "apiName": "TFT_Item_RecurveBow",
         "associatedTraits": [],
         "composition": [],
-        "desc": "공격 속도 %i:scaleAS%+@AS@%",
+        "desc": "공격 속도 +@AS@%",
         "effects": {
             "AS": 10.0
         },
@@ -434,10 +413,29 @@
         "unique": true
     },
     {
+        "apiName": "TFT_Item_SeraphsEmbrace",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "최대 마나 @ManaReduction@ 감소 <br><br>장착한 유닛이 처치 관여 시 @TakedownTimer@초 동안 @DamageAmp*100@%의 추가 피해<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AP": 10.0,
+            "Mana": 40.0,
+            "ManaOnTakedown": 10.0,
+            "ManaReduction": 10.0,
+            "TakedownTimer": 3.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Blue_Buff.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "푸른 파수꾼",
+        "unique": true
+    },
+    {
         "apiName": "TFT_Item_TearOfTheGoddess",
         "associatedTraits": [],
         "composition": [],
-        "desc": "마나 %i:scaleMana% +@Mana@",
+        "desc": "마나 +@Mana@",
         "effects": {
             "Mana": 15.0
         },
@@ -452,7 +450,7 @@
         "apiName": "TFT_Item_NegatronCloak",
         "associatedTraits": [],
         "composition": [],
-        "desc": "마법 저항력 %i:scaleMR% +@MagicResist@",
+        "desc": "마법 저항력 +@MagicResist@",
         "effects": {
             "MagicResist": 20.0
         },
@@ -476,7 +474,7 @@
             "Armor": 20.0,
             "BonusResistsAtStackCap": 20.0,
             "StackCap": 25.0,
-            "StackingAD": 0.02,
+            "StackingAD": 0.019999999552965164,
             "StackingSP": 2.0
         },
         "from": null,
@@ -512,7 +510,7 @@
         "apiName": "TFT_Item_SparringGloves",
         "associatedTraits": [],
         "composition": [],
-        "desc": "치명타 확률 +@CritChance@",
+        "desc": "치명타 확률 +@CritChance@%",
         "effects": {
             "CritChance": 20.0
         },
@@ -611,6 +609,21 @@
         "id": null,
         "incompatibleTraits": [],
         "name": "저녁갑주",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Spatula",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "<tftitemrules>무슨 쓸모가 있을 텐데...</tftitemrules>",
+        "effects": {
+            "{fe9818ef}": 5.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Spatula.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "뒤집개",
         "unique": false
     },
     {
@@ -714,9 +727,9 @@
         "apiName": "TFT_Item_BFSword",
         "associatedTraits": [],
         "composition": [],
-        "desc": "공격력 %i:scaleAD%+@AD*100@%",
+        "desc": "공격력 +@AD*100@%",
         "effects": {
-            "AD": 0.1
+            "AD": 0.10000000149011612
         },
         "from": null,
         "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/BF_Sword.tex",
@@ -820,11 +833,11 @@
         "apiName": "TFT_Item_GiantsBelt",
         "associatedTraits": [],
         "composition": [],
-        "desc": "체력 %i:scaleHealth% +@Health@",
+        "desc": "체력 +@Health@",
         "effects": {
             "Health": 150.0
         },
-        "from": null,   
+        "from": null,
         "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Gaints_Belt.tex",
         "id": null,
         "incompatibleTraits": [],
@@ -835,7 +848,7 @@
         "apiName": "TFT_Item_NeedlesslyLargeRod",
         "associatedTraits": [],
         "composition": [],
-        "desc": "주문력 %i:scaleAP% +@AP@",
+        "desc": "주문력 +@AP@",
         "effects": {
             "AP": 10.0
         },

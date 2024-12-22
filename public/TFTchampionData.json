@@ -45,10 +45,10 @@
                     "name": "HEROSpellBaseDamage",
                     "value": [
                         0.0,
-                        160.0,
-                        240.0,
-                        360.0,
-                        480.0,
+                        140.0,
+                        210.0,
+                        315.0,
+                        420.0,
                         0.0,
                         0.0
                     ]
@@ -108,6 +108,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Singed/Skins/Base/Images/TFT13_Singed.TFT_Set13.tex",
         "name": "신지드",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Singed/Skins/Base/Images/TFT13_Singed_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 40.0,
@@ -161,10 +162,10 @@
                     "name": "TargetDamage",
                     "value": [
                         0.0,
-                        280.0,
-                        420.0,
-                        650.0,
-                        880.0,
+                        310.0,
+                        465.0,
+                        700.0,
+                        935.0,
                         0.0,
                         0.0
                     ]
@@ -173,10 +174,10 @@
                     "name": "ExplosionDamage",
                     "value": [
                         0.0,
-                        140.0,
-                        210.0,
-                        325.0,
-                        440.0,
+                        155.0,
+                        230.0,
+                        350.0,
+                        465.0,
                         0.0,
                         0.0
                     ]
@@ -200,6 +201,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_RenataGlasc/Skins/Base/Images/TFT13_RenataGlasc.TFT_Set13.tex",
         "name": "레나타 글라스크",
+        "role": "APCasterHighMana",
         "squareIcon": "ASSETS/Characters/TFT13_RenataGlasc/Skins/Base/Images/TFT13_RenataGlasc_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 20.0,
@@ -304,6 +306,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Silco/Skins/Base/Images/TFT13_Silco.TFT_Set13.tex",
         "name": "실코",
+        "role": "APCasterHighMana",
         "squareIcon": "ASSETS/Characters/TFT13_Silco/Skins/Base/Images/TFT13_Silco_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 30.0,
@@ -333,10 +336,10 @@
                     "name": "PercentAttackDamage",
                     "value": [
                         2.75,
-                        2.4000000953674316,
-                        2.4000000953674316,
-                        3.0,
-                        3.5,
+                        2.299999952316284,
+                        2.299999952316284,
+                        2.5999999046325684,
+                        2.5999999046325684,
                         2.75,
                         2.75
                     ]
@@ -345,10 +348,10 @@
                     "name": "APDamage",
                     "value": [
                         0.0,
+                        30.0,
                         45.0,
                         70.0,
-                        120.0,
-                        185.0,
+                        95.0,
                         0.0,
                         0.0
                     ]
@@ -356,13 +359,13 @@
                 {
                     "name": "HealPercent",
                     "value": [
-                        0.4000000059604645,
-                        0.4000000059604645,
-                        0.4000000059604645,
-                        0.4000000059604645,
-                        0.4000000059604645,
-                        0.4000000059604645,
-                        0.4000000059604645
+                        0.33000001311302185,
+                        0.33000001311302185,
+                        0.33000001311302185,
+                        0.33000001311302185,
+                        0.33000001311302185,
+                        0.33000001311302185,
+                        0.33000001311302185
                     ]
                 }
             ]
@@ -372,6 +375,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Camille/Skins/Base/Images/TFT13_Camille.TFT_Set13.tex",
         "name": "카밀",
+        "role": "ADFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Camille/Skins/Base/Images/TFT13_Camille_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 45.0,
@@ -401,10 +405,10 @@
                     "name": "Shield",
                     "value": [
                         400.0,
-                        450.0,
                         470.0,
-                        520.0,
+                        500.0,
                         550.0,
+                        600.0,
                         400.0,
                         400.0
                     ]
@@ -488,6 +492,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_Blitzcrank/Skins/Base/Images/TFT13_Blitzcrank.TFT_Set13.tex",
         "name": "블리츠크랭크",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Blitzcrank/Skins/Base/Images/TFT13_Blitzcrank_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
@@ -517,8 +522,8 @@
                     "name": "Shield",
                     "value": [
                         2.0,
-                        250.0,
-                        300.0,
+                        280.0,
+                        325.0,
                         1200.0,
                         1200.0,
                         2.0,
@@ -529,9 +534,9 @@
                     "name": "PercentAttackDamage",
                     "value": [
                         0.0,
-                        5.5,
-                        5.5,
-                        11.0,
+                        6.0,
+                        6.0,
+                        12.0,
                         15.0,
                         3.299999952316284,
                         3.299999952316284
@@ -541,10 +546,10 @@
                     "name": "PercentAttackDamage_SecondaryDamage",
                     "value": [
                         1.5,
-                        1.5,
-                        1.5,
-                        4.5,
+                        1.7999999523162842,
+                        1.7999999523162842,
                         5.0,
+                        7.0,
                         4.0,
                         4.0
                     ]
@@ -580,6 +585,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Vi/Skins/Base/Images/TFT13_Vi.TFT_Set13.tex",
         "name": "바이",
+        "role": "ADFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Vi/Skins/Base/Images/TFT13_Vi_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
@@ -633,8 +639,8 @@
                     "name": "PercentAttackDamage",
                     "value": [
                         2.0,
-                        1.5,
-                        1.5,
+                        1.7999999523162842,
+                        1.7999999523162842,
                         7.5,
                         2.0,
                         2.0,
@@ -708,13 +714,14 @@
         "cost": 5,
         "icon": "ASSETS/Characters/TFT13_Caitlyn/Skins/Base/Images/TFT13_Caitlyn.TFT_Set13.tex",
         "name": "케이틀린",
+        "role": "ADCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Caitlyn/Skins/Base/Images/TFT13_Caitlyn_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 40.0,
             "attackSpeed": 0.550000011920929,
             "critChance": 0.25,
             "critMultiplier": 1.399999976158142,
-            "damage": 80.0,
+            "damage": 82.0,
             "hp": 900.0,
             "initialMana": 0,
             "magicResist": 40.0,
@@ -812,6 +819,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Ekko/Skins/Base/Images/TFT13_Ekko.TFT_Set13.tex",
         "name": "에코",
+        "role": "APReaper",
         "squareIcon": "ASSETS/Characters/TFT13_Ekko/Skins/Base/Images/TFT13_Ekko_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 60.0,
@@ -893,6 +901,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Amumu/Skins/Base/Images/TFT13_Amumu.TFT_Set13.tex",
         "name": "아무무",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Amumu/Skins/Base/Images/TFT13_Amumu_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 35.0,
@@ -934,8 +943,8 @@
                     "name": "InfectionDamage",
                     "value": [
                         0.0,
-                        18.0,
-                        27.0,
+                        14.0,
+                        21.0,
                         400.0,
                         1000.0,
                         2.5,
@@ -973,6 +982,7 @@
         "cost": 5,
         "icon": "ASSETS/Characters/TFT13_Malzahar/Skins/Base/Images/TFT13_Malzahar.TFT_Set13.tex",
         "name": "말자하",
+        "role": "APCasterHighMana",
         "squareIcon": "ASSETS/Characters/TFT13_Malzahar/Skins/Base/Images/TFT13_Malzahar_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 40.0,
@@ -983,7 +993,7 @@
             "hp": 950.0,
             "initialMana": 30.0,
             "magicResist": 40.0,
-            "mana": 90.0,
+            "mana": 95.0,
             "range": 4.0
         },
         "tileIcon": "ASSETS/Characters/TFT13_Malzahar/HUD/TFT13_Malzahar_Square.TFT_Set13.tex",
@@ -994,30 +1004,30 @@
     },
     {
         "ability": {
-            "desc": "충전 상태가 되어 @Duration@초에 걸쳐 체력을 <scaleHealth>@ModifiedHeal@(%i:scaleHealth%%i:scaleAP%)</scaleHealth> 회복합니다. 충전 상태에서 주변 적에게 매초 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 이후 2칸 이내 모든 적에게 <magicDamage>@ModifiedSecondaryDamage@(%i:scaleHealth%)</magicDamage>의 마법 피해를 입힙니다.<br><br><spellActive enabled=TFT13_ExperimentActive alternate=rules>실험체 추가 효과: <TFTBonus><ShowIfNot.TFT13_ExperimentActive></ShowIfNot.TFT13_ExperimentActive><ShowIf.TFT13_ExperimentActive></ShowIf.TFT13_ExperimentActive></TFTBonus>최대 체력을 <scaleHealth enabled=TFT13_ExperimentActive alternate=rules>@TFTUnitProperty.:TFT13_DrMundoBaseHealthExperimentBonus@</scaleHealth> 얻습니다. 처치 관여 시 전투가 끝날 때까지 최대 체력을 <scaleHealth enabled=TFT13_ExperimentActive alternate=rules>@TFTUnitProperty.:TFT13_DrMundoCurrentExperimentBonus@</scaleHealth> 얻습니다.</spellActive>",
+            "desc": "충전 상태가 되어 @Duration@초에 걸쳐 체력을 <scaleHealth>@ModifiedHeal@ (%i:scaleHealth%%i:scaleAP%)</scaleHealth> 회복합니다. 충전 상태에서 주변 적에게 매초 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. 이후 2칸 이내 모든 적에게 <magicDamage>@ModifiedSecondaryDamage@(%i:scaleHealth%)</magicDamage>의 마법 피해를 입힙니다.<br><br><spellActive enabled=TFT13_ExperimentActive alternate=rules>실험체 추가 효과: <TFTBonus><ShowIfNot.TFT13_ExperimentActive></ShowIfNot.TFT13_ExperimentActive><ShowIf.TFT13_ExperimentActive></ShowIf.TFT13_ExperimentActive></TFTBonus>최대 체력을 <scaleHealth enabled=TFT13_ExperimentActive alternate=rules>@TFTUnitProperty.:TFT13_DrMundoBaseHealthExperimentBonus@</scaleHealth> 얻습니다. 처치에 관여할 때마다 최대 체력을 <scaleHealth enabled=TFT13_ExperimentActive alternate=rules>@TFTUnitProperty.:TFT13_DrMundoCurrentExperimentBonus@</scaleHealth> 더 얻습니다.</spellActive>",
             "icon": "ASSETS/Characters/TFT13_DrMundo/HUD/Icons2D/DrMundo_E.TFT_Set13.tex",
             "name": "최대 투여량",
             "variables": [
                 {
                     "name": "PercentHealthHeal",
                     "value": [
-                        0.25,
-                        0.25,
-                        0.25,
-                        0.25,
-                        0.25,
-                        0.25,
-                        0.25
+                        0.18000000715255737,
+                        0.18000000715255737,
+                        0.18000000715255737,
+                        0.18000000715255737,
+                        0.18000000715255737,
+                        0.18000000715255737,
+                        0.18000000715255737
                     ]
                 },
                 {
                     "name": "APHeal",
                     "value": [
                         0.0,
-                        500.0,
-                        600.0,
-                        2000.0,
-                        3000.0,
+                        650.0,
+                        750.0,
+                        2500.0,
+                        3500.0,
                         0.0,
                         0.0
                     ]
@@ -1050,9 +1060,9 @@
                     "name": "APDamage",
                     "value": [
                         0.0,
-                        80.0,
                         120.0,
-                        800.0,
+                        180.0,
+                        1000.0,
                         1200.0,
                         0.0,
                         0.0
@@ -1062,9 +1072,9 @@
                     "name": "PercentHealthDamage",
                     "value": [
                         0.15000000596046448,
-                        0.11999999731779099,
-                        0.11999999731779099,
-                        0.4000000059604645,
+                        0.07000000029802322,
+                        0.07000000029802322,
+                        0.3499999940395355,
                         0.5,
                         0.25,
                         0.25
@@ -1073,25 +1083,25 @@
                 {
                     "name": "ExperimentHealthGain",
                     "value": [
-                        75.0,
-                        75.0,
-                        75.0,
-                        75.0,
-                        75.0,
-                        75.0,
-                        75.0
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0,
+                        60.0
                     ]
                 },
                 {
                     "name": "BaseExperimentHealthGain",
                     "value": [
-                        200.0,
-                        200.0,
-                        200.0,
-                        200.0,
-                        200.0,
-                        200.0,
-                        200.0
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0,
+                        120.0
                     ]
                 }
             ]
@@ -1101,6 +1111,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_DrMundo/Skins/Base/Images/TFT13_DrMundo.TFT_Set13.tex",
         "name": "문도 박사",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_DrMundo/Skins/Base/Images/TFT13_DrMundo_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 60.0,
@@ -1217,6 +1228,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Twitch/Skins/Base/Images/TFT13_Twitch.TFT_Set13.tex",
         "name": "트위치",
+        "role": "ADCarry",
         "squareIcon": "ASSETS/Characters/TFT13_Twitch/Skins/Base/Images/TFT13_Twitch__Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 30.0,
@@ -1260,8 +1272,8 @@
                         0.0,
                         240.0,
                         360.0,
-                        600.0,
-                        820.0,
+                        550.0,
+                        740.0,
                         0.0,
                         0.0
                     ]
@@ -1321,6 +1333,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Akali/Skins/Base/Images/TFT13_Akali.TFT_Set13.tex",
         "name": "아칼리",
+        "role": "APReaper",
         "squareIcon": "ASSETS/Characters/TFT13_Akali/Skins/Base/Images/TFT13_Akali_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 45.0,
@@ -1389,6 +1402,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Sett/Skins/Base/Images/TFT13_Sett.TFT_Set13.tex",
         "name": "세트",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Sett/Skins/Base/Images/TFT13_Sett_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
@@ -1457,6 +1471,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_Ezreal/Skins/Base/Images/TFT13_Ezreal.TFT_Set13.tex",
         "name": "이즈리얼",
+        "role": "ADCasterMana",
         "squareIcon": "ASSETS/Characters/TFT13_Ezreal/Skins/Base/Images/TFT13_Ezreal_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 25.0,
@@ -1562,6 +1577,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Illaoi/Skins/Base/Images/TFT13_Illaoi.TFT_Set13.tex",
         "name": "일라오이",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Illaoi/Skins/Base/Images/TFT13_Illaoi_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 60.0,
@@ -1583,7 +1599,7 @@
     },
     {
         "ability": {
-            "desc": "<spellPassive>기본 지속 효과:</spellPassive> 드레이븐이 강화된 도끼를 손에 들고 있다면 다음 기본 공격이 <physicalDamage>@TotalDamage@ (%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 강화된 도끼는 적에게 적중한 후 드레이븐에게 돌아옵니다.<br><br><spellActive>사용 시:</spellActive> 강화된 도끼를 회전시킵니다.",
+            "desc": "<spellPassive>기본 지속 효과:</spellPassive> 드레이븐이 강화된 도끼를 손에 들고 있다면 다음 기본 공격 시 도끼를 던져 총 <physicalDamage>@TotalDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 강화된 도끼는 적에게 적중한 후 드레이븐에게 돌아옵니다.<br><br><spellActive>사용 시:</spellActive> 강화된 도끼를 회전시킵니다.",
             "icon": "ASSETS/Characters/TFT13_Draven/HUD/Icons2D/Draven_SpinningAxe.TFT_Set13.tex",
             "name": "회전 도끼",
             "variables": [
@@ -1618,6 +1634,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Draven/Skins/Base/Images/TFT13_Draven.TFT_Set13.tex",
         "name": "드레이븐",
+        "role": "ADCarry",
         "squareIcon": "ASSETS/Characters/TFT13_Draven/Skins/Base/Images/TFT13_Draven_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 15.0,
@@ -1710,6 +1727,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Rell/Skins/Base/Images/TFT13_Rell.TFT_Set13.tex",
         "name": "렐",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Rell/Skins/Base/Images/TFT13_Rell_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 45.0,
@@ -1803,6 +1821,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_Cassiopeia/Skins/Base/Images/TFT13_Cassiopeia.TFT_Set13.tex",
         "name": "카시오페아",
+        "role": "APCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Cassiopeia/Skins/Base/Images/TFT13_Cassiopeia_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 25.0,
@@ -1915,13 +1934,13 @@
                 {
                     "name": "HEROAmpPerCast",
                     "value": [
-                        0.07000000029802322,
-                        0.07000000029802322,
-                        0.07000000029802322,
-                        0.07000000029802322,
-                        0.07000000029802322,
-                        0.07000000029802322,
-                        0.07000000029802322
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612
                     ]
                 }
             ]
@@ -1931,6 +1950,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Vladimir/Skins/Base/Images/TFT12_Vladimir.TFT_Set13.tex",
         "name": "블라디미르",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Vladimir/Skins/Base/Images/TFT13_Vladimir_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 45.0,
@@ -2024,6 +2044,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Elise/Skins/Base/Images/TFT13_Elise.TFT_Set13.tex",
         "name": "엘리스",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Elise/Skins/Base/Images/TFT13_Elise_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 0.0,
@@ -2141,6 +2162,7 @@
         "cost": 5,
         "icon": "ASSETS/Characters/TFT13_LeBlanc/Skins/Base/Images/TFT13_LeBlanc.TFT_Set13.tex",
         "name": "르블랑",
+        "role": "APCasterHighMana",
         "squareIcon": "ASSETS/Characters/TFT13_LeBlanc/Skins/Base/Images/TFT13_LeBlanc_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 40.0,
@@ -2170,9 +2192,9 @@
                     "name": "Damage",
                     "value": [
                         50.0,
-                        54.0,
-                        81.0,
-                        270.0,
+                        50.0,
+                        75.0,
+                        225.0,
                         400.0,
                         325.0,
                         325.0
@@ -2245,6 +2267,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Heimerdinger/Skins/Base/Images/TFT13_Heimerdinger.TFT_Set13.tex",
         "name": "하이머딩거",
+        "role": "APCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Heimerdinger/Skins/Base/Images/TFT13_Heimerdinger_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 30.0,
@@ -2274,8 +2297,8 @@
                     "name": "PercentAttackDamage",
                     "value": [
                         0.0,
-                        4.5,
-                        4.5,
+                        5.0,
+                        5.0,
                         20.0,
                         0.0,
                         0.0,
@@ -2409,6 +2432,7 @@
         "cost": 5,
         "icon": "ASSETS/Characters/TFT13_Jayce/Skins/Base/Images/TFT13_Jayce.TFT_Set13.tex",
         "name": "제이스",
+        "role": "ADFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Jayce/Skins/Base/Images/TFT13_Jayce_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 0.0,
@@ -2450,9 +2474,9 @@
                     "name": "GainHealth",
                     "value": [
                         0.0,
-                        160.0,
-                        190.0,
-                        230.0,
+                        200.0,
+                        220.0,
+                        250.0,
                         270.0,
                         0.0,
                         0.0
@@ -2477,6 +2501,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Trundle/Skins/Base/Images/TFT13_Trundle.TFT_Set13.tex",
         "name": "트런들",
+        "role": "ADTank",
         "squareIcon": "ASSETS/Characters/TFT13_Trundle/Skins/Base/Images/TFT13_Trundle_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 40.0,
@@ -2506,9 +2531,9 @@
                     "name": "Damage",
                     "value": [
                         0.0,
-                        175.0,
-                        265.0,
-                        400.0,
+                        180.0,
+                        270.0,
+                        450.0,
                         535.0,
                         0.0,
                         0.0
@@ -2518,9 +2543,9 @@
                     "name": "MinibombDamage",
                     "value": [
                         1.0,
-                        80.0,
-                        120.0,
-                        180.0,
+                        90.0,
+                        135.0,
+                        200.0,
                         240.0,
                         1.0,
                         1.0
@@ -2545,6 +2570,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Ziggs/Skins/Base/Images/TFT13_Ziggs.TFT_Set13.tex",
         "name": "직스",
+        "role": "APCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Ziggs/Skins/Base/Images/TFT13_Ziggs_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 20.0,
@@ -2681,25 +2707,25 @@
                 {
                     "name": "SelfDestruct_ResistDamage_Level1",
                     "value": [
-                        2.0,
-                        2.0,
-                        2.0,
-                        2.0,
-                        2.0,
-                        2.0,
-                        2.0
+                        1.600000023841858,
+                        1.600000023841858,
+                        1.600000023841858,
+                        1.600000023841858,
+                        1.600000023841858,
+                        1.600000023841858,
+                        1.600000023841858
                     ]
                 },
                 {
                     "name": "SelfDestruct_ResistDamage_Level2",
                     "value": [
-                        3.0,
-                        3.0,
-                        3.0,
-                        3.0,
-                        3.0,
-                        3.0,
-                        3.0
+                        2.4000000953674316,
+                        2.4000000953674316,
+                        2.4000000953674316,
+                        2.4000000953674316,
+                        2.4000000953674316,
+                        2.4000000953674316,
+                        2.4000000953674316
                     ]
                 },
                 {
@@ -2729,25 +2755,25 @@
                 {
                     "name": "Flamethrower_Damage_Level1",
                     "value": [
-                        35.0,
-                        35.0,
-                        35.0,
-                        35.0,
-                        35.0,
-                        35.0,
-                        35.0
+                        30.0,
+                        30.0,
+                        30.0,
+                        30.0,
+                        30.0,
+                        30.0,
+                        30.0
                     ]
                 },
                 {
                     "name": "Flamethrower_Damage_Level2",
                     "value": [
-                        50.0,
-                        50.0,
-                        50.0,
-                        50.0,
-                        50.0,
-                        50.0,
-                        50.0
+                        45.0,
+                        45.0,
+                        45.0,
+                        45.0,
+                        45.0,
+                        45.0,
+                        45.0
                     ]
                 },
                 {
@@ -2889,6 +2915,7 @@
         "cost": 5,
         "icon": "ASSETS/Characters/TFT13_Rumble/Skins/Base/Images/TFT13_Rumble.TFT_Set13.tex",
         "name": "럼블",
+        "role": "APFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Rumble/Skins/Base/Images/TFT13_Rumble_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 70.0,
@@ -2982,13 +3009,14 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_Gremlin/Skins/Base/Images/TFT13_Gremlin.TFT_Set13.tex",
         "name": "스미치",
+        "role": "ADReaper",
         "squareIcon": "ASSETS/Characters/TFT13_Gremlin/Skins/Base/Images/TFT13_Gremlin_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
             "attackSpeed": 0.800000011920929,
             "critChance": 0.25,
             "critMultiplier": 1.399999976158142,
-            "damage": 68.0,
+            "damage": 70.0,
             "hp": 800.0,
             "initialMana": 20.0,
             "magicResist": 50.0,
@@ -3314,6 +3342,7 @@
         "cost": 5,
         "icon": "ASSETS/Characters/TFT13_Lieutenant/Skins/Base/Images/TFT13_Lieutenant.TFT_Set13.tex",
         "name": "세비카",
+        "role": "ADFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Lieutenant/Skins/Base/Images/TFT13_Lieutenant_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 60.0,
@@ -3479,6 +3508,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_Chainsaw/Skins/Base/Images/TFT13_Chainsaw.TFT_Set13.tex",
         "name": "레니",
+        "role": "ADTank",
         "squareIcon": "ASSETS/Characters/TFT13_Chainsaw/Skins/Base/Images/TFT13_Chainsaw_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
@@ -3508,10 +3538,10 @@
                     "name": "Shield",
                     "value": [
                         0.0,
-                        500.0,
-                        575.0,
-                        675.0,
-                        775.0,
+                        525.0,
+                        600.0,
+                        700.0,
+                        800.0,
                         0.0,
                         0.0
                     ]
@@ -3559,6 +3589,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_Beardy/Skins/Base/Images/TFT13_Beardy.TFT_Set13.tex",
         "name": "로리스",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Beardy/Skins/Base/Images/TFT13_Beardy_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
@@ -3569,7 +3600,7 @@
             "hp": 850.0,
             "initialMana": 50.0,
             "magicResist": 50.0,
-            "mana": 100,
+            "mana": 90.0,
             "range": 1.0
         },
         "tileIcon": "ASSETS/Characters/TFT13_Beardy/HUD/TFT13_Beardy_Square.TFT_Set13.tex",
@@ -3675,6 +3706,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Fish/Skins/Base/Images/TFT13_Fish.TFT_Set13.tex",
         "name": "스텝",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Fish/Skins/Base/Images/TFT13_Fish_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 45.0,
@@ -3707,7 +3739,7 @@
                         1.25,
                         1.25,
                         1.399999976158142,
-                        1.350000023841858,
+                        1.399999976158142,
                         1.350000023841858,
                         1.350000023841858
                     ]
@@ -3767,6 +3799,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Shooter/Skins/Base/Images/TFT13_Shooter.TFT_Set13.tex",
         "name": "매디",
+        "role": "ADCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Shooter/Skins/Base/Images/TFT13_Shooter_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 15.0,
@@ -3796,10 +3829,10 @@
                     "name": "Damage",
                     "value": [
                         0.0,
-                        320.0,
-                        480.0,
-                        680.0,
-                        880.0,
+                        350.0,
+                        500.0,
+                        700.0,
+                        900.0,
                         0.0,
                         0.0
                     ]
@@ -3833,9 +3866,9 @@
                     "value": [
                         240.0,
                         350.0,
-                        530.0,
-                        800.0,
-                        1070.0,
+                        500.0,
+                        700.0,
+                        900.0,
                         240.0,
                         240.0
                     ]
@@ -3867,13 +3900,13 @@
                 {
                     "name": "HeroBigFalloffPerc",
                     "value": [
-                        0.6000000238418579,
-                        0.6000000238418579,
-                        0.6000000238418579,
-                        0.6000000238418579,
-                        0.6000000238418579,
-                        0.6000000238418579,
-                        0.6000000238418579
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5
                     ]
                 }
             ]
@@ -3883,6 +3916,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Blue/Skins/Base/Images/TFT13_Blue.TFT_Set13.tex",
         "name": "파우더",
+        "role": "APCasterHighMana",
         "squareIcon": "ASSETS/Characters/TFT13_Blue/Skins/Base/Images/TFT13_Blue_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 15.0,
@@ -3905,7 +3939,7 @@
     },
     {
         "ability": {
-            "desc": "공격을 중단하고 @TauntDuration@초 동안 공격에 대비해 방어력 및 마법 저항력을 <TFTBonus>@ModifiedDefenses@ (%i:scaleAP%)</TFTBonus> 얻습니다. 다음 기본 공격이 강화되어 <physicalDamage>@ModifiedDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 물리 피해량은 아군 1단계 또는 2단계 유닛 하나당 <physicalDamage>@ModifiedBonusDamage@(%i:scaleAD%)</physicalDamage> 증가합니다. ",
+            "desc": "공격을 중단하고 @TauntDuration@초 동안 공격에 대비해 방어력 및 마법 저항력을 <TFTBonus>@ModifiedDefenses@ (%i:scaleAP%)</TFTBonus> 얻습니다. 밴더의 다음 기본 공격이 <physicalDamage>@ModifiedDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입히는 타격으로 대체됩니다. 물리 피해량은 아군 1단계 또는 2단계 유닛 하나당 <physicalDamage>@ModifiedBonusDamage@ (%i:scaleAD%)</physicalDamage> 증가합니다. ",
             "icon": "ASSETS/Characters/TFT13_Prime/HUD/Icons2D/PrimeSpell.TFT_Set13.tex",
             "name": "지하의 사냥개",
             "variables": [
@@ -3972,13 +4006,13 @@
                 {
                     "name": "HEROBonusDamage",
                     "value": [
-                        1.75,
-                        1.75,
-                        1.75,
-                        1.75,
-                        1.75,
-                        1.75,
-                        1.75
+                        1.850000023841858,
+                        1.850000023841858,
+                        1.850000023841858,
+                        1.850000023841858,
+                        1.850000023841858,
+                        1.850000023841858,
+                        1.850000023841858
                     ]
                 },
                 {
@@ -4024,6 +4058,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Prime/Skins/Base/Images/TFT13_Prime.TFT_Set13.tex",
         "name": "밴더",
+        "role": "ADTank",
         "squareIcon": "ASSETS/Characters/TFT13_Prime/Skins/Base/Images/TFT13_Prime_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 45.0,
@@ -4053,9 +4088,9 @@
                     "name": "Heal",
                     "value": [
                         0.029999999329447746,
-                        210.0,
+                        220.0,
                         240.0,
-                        285.0,
+                        270.0,
                         330.0,
                         0.029999999329447746,
                         0.029999999329447746
@@ -4089,10 +4124,10 @@
                     "name": "Damage",
                     "value": [
                         0.0,
-                        110.0,
-                        165.0,
-                        265.0,
-                        365.0,
+                        80.0,
+                        120.0,
+                        180.0,
+                        240.0,
                         0.0,
                         0.0
                     ]
@@ -4104,6 +4139,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_FlyGuy/Skins/Base/Images/TFT13_Flyguy.TFT_Set13.tex",
         "name": "스카",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_FlyGuy/Skins/Base/Images/TFT13_Flyguy_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
@@ -4114,7 +4150,7 @@
             "hp": 800.0,
             "initialMana": 80.0,
             "magicResist": 50.0,
-            "mana": 155.0,
+            "mana": 170.0,
             "range": 1.0
         },
         "tileIcon": "ASSETS/Characters/TFT13_FlyGuy/HUD/TFT13_FlyGuy_Square.TFT_Set13.tex",
@@ -4232,6 +4268,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_NunuWillump/Skins/Base/Images/TFT13_NunuWillump.TFT_Set13.tex",
         "name": "누누와 윌럼프",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_NunuWillump/Skins/Base/Images/TFT13_NunuWillump_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
@@ -4276,8 +4313,8 @@
                         0.0,
                         2.6500000953674316,
                         2.6500000953674316,
-                        15.0,
-                        22.0,
+                        20.0,
+                        30.0,
                         0.0,
                         0.0
                     ]
@@ -4288,7 +4325,7 @@
                         0.0,
                         2.6500000953674316,
                         2.6500000953674316,
-                        15.0,
+                        20.0,
                         30.0,
                         0.0,
                         0.0
@@ -4385,6 +4422,7 @@
         "cost": 5,
         "icon": "ASSETS/Characters/TFT13_Jinx/Skins/Base/Images/TFT13_Jinx.TFT_Set13.tex",
         "name": "징크스",
+        "role": "ADCasterMana",
         "squareIcon": "ASSETS/Characters/TFT13_Jinx/Skins/Base/Images/TFT13_Jinx_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 40.0,
@@ -4437,13 +4475,13 @@
                 {
                     "name": "PercentAttackDamage",
                     "value": [
-                        1.899999976158142,
-                        1.899999976158142,
-                        1.899999976158142,
-                        1.899999976158142,
-                        1.899999976158142,
-                        1.899999976158142,
-                        1.899999976158142
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0
                     ]
                 },
                 {
@@ -4477,6 +4515,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Zeri/Skins/Base/Images/TFT13_Zeri.TFT_Set13.tex",
         "name": "제리",
+        "role": "ADCarry",
         "squareIcon": "ASSETS/Characters/TFT13_Zeri/Skins/Base/Images/TFT13_Zeri_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 20.0,
@@ -4508,8 +4547,8 @@
                         1.350000023841858,
                         1.350000023841858,
                         1.350000023841858,
-                        1.399999976158142,
-                        1.4500000476837158,
+                        1.350000023841858,
+                        1.350000023841858,
                         1.350000023841858,
                         1.350000023841858
                     ]
@@ -4530,10 +4569,10 @@
                     "name": "APDamage",
                     "value": [
                         0.0,
-                        40.0,
+                        20.0,
+                        30.0,
+                        45.0,
                         60.0,
-                        90.0,
-                        120.0,
                         0.0,
                         0.0
                     ]
@@ -4541,13 +4580,13 @@
                 {
                     "name": "PercentIncreasedAttackDamage",
                     "value": [
-                        4.0,
-                        4.5,
-                        4.5,
-                        4.75,
-                        4.25,
-                        4.0,
-                        4.0
+                        3.299999952316284,
+                        3.299999952316284,
+                        3.299999952316284,
+                        3.299999952316284,
+                        3.299999952316284,
+                        3.299999952316284,
+                        3.299999952316284
                     ]
                 },
                 {
@@ -4569,17 +4608,18 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Red/Skins/Base/Images/TFT13_Red.TFT_Set13.tex",
         "name": "바이올렛",
+        "role": "ADFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Red/Skins/Base/Images/TFT13_Red_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 40.0,
             "attackSpeed": 0.800000011920929,
             "critChance": 0.25,
             "critMultiplier": 1.399999976158142,
-            "damage": 40.0,
+            "damage": 50.0,
             "hp": 650.0,
             "initialMana": 20.0,
             "magicResist": 40.0,
-            "mana": 70.0,
+            "mana": 65.0,
             "range": 1.0
         },
         "tileIcon": "ASSETS/Characters/TFT13_Red/HUD/TFT13_Red_Square.TFT_Set13.tex",
@@ -4649,6 +4689,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_Nami/Skins/Base/Images/TFT13_Nami.TFT_Set13.tex",
         "name": "나미",
+        "role": "APCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Nami/Skins/Base/Images/TFT13_Nami_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 25.0,
@@ -4765,13 +4806,14 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Corki/Skins/Base/Images/TFT13_Corki.TFT_Set13.tex",
         "name": "코르키",
+        "role": "ADCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Corki/Skins/Base/Images/TFT13_Corki_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 30.0,
             "attackSpeed": 0.75,
             "critChance": 0.25,
             "critMultiplier": 1.399999976158142,
-            "damage": 63.0,
+            "damage": 65.0,
             "hp": 850.0,
             "initialMana": 0,
             "magicResist": 30.0,
@@ -4873,6 +4915,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Garen/Skins/Base/Images/TFT13_Garen.TFT_Set13.tex",
         "name": "가렌",
+        "role": "ADTank",
         "squareIcon": "ASSETS/Characters/TFT13_Garen/Skins/Base/Images/TFT13_Garen_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 60.0,
@@ -4904,8 +4947,8 @@
                         0.0,
                         220.0,
                         330.0,
-                        500.0,
-                        670.0,
+                        550.0,
+                        770.0,
                         0.0,
                         0.0
                     ]
@@ -4916,8 +4959,8 @@
                         0.0,
                         110.0,
                         165.0,
-                        250.0,
-                        335.0,
+                        275.0,
+                        385.0,
                         0.0,
                         0.0
                     ]
@@ -4941,6 +4984,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Vex/Skins/Base/Images/TFT13_Vex.TFT_Set13.tex",
         "name": "벡스",
+        "role": "APCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Vex/Skins/Base/Images/TFT13_Vex_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 15.0,
@@ -5033,10 +5077,11 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Nocturne/Skins/Base/Images/TFT13_Nocturne.TFT_Set13.tex",
         "name": "녹턴",
+        "role": "ADReaper",
         "squareIcon": "ASSETS/Characters/TFT13_Nocturne/Skins/Base/Images/TFT13_Nocturne_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 45.0,
-            "attackSpeed": 0.75,
+            "attackSpeed": 0.800000011920929,
             "critChance": 0.25,
             "critMultiplier": 1.399999976158142,
             "damage": 65.0,
@@ -5113,6 +5158,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Darius/Skins/Base/Images/TFT13_Darius.TFT_Set13.tex",
         "name": "다리우스",
+        "role": "ADFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Darius/Skins/Base/Images/TFT13_Darius_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 40.0,
@@ -5202,10 +5248,10 @@
                     "name": "HEROBaseDashDamage",
                     "value": [
                         0.0,
-                        3.1500000953674316,
-                        3.1500000953674316,
-                        3.25,
-                        3.25,
+                        3.3499999046325684,
+                        3.3499999046325684,
+                        3.450000047683716,
+                        3.450000047683716,
                         0.0,
                         0.0
                     ]
@@ -5226,10 +5272,10 @@
                     "name": "HEROSpellAPBase",
                     "value": [
                         0.0,
-                        30.0,
-                        45.0,
-                        70.0,
-                        95.0,
+                        40.0,
+                        60.0,
+                        90.0,
+                        120.0,
                         0.0,
                         0.0
                     ]
@@ -5241,6 +5287,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Irelia/Skins/Base/Images/TFT13_Irelia.TFT_Set13.tex",
         "name": "이렐리아",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Irelia/Skins/Base/Images/TFT13_Irelia_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 40.0,
@@ -5318,10 +5365,10 @@
                     "name": "SlamDamageAD",
                     "value": [
                         5.0,
-                        4.5,
-                        4.5,
-                        10.0,
+                        5.0,
+                        5.0,
                         12.0,
+                        15.0,
                         6.0,
                         6.0
                     ]
@@ -5333,6 +5380,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Ambessa/Skins/Base/Images/TFT13_Ambessa.TFT_Set13.tex",
         "name": "암베사",
+        "role": "ADFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Ambessa/Skins/Base/Images/TFT13_Ambessa_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
@@ -5343,7 +5391,7 @@
             "hp": 1100.0,
             "initialMana": 40.0,
             "magicResist": 50.0,
-            "mana": 100,
+            "mana": 90.0,
             "range": 1.0
         },
         "tileIcon": "ASSETS/Characters/TFT13_Ambessa/HUD/TFT13_Ambessa_Square.TFT_Set13.tex",
@@ -5387,10 +5435,10 @@
                     "name": "AOEDamage",
                     "value": [
                         0.0,
-                        80.0,
-                        120.0,
-                        180.0,
-                        240.0,
+                        95.0,
+                        140.0,
+                        215.0,
+                        290.0,
                         0.0,
                         0.0
                     ]
@@ -5438,6 +5486,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Zyra/Skins/Base/Images/TFT13_Zyra.TFT_Set13.tex",
         "name": "자이라",
+        "role": "APCasterHighMana",
         "squareIcon": "ASSETS/Characters/TFT13_Zyra/Skins/Base/Images/TFT13_Zyra_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 20.0,
@@ -5459,20 +5508,20 @@
     },
     {
         "ability": {
-            "desc": "모든 해로운 효과를 정화하고 체력을 <scaleHealth>@ModifiedHeal@ (%i:scaleAP%)</scaleHealth> 회복합니다. 검을 휘둘러 일직선상의 적에게 <physicalDamage>@ModifiedDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 적 한 명에게만 적중한 경우 피해량이 두 배로 증가합니다.",
+            "desc": "체력을 <scaleHealth>@ModifiedHeal@(%i:scaleAP%)</scaleHealth> 회복합니다. 그다음 베기로 일직선상의 모든 적에게 <physicalDamage>@ModifiedDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 적에게 적중 시 피해를 두 배로&nbsp;입힙니다.",
             "icon": "ASSETS/Characters/TFT13_Gangplank/HUD/Icons2D/TFT13_Gangplank_Passive.TFT_Set13.tex",
             "name": "화염의 수확",
             "variables": [
                 {
                     "name": "PercentAttackDamage",
                     "value": [
-                        3.1500000953674316,
-                        3.1500000953674316,
-                        3.1500000953674316,
-                        3.1500000953674316,
-                        3.1500000953674316,
-                        3.1500000953674316,
-                        3.1500000953674316
+                        3.4000000953674316,
+                        3.4000000953674316,
+                        3.4000000953674316,
+                        3.4000000953674316,
+                        3.4000000953674316,
+                        3.4000000953674316,
+                        3.4000000953674316
                     ]
                 },
                 {
@@ -5510,6 +5559,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_Gangplank/Skins/Base/Images/TFT13_Gangplank.TFT_Set13.tex",
         "name": "갱플랭크",
+        "role": "ADFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Gangplank/Skins/Base/Images/TFT13_Gangplank_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 0.0,
@@ -5579,6 +5629,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Leona/Skins/Base/Images/TFT13_Leona.TFT_Set13.tex",
         "name": "레오나",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Leona/Skins/Base/Images/TFT13_Leona_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 50.0,
@@ -5644,8 +5695,8 @@
                     "name": "DamageOnAttack",
                     "value": [
                         0.0,
-                        50.0,
-                        75.0,
+                        48.0,
+                        72.0,
                         120.0,
                         210.0,
                         0.0,
@@ -5671,6 +5722,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_KogMaw/Skins/Base/Images/TFT13_KogMaw.TFT_Set13.tex",
         "name": "코그모",
+        "role": "APCarry",
         "squareIcon": "ASSETS/Characters/TFT13_KogMaw/Skins/Base/Images/TFT13_KogMaw_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 25.0,
@@ -5700,10 +5752,10 @@
                     "name": "BlueHeal",
                     "value": [
                         0.0,
-                        80.0,
-                        100.0,
-                        125.0,
-                        150.0,
+                        90.0,
+                        110.0,
+                        140.0,
+                        170.0,
                         0.0,
                         0.0
                     ]
@@ -5715,7 +5767,7 @@
                         110.0,
                         165.0,
                         255.0,
-                        405.0,
+                        345.0,
                         0.0,
                         0.0
                     ]
@@ -5724,10 +5776,10 @@
                     "name": "YellowDamage",
                     "value": [
                         0.0,
-                        210.0,
-                        315.0,
-                        505.0,
-                        630.0,
+                        230.0,
+                        345.0,
+                        535.0,
+                        725.0,
                         0.0,
                         0.0
                     ]
@@ -5751,6 +5803,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_TwistedFate/Skins/Base/Images/TFT13_TwistedFate.TFT_Set13.tex",
         "name": "트위스티드 페이트",
+        "role": "APCasterHighMana",
         "squareIcon": "ASSETS/Characters/TFT13_TwistedFate/Skins/Base/Images/TFT13_TwistedFate_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 25.0,
@@ -5831,6 +5884,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Lux/Skins/Base/Images/TFT13_Lux.TFT_Set13.tex",
         "name": "럭스",
+        "role": "APCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Lux/Skins/Base/Images/TFT13_Lux_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 20.0,
@@ -6019,6 +6073,7 @@
         "cost": 5,
         "icon": "ASSETS/Characters/TFT13_Mordekaiser/Skins/Base/Images/TFT13_Mordekaiser.TFT_Set13.tex",
         "name": "모데카이저",
+        "role": "APFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Mordekaiser/Skins/Base/Images/TFT13_Mordekaiser_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 70.0,
@@ -6048,9 +6103,9 @@
                     "name": "Damage",
                     "value": [
                         0.0,
-                        500.0,
-                        750.0,
-                        1150.0,
+                        525.0,
+                        780.0,
+                        1300.0,
                         1550.0,
                         200.0,
                         240.0
@@ -6087,6 +6142,7 @@
         "cost": 1,
         "icon": "ASSETS/Characters/TFT13_Morgana/Skins/Base/Images/TFT13_Morgana.TFT_Set13.tex",
         "name": "모르가나",
+        "role": "APCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Morgana/Skins/Base/Images/TFT13_Morgana_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 20.0,
@@ -6167,10 +6223,11 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Tristana/Skins/Base/Images/TFT13_Tristana.TFT_Set13.tex",
         "name": "트리스타나",
+        "role": "ADCaster",
         "squareIcon": "ASSETS/Characters/TFT13_Tristana/Skins/Base/Images/TFT13_Tristana_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 20.0,
-            "attackSpeed": 0.699999988079071,
+            "attackSpeed": 0.75,
             "critChance": 0.25,
             "critMultiplier": 1.399999976158142,
             "damage": 42.0,
@@ -6196,10 +6253,10 @@
                     "name": "Heal",
                     "value": [
                         0.0,
-                        250.0,
+                        240.0,
                         300.0,
-                        350.0,
-                        400.0,
+                        380.0,
+                        460.0,
                         0.0,
                         0.0
                     ]
@@ -6208,9 +6265,9 @@
                     "name": "HealPerSecond",
                     "value": [
                         0.0,
-                        75.0,
+                        70.0,
                         90.0,
-                        110.0,
+                        125.0,
                         130.0,
                         0.0,
                         0.0
@@ -6259,6 +6316,7 @@
         "cost": 3,
         "icon": "ASSETS/Characters/TFT13_Swain/Skins/Base/Images/TFT13_Swain.TFT_Set13.tex",
         "name": "스웨인",
+        "role": "APTank",
         "squareIcon": "ASSETS/Characters/TFT13_Swain/Skins/Base/Images/TFT13_Swain_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 0.0,
@@ -6281,7 +6339,7 @@
     },
     {
         "ability": {
-            "desc": "폭약을 발사해 대상에게 <physicalDamage>@ModifiedPrimaryDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입히고 인접한 적에게는 <physicalDamage>@ModifiedSecondaryDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 적중한 모든 적에게 @Duration@초 동안 <TFTKeyword>파열</TFTKeyword>을 20% 적용합니다.<br><br><rules><tftbold>파열:</tftbold> 방어력 감소</rules><br><br><spellActive enabled=TFT13_ExperimentActive alternate=rules>실험체 추가 효과:<TFTBonus><ShowIfNot.TFT13_ExperimentActive></ShowIfNot.TFT13_ExperimentActive><ShowIf.TFT13_ExperimentActive></ShowIf.TFT13_ExperimentActive></TFTBonus> 전투 시작 시 및 스킬 사용 후 대상에게 돌진한 다음 @ExperimentDuration@초 동안 최대 체력의 <TFTBonus enabled=TFT13_ExperimentActive alternate=rules>@TFTUnitProperty.:TFT13_UrgotCurrentExperimentBonusShield@%</TFTBonus>에 해당하는 보호막을 얻고, 공격 속도를 <TFTBonus enabled=TFT13_ExperimentActive alternate=rules>@TFTUnitProperty.:TFT13_UrgotCurrentExperimentBonusAS@%</TFTBonus> 얻습니다.</spellActive>",
+            "desc": "폭약을 발사해 대상에게 <physicalDamage>@ModifiedPrimaryDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입히고, 인접한 적에게는 <physicalDamage>@ModifiedSecondaryDamage@(%i:scaleAD%)</physicalDamage>의 물리 피해를 입힙니다. 적중한 모든 적에게 @Duration@초 동안 <TFTKeyword>파열</TFTKeyword>을 20% 적용합니다.<br><br><rules><tftbold>파열:</tftbold> 방어력 감소</rules><br><br><spellActive enabled=TFT13_ExperimentActive alternate=rules>실험체 추가 효과:<TFTBonus><ShowIfNot.TFT13_ExperimentActive></ShowIfNot.TFT13_ExperimentActive><ShowIf.TFT13_ExperimentActive></ShowIf.TFT13_ExperimentActive></TFTBonus> 대상에게 돌진합니다. 스킬 사용 시 @ExperimentDuration@초 동안 최대 체력의 <TFTBonus enabled=TFT13_ExperimentActive alternate=rules>@TFTUnitProperty.:TFT13_UrgotCurrentExperimentBonusShield@%</TFTBonus>에 해당하는 보호막을 얻고, 공격 속도를 <TFTBonus enabled=TFT13_ExperimentActive alternate=rules>@TFTUnitProperty.:TFT13_UrgotCurrentExperimentBonusAS@%</TFTBonus>&nbsp;얻습니다.</spellActive>",
             "icon": "ASSETS/Characters/TFT13_Urgot/HUD/Icons2D/TFT13_Urgot_Q.TFT_Set13.tex",
             "name": "부식성 폭약",
             "variables": [
@@ -6376,6 +6434,7 @@
         "cost": 2,
         "icon": "ASSETS/Characters/TFT13_Urgot/Skins/Base/Images/TFT13_Urgot.TFT_Set13.tex",
         "name": "우르곳",
+        "role": "ADFighter",
         "squareIcon": "ASSETS/Characters/TFT13_Urgot/Skins/Base/Images/TFT13_Urgot_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 45.0,
@@ -6445,6 +6504,7 @@
         "cost": 4,
         "icon": "ASSETS/Characters/TFT13_Zoe/Skins/Base/Images/TFT13_Zoe.TFT_Set13.tex",
         "name": "조이",
+        "role": "APCasterHighMana",
         "squareIcon": "ASSETS/Characters/TFT13_Zoe/Skins/Base/Images/TFT13_Zoe_Mobile.TFT_Set13.tex",
         "stats": {
             "armor": 30.0,
@@ -6462,6 +6522,443 @@
         "traits": [
             "반군",
             "마법사"
+        ]
+    },
+    {
+        "ability": {
+            "desc": "<spellPassive>기본 지속 효과:</spellPassive> 기본 공격이 일직선으로 @LaserHexLength@칸에 <magicDamage>@ModifiedDeathRayDamage@(%i:scaleAP%)</magicDamage>의 마법 피해 및 <trueDamage>@LaserTrueDamage@</trueDamage>의 고정 피해를 입히는 죽음의 광선으로 대체됩니다. 적중당한 적에게 @ShredDuration@초 동안 <TFTKeyword>파열</TFTKeyword> 및 <TFTKeyword>파쇄</TFTKeyword>를 30% 적용합니다.<br><br><spellActive>사용 시:</spellActive> 전장을 뒤덮는 혼돈의 폭풍을 소환해 모든 적을 @StunDuration@초 동안 공중에 띄웁니다. 지속시간이 끝나면 적들을 지면에 내리쳐 <magicDamage>@ModifiedSpellDamage@(%i:scaleAP%)</magicDamage>+적 최대 체력의 <magicDamage>@PercentMaxHealthDamage*100@%</magicDamage>에 해당하는 마법 피해를 입힙니다.<br><br><rules><tftbold>파열:</tftbold> 방어력 감소,</rules> <rules><tftbold>파쇄:</tftbold> 마법 저항력 감소</rules>",
+            "icon": "ASSETS/Characters/TFT13_Viktor/HUD/Icons2D/Viktor_Passive.TFT_Set13_Evolved.tex",
+            "name": "혼돈의 폭풍",
+            "variables": [
+                {
+                    "name": "LaserHexLength",
+                    "value": [
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0
+                    ]
+                },
+                {
+                    "name": "LaserMagicDamage",
+                    "value": [
+                        40.0,
+                        70.0,
+                        175.0,
+                        2000.0,
+                        9001.0,
+                        20.0,
+                        20.0
+                    ]
+                },
+                {
+                    "name": "LaserTrueDamage",
+                    "value": [
+                        0.0,
+                        35.0,
+                        90.0,
+                        1000.0,
+                        9001.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "ShredDuration",
+                    "value": [
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0
+                    ]
+                },
+                {
+                    "name": "StunDuration",
+                    "value": [
+                        2.0,
+                        2.0,
+                        3.0,
+                        30.0,
+                        30.0,
+                        2.0,
+                        2.0
+                    ]
+                },
+                {
+                    "name": "SpellDamage",
+                    "value": [
+                        150.0,
+                        120.0,
+                        300.0,
+                        9999.0,
+                        9999.0,
+                        100.0,
+                        100.0
+                    ]
+                },
+                {
+                    "name": "PercentMaxHealthDamage",
+                    "value": [
+                        0.10000000149011612,
+                        0.07999999821186066,
+                        0.20000000298023224,
+                        1.0,
+                        1.0,
+                        0.15000000596046448,
+                        0.15000000596046448
+                    ]
+                }
+            ]
+        },
+        "apiName": "TFT13_Viktor",
+        "characterName": "TFT13_Viktor",
+        "cost": 6,
+        "icon": "ASSETS/Characters/TFT13_Viktor/Skins/Base/Images/TFT13_Viktor.TFT_Set13_Evolved.tex",
+        "name": "빅토르",
+        "role": "APCasterViktorS13",
+        "squareIcon": "ASSETS/Characters/TFT13_Viktor/Skins/Base/Images/TFT13_Viktor_Mobile.TFT_Set13_Evolved.tex",
+        "stats": {
+            "armor": 40.0,
+            "attackSpeed": 0.550000011920929,
+            "critChance": 0.25,
+            "critMultiplier": 1.399999976158142,
+            "damage": 100.0,
+            "hp": 1600.0,
+            "initialMana": 0,
+            "magicResist": 40.0,
+            "mana": 100,
+            "range": 4.0
+        },
+        "tileIcon": "ASSETS/Characters/TFT13_Viktor/HUD/TFT13_Viktor_Square.TFT_Set13_Evolved.tex",
+        "traits": [
+            "기계화의 전령관"
+        ]
+    },
+    {
+        "ability": {
+            "desc": "주변 칸으로 돌진한 후 보호막을 <TFTBonus>@ShieldAmount@</TFTBonus> 얻고 주변 아군 @ShieldCount@명에게 동일한 보호막을 부여합니다. 보호막으로 막은 피해량의 @DRConvertToUnstableEnergy*100@%가 불안정한 에너지로 저장됩니다. 돌진한 후 주변 적 @NormalCastNumEnemies@명에게 <magicDamage>@ModifiedDamage@(%i:scaleAP%)</magicDamage>의 마법 피해를 입힙니다. <br><br>스킬을 3회 사용할 때마다 가장 가까운 적 @ThirdCastNumEnemies@명에게 불안정한 에너지+<magicDamage>@ModifiedSecondaryDamage@(%i:scaleAP%)</magicDamage>에 해당하는 마법 피해를 나누어 입힙니다.",
+            "icon": "ASSETS/Characters/TFT13_MissMage/HUD/Icons2D/TFT13_MissMage_Spell.TFT_Set13_Evolved.tex",
+            "name": "마법 전도체",
+            "variables": [
+                {
+                    "name": "NormalCastDamage",
+                    "value": [
+                        0.0,
+                        180.0,
+                        450.0,
+                        2700.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "NormalCastNumEnemies",
+                    "value": [
+                        3.0,
+                        3.0,
+                        3.0,
+                        3.0,
+                        3.0,
+                        3.0,
+                        3.0
+                    ]
+                },
+                {
+                    "name": "NormalCastNumMissilesPerEnemy",
+                    "value": [
+                        10.0,
+                        10.0,
+                        10.0,
+                        10.0,
+                        10.0,
+                        10.0,
+                        10.0
+                    ]
+                },
+                {
+                    "name": "AuraDuration",
+                    "value": [
+                        4.0,
+                        4.0,
+                        4.0,
+                        4.0,
+                        4.0,
+                        4.0,
+                        4.0
+                    ]
+                },
+                {
+                    "name": "AuraDR",
+                    "value": [
+                        0.20000000298023224,
+                        0.20000000298023224,
+                        0.20000000298023224,
+                        0.20000000298023224,
+                        0.20000000298023224,
+                        0.20000000298023224,
+                        0.20000000298023224
+                    ]
+                },
+                {
+                    "name": "DRConvertToUnstableEnergy",
+                    "value": [
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5,
+                        0.5
+                    ]
+                },
+                {
+                    "name": "SpecialCastDamage",
+                    "value": [
+                        0.0,
+                        1390.0,
+                        3475.0,
+                        99999.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "ThirdCastNumEnemies",
+                    "value": [
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0
+                    ]
+                },
+                {
+                    "name": "DashLogic_DashRange",
+                    "value": [
+                        9000.0,
+                        9000.0,
+                        9000.0,
+                        9000.0,
+                        9000.0,
+                        9000.0,
+                        9000.0
+                    ]
+                },
+                {
+                    "name": "DashLogic_LineWidth",
+                    "value": null
+                },
+                {
+                    "name": "DashLogic_DashSpeed",
+                    "value": [
+                        1600.0,
+                        1600.0,
+                        1600.0,
+                        1600.0,
+                        1600.0,
+                        1600.0,
+                        1600.0
+                    ]
+                },
+                {
+                    "name": "DashLogic_MaxDashTime",
+                    "value": [
+                        1.5,
+                        1.5,
+                        1.5,
+                        1.5,
+                        1.5,
+                        1.5,
+                        1.5
+                    ]
+                },
+                {
+                    "name": "ShieldAmount",
+                    "value": [
+                        0.0,
+                        300.0,
+                        600.0,
+                        10000.0,
+                        10000.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "ShieldCount",
+                    "value": [
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0,
+                        2.0
+                    ]
+                }
+            ]
+        },
+        "apiName": "TFT13_MissMage",
+        "characterName": "TFT13_MissMage",
+        "cost": 6,
+        "icon": "ASSETS/Characters/TFT13_MissMage/Skins/Base/Images/TFT13_MissMage.TFT_Set13_Evolved.tex",
+        "name": "멜",
+        "role": "APReaper",
+        "squareIcon": "ASSETS/Characters/TFT13_MissMage/Skins/Base/Images/TFT13_MissMage_Mobile.TFT_Set13_Evolved.tex",
+        "stats": {
+            "armor": 60.0,
+            "attackSpeed": 0.800000011920929,
+            "critChance": 0.25,
+            "critMultiplier": 1.399999976158142,
+            "damage": 80.0,
+            "hp": 1800.0,
+            "initialMana": 0,
+            "magicResist": 60.0,
+            "mana": 40.0,
+            "range": 3.0
+        },
+        "tileIcon": "ASSETS/Characters/TFT13_MissMage/HUD/TFT13_MissMage_Square.TFT_Set13_Evolved.tex",
+        "traits": [
+            "추방된 마법사"
+        ]
+    },
+    {
+        "ability": {
+            "desc": "<spellPassive>기본 지속 효과:</spellPassive> <omnivamp>피의 광란</omnivamp> 상태에서는 빠르게 움직이며 모든 피해 흡혈을 <TFTBonus>@PercentOmnivamp@%(%i:scaleAP%)</TFTBonus>, 공격 속도를 <TFTBonus>@BloodfrenzyAS*100@%</TFTBonus>의 얻고 대상에게 초당 <physicalDamage>@ModifiedDamage@(%i:scaleAD%%i:scaleAS%)</physicalDamage>의 물리 피해를 입힙니다. 적을 @ChampsToDevourTooltipOnly@명 처치하면 전투가 끝날 때까지 저지 불가 및 <omnivamp>피의 광란</omnivamp> 상태가 됩니다.<br><br><spellActive>사용 시</spellActive>: @BloodfrenzyDuration@초 동안 <omnivamp>피의 광란</omnivamp> 상태가 됩니다.<br><br><spellActive enabled=TFT13_ExperimentActive alternate=rules>실험체 추가 효과:<TFTBonus><ShowIfNot.TFT13_ExperimentActive></ShowIfNot.TFT13_ExperimentActive><ShowIf.TFT13_ExperimentActive></ShowIf.TFT13_ExperimentActive></TFTBonus> 처치 시, 사망한 대상 주변 적들을 @TFTUnitProperty.:TFT13_WarwickCurrentExperimentBonus@초 동안 기절시킵니다.</spellActive>",
+            "icon": "ASSETS/Characters/TFT13_Warwick/Skins/Base/Images/TFT13_Warwick_AbilityIcon.TFT_Set13_Evolved.tex",
+            "name": "피의 사냥",
+            "variables": [
+                {
+                    "name": "BaseOmnivamp",
+                    "value": [
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612
+                    ]
+                },
+                {
+                    "name": "APOmnivamp",
+                    "value": [
+                        1.0,
+                        0.10000000149011612,
+                        0.15000000596046448,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "BloodfrenzyAS",
+                    "value": [
+                        0.4000000059604645,
+                        0.4000000059604645,
+                        0.4000000059604645,
+                        0.4000000059604645,
+                        0.4000000059604645,
+                        0.4000000059604645,
+                        0.4000000059604645
+                    ]
+                },
+                {
+                    "name": "BloodfrenzyDuration",
+                    "value": [
+                        4.0,
+                        4.0,
+                        4.0,
+                        4.0,
+                        4.0,
+                        4.0,
+                        4.0
+                    ]
+                },
+                {
+                    "name": "DamagePercent",
+                    "value": [
+                        3.0,
+                        2.0,
+                        3.75,
+                        25.0,
+                        50.0,
+                        3.0,
+                        3.0
+                    ]
+                },
+                {
+                    "name": "BaseDamage",
+                    "value": [
+                        0.0,
+                        180.0,
+                        300.0,
+                        1088.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "ExperimentStunDuration",
+                    "value": [
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0,
+                        1.0
+                    ]
+                },
+                {
+                    "name": "ChampsToDevourTooltipOnly",
+                    "value": [
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0,
+                        5.0
+                    ]
+                }
+            ]
+        },
+        "apiName": "TFT13_Warwick",
+        "characterName": "TFT13_Warwick",
+        "cost": 6,
+        "icon": "ASSETS/Characters/TFT13_Warwick/Skins/Base/Images/TFT13_Warwick.TFT_Set13_Evolved.tex",
+        "name": "워윅",
+        "role": "ADFighter",
+        "squareIcon": "ASSETS/Characters/TFT13_Warwick/Skins/Base/Images/TFT13_Warwick_Mobile.TFT_Set13_Evolved.tex",
+        "stats": {
+            "armor": 70.0,
+            "attackSpeed": 0.8999999761581421,
+            "critChance": 0.25,
+            "critMultiplier": 1.399999976158142,
+            "damage": 110.0,
+            "hp": 2100.0,
+            "initialMana": 60.0,
+            "magicResist": 70.0,
+            "mana": 100,
+            "range": 1.0
+        },
+        "tileIcon": "ASSETS/Characters/TFT13_Warwick/HUD/TFT13_Warwick_Square.TFT_Set13_Evolved.tex",
+        "traits": [
+            "실험체",
+            "피의 사냥꾼"
         ]
     }
 ]

@@ -11,48 +11,101 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
   const jobList = ['감시자','기동타격대','난동꾼','마법사','매복자','선도자','저격수','주시자','지배자','투사','포수','형태전환자']
   const [result, setResult] = useState({});
   const [sortedKeys, setSortedKeys] = useState([]);
-  const [searchInput, setSearchInput] = useState('');  // 부모에서 상태 관리
+  const [searchInput, setSearchInput] = useState(''); 
+  const [data, setData] = useState(null);
+  const [activeButton, setActiveButton] = useState('name'); // 현재 활성화된 버튼 상태
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/TFTtraitsData.json'); 
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const jsonData = await response.json();
+        setData(jsonData); 
+      } catch (error) {
+        console.error('Error fetching JSON data:', error);
+      }
+    };
+
+    fetchData();
+  }, []); 
+
+  // 챔피언박스 버튼 컴포넌트 모음 
   const ChampionBoxNameButton = () => {
-    return(
-      <div className='buttonWrap'>
-        <button onClick={relocationChampionName}>이름순</button>
+    return (
+      <div className="buttonWrap">
+        <button
+          className={`button ${activeButton === 'name' ? 'active' : ''}`}
+          onClick={() => {
+            relocationChampionName();
+            setActiveButton('name');
+          }}
+        >
+          이름순
+        </button>
       </div>
-    )
-  }
-
+    );
+  };
+  
   const ChampionBoxCostButton = () => {
-    return(
-      <div className='buttonWrap'>
-        <button onClick={relocationChampionCost}>가격순</button>
+    return (
+      <div className="buttonWrap">
+        <button
+          className={`button ${activeButton === 'cost' ? 'active' : ''}`}
+          onClick={() => {
+            relocationChampionCost();
+            setActiveButton('cost');
+          }}
+        >
+          가격순
+        </button>
       </div>
-    )
-  }
-
+    );
+  };
+  
   const ChampionBoxLineButton = () => {
-    return(
-      <div className='buttonWrap'>
-        <button onClick={relocationChampionLine}>계열별</button>
+    return (
+      <div className="buttonWrap">
+        <button
+          className={`button ${activeButton === 'line' ? 'active' : ''}`}
+          onClick={() => {
+            relocationChampionLine();
+            setActiveButton('line');
+          }}
+        >
+          계열별
+        </button>
       </div>
-    )
-  }
-
+    );
+  };
+  
   const ChampionBoxJobButton = () => {
-    return(
-      <div className='buttonWrap'>
-        <button onClick={relocationChampionJob}>직업별</button>
+    return (
+      <div className="buttonWrap">
+        <button
+          className={`button ${activeButton === 'job' ? 'active' : ''}`}
+          onClick={() => {
+            relocationChampionJob();
+            setActiveButton('job');
+          }}
+        >
+          직업별
+        </button>
       </div>
-    )
-  }
+    );
+  };
 
+  // 챔피언박스의 버튼 클릭시 챔피언 정렬(버튼 종류별로)
   const relocationChampionName = () => {
     setLineButton(false);
     setJobButton(false);
     const relocatedData = [...championList].sort((a, b) => {
-      return a.name.localeCompare(b.name, 'ko'); // 한글 로케일을 기준으로 비교
+      return a.name.localeCompare(b.name, 'ko');
     });
     setChampionList(relocatedData);
   }   
-
   const relocationChampionCost = () => {
     setLineButton(false);
     setJobButton(false);
@@ -61,7 +114,6 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
     });
     setChampionList(relocatedData);
   } 
-  
   const relocationChampionLine = () => {
     setLineButton(true);
     setJobButton(false);
@@ -69,13 +121,10 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
     lineList.forEach((line) => {
       newResult[line] = championList.filter((data) => data.traits.includes(line));
     });
-    // 2. result를 상태로 설정
     setResult(newResult);
-    // 3. sortedKeys 계산: result의 key들을 한국어 순서로 정렬
     const sorted = Object.keys(newResult).sort((a, b) => a.localeCompare(b));
     setSortedKeys(sorted);
   } 
-
   const relocationChampionJob = () => {
     setLineButton(false);
     setJobButton(true);
@@ -88,13 +137,10 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
     setSortedKeys(sorted);
   } 
 
-
-
   // input 값이 변경되면 부모 상태를 업데이트하는 함수
   const handleInputChange = (value) => {
     setSearchInput(value);
   };
-
 
   return (
     <div className='championBoxWrap'>
@@ -105,23 +151,42 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
         <ChampionBoxLineButton/>
         <ChampionBoxJobButton/>
         <ChampionBoxSearchBox
-            inputValue={searchInput}   // 부모 컴포넌트의 상태를 props로 전달
-            onInputChange={handleInputChange} // input 값 변경 시 부모로 전달하는 함수
+            inputValue={searchInput}   
+            onInputChange={handleInputChange} 
         />
       </div>
     <div className='championBox'>
-    {lineButton ? (
+      {lineButton ? (  // 챔피언 박스의 버튼이 lineButton일때 랜더링
       <div className="championBoxSet">
-         {sortedKeys.map((key) => {
-        const sortedData = result[key].sort((a, b) => a.name.localeCompare(b.name)); // name으로 정렬
-
+        {sortedKeys.map((key) => {
+        const sortedData = result[key].sort((a, b) => a.name.localeCompare(b.name));
         return (
           <div key={key}>
             {sortedData
               .filter(championData => 
                 championData.name.toLowerCase().includes(searchInput.toLowerCase()) // name에 searchInput 포함 여부 확인
               ).length > 0 && (
-                <div>{key}</div>  // 필터링된 데이터가 있을 경우에만 머릿말 출력
+                <div className='TraitWrap'>
+                  <div className='TraitImgWrap'>
+                    <img
+                      src={`./traitImg/${key}.png`}
+                      className='TraitImg'
+                    />
+                  </div>
+                  <div className='TraitTextWrap'>
+                    {key}
+                  </div>
+                  <div className='EffectsWrap'>
+                    {data && // JSON 데이터를 성공적으로 불러온 경우에만 렌더링
+                      data
+                        .filter((dataItem) => dataItem.name === key) // data.name === key인 데이터 필터링
+                        .map((dataItem) => (
+                          <div className = 'traitText' key={dataItem.name}>
+                            ({dataItem.effects.map((effect) => effect.minUnits).join('/')})
+                          </div>
+                        ))}
+                  </div>
+                </div> 
             )}
             
             {sortedData
@@ -142,16 +207,34 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
     ) : jobButton ? (
       <div className="championBoxSet">
         {sortedKeys.map((key) => {
-          // key에 해당하는 데이터 정렬
-          const sortedData = result[key].sort((a, b) => a.name.localeCompare(b.name)); // name으로 정렬
+          const sortedData = result[key].sort((a, b) => a.name.localeCompare(b.name)); 
           return (
             <div key={key}>
-                {/* 필터링된 데이터가 있을 경우에만 key를 렌더링 */}
                 {sortedData
                   .filter(championData => 
-                    championData.name.toLowerCase().includes(searchInput.toLowerCase()) // name에 searchInput 포함 여부 확인
+                    championData.name.toLowerCase().includes(searchInput.toLowerCase())
                   ).length > 0 && (
-                    <div>{key}</div>  // 필터링된 데이터가 있을 경우에만 머릿말 출력
+                    <div className='TraitWrap'>
+                      <div className='TraitImgWrap'>
+                        <img
+                          src={`./traitImg/${key}.png`}
+                          className='TraitImg'
+                        />
+                      </div>
+                      <div className='TraitTextWrap'>
+                        {key}
+                      </div>
+                      <div className='EffectsWrap'>
+                        {data &&
+                          data
+                            .filter((dataItem) => dataItem.name === key) 
+                            .map((dataItem) => (
+                              <div className = 'traitText' key={dataItem.name}>
+                                ({dataItem.effects.map((effect) => effect.minUnits).join('/')}) 
+                              </div>
+                            ))}
+                      </div>
+                   </div>  
                 )}
                 
                 {/* 검색 조건 추가: name에 searchInput이 포함된 챔피언만 필터링 */}
@@ -189,9 +272,6 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
       </div>
   </div>
       );
-      
 };
-
-
 
 export default ChampionBox;

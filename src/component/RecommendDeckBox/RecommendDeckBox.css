@@ -1,0 +1,66 @@
+
+.RecommendDeckBoxWrap{
+    display: inline;
+
+}
+
+.RecommendDeckBox{
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+}
+
+.RecommendDeckBox::-webkit-scrollbar{
+    width: 10px;
+}
+
+.RecommendDeckBox::-webkit-scrollbar-thumb {
+    background-color: #242322;
+    border-radius: 5px;
+}
+
+.RecommendDeckBoxBtn{
+    display: flex;
+    flex-direction: row;
+}
+
+.deckListButton{
+    width: 120px;
+    height: 35px;
+    font-size: 20x;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #242322;
+    color: gray;
+    border: 0;
+    cursor: pointer;
+}
+
+.deckListButton.active {
+    background-color: #407c42; 
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+
+  
+.deckListButton:hover {
+    color: white; 
+}
+
+.deckName{
+    font-size: 16px;
+    color: white;
+    height: 30px;
+    margin: 5px 5px 5px 5px;
+    background-color: #242322;
+    line-height : 30px;
+    padding-left: 15px;
+}
+
+.noRecommend {
+    margin-top: 10px;
+    font-size: 24px; 
+    color: gray; 
+  }
+  
+

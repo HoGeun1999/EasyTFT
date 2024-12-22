@@ -1,10 +1,9 @@
 import { useState } from "react";
 import React from 'react';
 import './ChampionComponent.css';
-import { v4 as uuidv4 } from "uuid";
 
 const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, className }) => {
-  const championData = data; // championData를 props로 받음
+  const championData = data;
   const [showChampionInfo, setShowChampionInfo] = useState(false);
   const [infoPosition, setInfoPosition] = useState({ x: 0, y: 0 });
 
@@ -18,32 +17,74 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
   };
 
   const handleMouseEnter = (event) => {
+    const processedDesc = processAbilityDescription(
+      championData['ability']['desc'],
+      championAbilityDesc,
+      championData['ability']['variables']
+    );
+    
     setShowChampionInfo(true);
     const rect = event.target.getBoundingClientRect();
+
+    const brCount = championData.ability.desc.split("<br>").length - 1;
+    const descHeight = processedDesc.length/35
+    const infoDivHeight = 200 + brCount*14 + descHeight*15
+    let newX = rect.right - 230
+    let newY = rect.top
+    if(newY+infoDivHeight>=900){
+      newY = newY - infoDivHeight*0.80 - 80
+    }
+    else{
+      newY = rect.top + infoDivHeight*0.12 + 60
+    }
     setInfoPosition({
-      x: rect.right + 10,
-      y: rect.top - 150,
+      x: newX,
+      y: newY,
     });
   };
+  
 
   const handleMouseLeave = () => {
     setShowChampionInfo(false);
   };
 
   const processAbilityDescription = (description, abilityDescMap, abilityVariables) => {
-    // 1. HTML 태그 제거 (<br>은 유지, 나머지 태그는 제거)
-    const cleanedDescription = description.replace(/<(?!br\s*\/?)[^>]+>/g, "");
+    // 1. HTML 태그 제거 (<br>은 유지)
+    let cleanedDescription = description.replace(/<(?!br\s*\/?)[^>]+>/g, "");
 
-    // 2. `%문자%` 치환
-    let replacedDescription = cleanedDescription.replace(/%([^%]+)%/g, (match, key) => {
-      return abilityDescMap[key] || match; // 매칭되는 값이 없으면 원래 값 유지
+    // 2. `@Modified...@` 제거
+    cleanedDescription = cleanedDescription.replace(/@Modified[^@]*@/g, "");
+
+    // 3. 소괄호와 소괄호 뒤 첫 번째 값 제거
+    cleanedDescription = cleanedDescription.replace(/\([^)]*\)[^\s]*/g, "");
+
+    // 4. `%문자%` 치환
+    let replacedDescription = cleanedDescription.replace(/%i:([^%]+)%/g, (match, key) => {
+      return abilityDescMap[`%i:${key}%`] || match;
     });
 
-    // 3. `@문자@` 치환
+    // 5. `@문자@` 치환 (abilityVariables에서 해당 키를 찾아 치환, 계산 포함)
     replacedDescription = replacedDescription.replace(/@([^@]+)@/g, (match, key) => {
-      const variable = abilityVariables.find((item) => item.name === key);
-      return variable ? variable.value[0].toString() : match; // 첫 번째 값을 문자열로 변환하여 치환
+      const [effectKey, multiplier] = key.split("*");
+      // abilityVariables에서 key를 찾아서 값을 가져옴
+      const variable = abilityVariables.find((item) => item.name === effectKey);
+
+      if (variable) {
+        let effectValue = variable.value[0]; 
+        if (multiplier) {
+          const multiplierValue = parseFloat(multiplier);
+          effectValue *= multiplierValue; 
+        }
+
+        const formattedValue = Number.isInteger(effectValue) ? effectValue : effectValue.toFixed(2);
+        return formattedValue;
+      }
+
+      return ""; // 매칭되지 않으면 빈 문자열로 반환하여 삭제 처리
     });
+
+    // 6. <br> 태그를 줄바꿈 문자로 변환
+    replacedDescription = replacedDescription.replace(/<br\s*\/?>/g, "<br/>");
 
     return replacedDescription;
   };
@@ -69,10 +110,10 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
         </div>
         <div className="championINFOtraits">
           {championData.traits.map((trait) => (
-            <div key={uuidv4()}>
+            <div>
               <img
                 className="championINFOtraitImg"
-                src={`/traitImg/${trait}.png`} // public/img/traits 폴더에 이미지 저장
+                src={`/traitImg/${trait}.png`} 
                 alt={trait}
               />
               <span>{trait}</span>
@@ -83,7 +124,7 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
           <div className="skillWrap">
             <img
               className="championINFOskillImg"
-              src={`/img/${championData['ability']['name']}.png`} // public/img/traits 폴더에 이미지 저장
+              src={`/img/${championData['ability']['name']}.png`} 
               alt={championData['ability']['name']}
             />
             <span>
@@ -92,7 +133,7 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
               {championData['stats']['mana']}
             </span>
           </div>
-          <div className="skillINFO">{processedDesc}</div>
+          <div className="skillINFO" dangerouslySetInnerHTML={{ __html: processedDesc }} />
         </div>
       </div>
     );
@@ -125,7 +166,6 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
   if (championNameLen >= 5) {
     championNameClass = 'long';
   }
-
   return (
     <div className="championComponent">
       {championData ? (
@@ -138,7 +178,7 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
           onClick={handleClick}
         >
           <img
-            src={`./img/${championData.characterName}.png`}
+            src={`./img/${championData.name}.png`}
             alt={championData.name}
           />
         </div>

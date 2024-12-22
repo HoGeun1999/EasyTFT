@@ -3,14 +3,78 @@
 }
 
 .championBox{
-    border: 1px solid black;
     width: 100%;
     height: 90%;
-    overflow-x: hidden;
+    overflow: auto;
+}
+
+.championBox::-webkit-scrollbar{
+    width: 7px;
+
+}
+
+.championBox::-webkit-scrollbar-thumb {
+    background-color: #242322;
+    border-radius: 5px;
 }
 
 .championBoxTool{
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
+}
+
+.button{
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    margin-right: 5px;
+    background-color: #242322;
+    color: gray;
+    border: 0;
+    cursor: pointer;
+}
+
+.button.active {
+    background-color: #407c42; 
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.button:hover {
+    color: white; 
+}
+
+.TraitWrap{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(39, 37, 37);
+}
+
+.TraitTextWrap{
+    color: white;
+    margin-top: 5px;
+}
+
+.TraitImgWrap{
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 5px 5px;
+    filter: brightness(0) invert(1);
+}
+
+.TraitImg{
+    width: 100%;
+    height: 100%;
+}
+
+.EffectsWrap{
+    margin: 5px 5px 5px 5px;
+}
+
+.traitText{
+    color: white;
 }

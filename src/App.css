@@ -4,7 +4,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: 100vh;
-background-color: #f5f5f5;
+background-color:#242322
+}
+
+body.no-scroll {
+    overflow: hidden;
 }
 
 .grid-container {
@@ -19,14 +23,14 @@ grid-template-areas:
     "T C C C C I I I"
     "T C C C C I I I";
 gap: 10px; /* 각 그리드 항목 사이의 간격 */
-max-width: 1800px;
+/* max-width: 1800px; */
 width: 95%;
 height: 90%;
 }
 
 .grid-container > div {
-background-color: #fff;
-padding: 20px;
+background-color: #3a3939;
+padding: 7px;
 border-radius: 8px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -43,14 +47,24 @@ flex-direction: row;
 
 .grid-item-TraitBox{
 grid-area: T;
-overflow-x: hidden;
+overflow: auto;
+}
+
+.grid-item-TraitBox::-webkit-scrollbar{
+    width: 7px;
+}
+
+.grid-item-TraitBox::-webkit-scrollbar-thumb {
+    background-color: #242322;
+    border-radius: 5px;
 }
 
 .grid-item-RecommendDeckBox{
 grid-area: R;
-overflow-x: hidden;
 }
 
 .grid-item-SetChampionBox{
 grid-area: S;
 }
+
+

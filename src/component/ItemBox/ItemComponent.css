@@ -17,7 +17,7 @@
   
 .ItemComponentUI {
     position: absolute;
-    bottom: 110%; /* 이미지 아래에 표시 */
+    bottom: 110%; 
     width: 300px;
     left: 50%;
     transform: translateX(-50%);
@@ -29,3 +29,25 @@
     z-index: 10;
   }
   
+  .ItemComposition {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+    align-items: center; 
+  }
+  
+  .compositionWrap {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .ItemCompositionIcon {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 4px; 
+  }
+  
+  .compositionWrap span {
+    font-size: 30px; 
+    color: white; 
+  }

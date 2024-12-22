@@ -1,53 +1,60 @@
 .TraitBox{
-    background-color: black;
-    width: 200px;
+    height: 60px;
 }
 
 /* Trait 전체 컨테이너 */
 .Trait {
     display: flex;
     flex-direction: row;
-    padding: 5px;
-    background-color: #1a1a1a; /* 전체 배경 */
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #242322; /* 전체 배경 */
   }
   
-  /* 6각형 모양의 div */
-  .TraitImgContainer {
-    width: 45px;
-    height: 40px;
-    background-color: gray; /* 배경색 */
-    clip-path: polygon(
-      50% 0%,
-      100% 25%,
-      100% 75%,
-      50% 100%,
-      0% 75%,
-      0% 25%
-    ); /* 6각형 모양 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
-    margin-left: 5px;
-  }
+/* 6각형 모양의 div */
+.TraitImgContainer {
+  width: 45px;
+  height: 40px;
+  background-color: gray; /* 배경색 */
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  ); /* 6각형 모양 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 그림자 효과 */
+  margin-left: 5px;
+}
     
-  /* 이미지 스타일 */
-  .TraitImg {
-    width: 70%; /* 이미지 크기 */
-    height: 70%; /* 이미지 크기 */
-    object-fit: cover; /* 이미지가 부모 컨테이너 안에 잘 맞게 */
-    clip-path: inherit; /* 6각형 모양 유지 */
-    border-radius: 6px; /* 약간의 둥근 테두리 */
-    filter: grayscale(100%) brightness(0%); /* 이미지 색상 검은색 */    
+/* 이미지 스타일 */
+.TraitImg {
+  width: 70%; /* 이미지 크기 */
+  height: 70%; /* 이미지 크기 */
+  object-fit: cover; /* 이미지가 부모 컨테이너 안에 잘 맞게 */
+  clip-path: inherit; /* 6각형 모양 유지 */
+  border-radius: 6px; /* 약간의 둥근 테두리 */
+  filter: grayscale(100%) brightness(0%); /* 이미지 색상 검은색 */    
 
-  }
+
+}
+
 .traitName{
     color: white;
     width: 80px;
   }
+
 .traitLevel{
-    color: white;
+    color: gray;
     display: flex;
     flex-direction: row;
 }
@@ -63,7 +70,7 @@
     height: 0;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 10px solid white;  /* 화살표 모양을 만들기 위해 왼쪽에 흰색 border 설정 */
+    border-left: 10px solid gray;  /* 화살표 모양을 만들기 위해 왼쪽에 흰색 border 설정 */
     margin: 5px 5px 5px 5px;
   }
 
@@ -73,7 +80,7 @@
 }
 
 .highlight{
-    color: red;
+    color: greenyellow;
 }
 
 .traitStyle1{
