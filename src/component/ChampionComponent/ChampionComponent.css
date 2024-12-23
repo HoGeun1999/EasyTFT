@@ -6,12 +6,14 @@
   display: inline-table;
   /* position: relative; */
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /* 이미지가 부모 div에 맞게 크기 조정 */
 .championComponent img {
   width: 100%;  /* 부모 div에 맞게 너비를 100%로 설정 */
 	vertical-align: middle;
+  border-radius: 5px;
 }
 
 .championName{
@@ -35,38 +37,42 @@
 
 .cost-1 {
 border: 3px solid #808080;  /* cost가 1일 때 빨간색 테두리 */
-
+background-color: #808080;
 }
 
 .cost-2 {
 border: 3px solid #90EE90;  /* cost가 2일 때 초록색 테두리 */
+background-color: #90EE90;
 }
 
 .cost-3 {
 border: 3px solid #3993b1;  /* cost가 3일 때 파란색 테두리 */
+background-color: #3993b1;
 }
 
 .cost-4 {
 border: 3px solid #800080;  /* cost가 4일 때 보라색 테두리 */
+background-color: #800080;
 }
 
 .cost-5 {
 border: 3px solid #FFD700;  /* cost가 5일 때 노란색 테두리 */
+background-color: #FFD700;
 }
 
 .cost-6 {
-  border: 3px solid rgb(224, 171, 224);  /* cost가 5일 때 노란색 테두리 */
-  }
+border: 3px solid rgb(224, 171, 224);  /* cost가 5일 때 노란색 테두리 */
+background-color: rgb(224, 171, 224);
+}
 
 .championINFO {
+  position: absolute;
+  width: 380px;
   background-color: rgba(0, 0, 0, 0.9);  /* 검은색 배경, 투명도 */
   color: white;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  width: 380px;
-  left: 100px;
   z-index: 10;
 }
 

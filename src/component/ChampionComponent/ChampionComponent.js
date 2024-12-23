@@ -25,14 +25,17 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
     
     setShowChampionInfo(true);
     const rect = event.target.getBoundingClientRect();
-
     const brCount = championData.ability.desc.split("<br>").length - 1;
     const descHeight = processedDesc.length/35
     const infoDivHeight = 200 + brCount*14 + descHeight*15
     let newX = rect.right - 230
     let newY = rect.top
-    if(newY+infoDivHeight>=900){
+    if(newY+infoDivHeight>=840){
       newY = newY - infoDivHeight*0.80 - 80
+    }
+    else if(newX>1400){
+      newX = newX - 100
+      newY = rect.top + infoDivHeight*0.12 + 60
     }
     else{
       newY = rect.top + infoDivHeight*0.12 + 60
@@ -188,7 +191,7 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
       <div className={`championName ${championNameClass}`}>
         {championData.name}
       </div>
-      <div>{showChampionInfo && <ChampionMouseOverINFO />}</div>
+      {showChampionInfo && <ChampionMouseOverINFO />}
     </div>
   );
 };

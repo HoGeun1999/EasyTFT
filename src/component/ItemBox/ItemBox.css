@@ -18,12 +18,14 @@
     color: gray;
     border: 0;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .button.active {
     background-color: #407c42;
     color: white;
     border: 1px solid #4CAF50;
+
 }
 
 .button:hover {

@@ -64,6 +64,7 @@ function App() {
           SettingChampionBoxList={SettingChampionBoxList} />
         </div>
       </div>
+      <div className='version'>14.24 version</div>
     </div>
   );
 }

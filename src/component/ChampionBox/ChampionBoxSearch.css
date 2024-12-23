@@ -6,5 +6,7 @@
     width: 300px;
     font-size: 16px;
     background-color: #242322;
-    color : white
+    color : white;
+    border-radius: 5px;
+    padding-left: 15px;
 }

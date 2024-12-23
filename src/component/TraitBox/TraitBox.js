@@ -71,6 +71,7 @@ const TraitDiv = ({ data }) => {
   const handleMouseEnter = (event) => {
     setShowInfo(true);
     const rect = event.target.getBoundingClientRect();
+    console.log(rect.x)
     setInfoPosition({
       x: rect.right + 20,
       y: rect.top - 20
@@ -210,11 +211,14 @@ const TraitDiv = ({ data }) => {
 
   return (
     <div className="TraitBoxWrap">
-      <div className="Trait">
+      <div className="Trait"
+        onMouseEnter={handleMouseEnter} 
+        onMouseLeave={handleMouseLeave} 
+      >
         <div 
           className={`TraitImgContainer traitStyle${data[2]}`}
-          onMouseEnter={handleMouseEnter} 
-          onMouseLeave={handleMouseLeave} 
+          // onMouseEnter={handleMouseEnter} 
+          // onMouseLeave={handleMouseLeave} 
         >
           <img
             src={`./traitImg/${traitName}.png`}
@@ -223,8 +227,8 @@ const TraitDiv = ({ data }) => {
         </div>
         <div
           className="TraitContainer"
-          onMouseEnter={handleMouseEnter} 
-          onMouseLeave={handleMouseLeave}  
+          // onMouseEnter={handleMouseEnter} 
+          // onMouseLeave={handleMouseLeave}  
         >
           <div className="traitName">
             {data[0].name}
