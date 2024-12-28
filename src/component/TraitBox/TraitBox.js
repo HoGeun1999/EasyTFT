@@ -61,7 +61,9 @@ const TraitDiv = ({ data }) => {
     '%i:scaleAS%' : '공격속도',
     '%i:scaleDR%' : '내구력',
     '%i:scaleDA%' : '피해증폭',
-    '%i:scaleMana%' : '추가마나'
+    '%i:scaleMana%' : '추가마나',
+    '%i:scaleCrit%' : '치명타확률',
+    '%i:scaleCritMult%' : '치명타데미지'
   };
 
   const [showInfo, setShowInfo] = useState(false);

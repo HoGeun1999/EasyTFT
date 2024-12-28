@@ -146,7 +146,15 @@ const RecommendDeckBox = ({ SetChampionBoxList, SettingChampionBoxList }) => {
             // 먼저 가장 많이 겹치는 덱을 선택
             matchedFirstDecks.forEach((deck) => {
                 if (prioritizedDecks.length < maxDecks) {
-                    prioritizedDecks.push(deck.championList);
+                    // 중복된 덱이 있는지 확인하고 없으면 추가
+                    const isDuplicate = prioritizedDecks.some(
+                        (existingDeck) =>
+                            JSON.stringify(existingDeck) === JSON.stringify(deck.championList)
+                    );
+    
+                    if (!isDuplicate) {
+                        prioritizedDecks.push(deck.championList);
+                    }
                 }
             });
     
@@ -162,7 +170,16 @@ const RecommendDeckBox = ({ SetChampionBoxList, SettingChampionBoxList }) => {
                     const randomIndex = Math.floor(Math.random() * remainingDecks.length);
                     if (!randomIndexes.has(randomIndex)) {
                         randomIndexes.add(randomIndex);
-                        prioritizedDecks.push(remainingDecks[randomIndex].championList);
+                        const randomDeck = remainingDecks[randomIndex].championList;
+    
+                        // 중복된 덱이 있는지 확인하고 없으면 추가
+                        const isDuplicate = prioritizedDecks.some(
+                            (existingDeck) => JSON.stringify(existingDeck) === JSON.stringify(randomDeck)
+                        );
+    
+                        if (!isDuplicate) {
+                            prioritizedDecks.push(randomDeck);
+                        }
                     }
                 }
             }

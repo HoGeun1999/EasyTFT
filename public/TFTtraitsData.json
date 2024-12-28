@@ -969,7 +969,7 @@
     },
     {
         "apiName": "TFT13_Squad",
-        "desc": "전투 시작: 집행자가 보호막 및 피해 증폭을 얻습니다. 체력이 가장 많은 적이 <i>현상수배!</i> 상태가 됩니다. <br><br>현상수배 상태인 적이 사망하면 집행자가 공격 속도를 @AttackSpeedPerWantedKill*100@% 얻습니다.<br><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 모든 적, @PercentMaxHealthShield*100*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%, 전투 시작: 모든 적의 아이템을 압수함!</row>",
+        "desc": "전투 시작: 집행자가 보호막 및 피해 증폭을 얻습니다. 체력이 가장 많은 적이 <i>현상수배!</i> 상태가 됩니다. <br><br>현상수배 상태인 적이 사망하면 집행자가 공격 속도를 @AttackSpeedPerWantedKill*100@% 얻습니다.<br><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 모든 적, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%, 전투 시작: 모든 적의 아이템을 압수함!</row>",
         "effects": [
             {
                 "maxUnits": 3,
