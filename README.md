@@ -20,10 +20,10 @@ If you want to know Champion skill & ability or Item stats, just move your mouse
 You can change the champion arrangement  by click the button on the champion box.  
 Item boxes have the same function.  
 
-<p align="center">
-  <img src="public/readme/championInfo.JPG" alt="championInfo" width="350" style="margin-right: 10px;"/>
-  <img src="public/readme/itemInfo.JPG" alt="itemInfo" width="350" style=" margin-left: 10px;"/>
-</p>
+<div>
+  <img src="public/readme/championInfo.JPG" alt="championInfo" width="350" height="300" style="margin-right: 10px;"/>
+  <img src="public/readme/itemInfo.JPG" alt="itemInfo" width="350" height="300" style=" margin-left: 10px;"/>
+</div>
 <br>  
 
 If you want to know the traits information, click champion in chPampion box.  
