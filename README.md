@@ -7,9 +7,9 @@ The picture below is the main screen of the website.
 <img src='public/readme/mainscreen.JPG' alt="mainscreen">  
 
 # Contents
-1. [Funciton](#1.-Funciton0)
-2. [Project progress](#2.-Project-progress-)
-3. [Additional updates](#3.-Additional-updates-)
+1. [Function](#1-function)
+2. [Project progress](#2-project-progress)
+3. [Additional updates](#3-additional-updates)
 
 # 1. Function
 
@@ -31,7 +31,7 @@ Then the champion's traits you selected will added trait box.
 Move your mouse on trait and you can get trait information.
 
 <img src='public/readme/traitInfo.JPG' alt="traitInfo">  
-<br><br><br>
+<br>
 
 \* **Caution** \*  
 
@@ -53,7 +53,7 @@ It recommends the meta deck and the most recent #1 deck based on the champions y
 for example, you choose 3 champion. At this time othing on recommend deck list.  
 
 <img src='public/readme/notRecommendDeck.JPG'>
-<br><br>
+<br>
 
 The minimum requirement for recommend deck list to have at least 5 champions selected.
 If you select the appropriate 5 champion, you can see the recommend deck list like picture below.
@@ -61,6 +61,14 @@ If you select the appropriate 5 champion, you can see the recommend deck list li
 <img src='public/readme/recommendDeckList.JPG'>
 If you use this function well, you can enjoy the game without studying.
 
+## 1.3. How to use
+The picture below is an example of usage.  
+Click on the image of the champion you want to use or are currently using in the box.  
+Next, when you click on "Meta Deck Button," it recommends a deck based on the selected champion.  
+You can easily create a deck by viewing the latest top 1 deck.  
+
+
+<img src='public/readme/easyTFTplay.gif'>
 
 # 2. Project progress
 ## 2.1. React & Python
@@ -104,7 +112,7 @@ If you encounter any issues while using it, please report them.
 The data below is the description of a certain trait.  
 Various @characters@ and <tags> were modified to process the data into the description shown below.  
 However, in the case of this trait, the descriptions for (4) and (6) were missing from the retrieved data from the beginning, which may appear as data loss.
-```json
+```js
 "desc": "자동기계가 피해를 입힐 때 수정을 획득합니다. 수정이 @TriggerNumCrystals@개가 되면 현재 대상에게 폭발을 일으켜 마법 피해+이전 폭발 이후 입힌 피해량의 
 <magicDamage>@ConversionDamagePct*100@%</magicDamage>만큼 피해를 입히고 초기화됩니다. 
 또한 자동기계가 방어력 및 마법 저항력을 얻습니다.
@@ -129,7 +137,7 @@ This data was processed according to the following rules to determine the recomm
 The recommended deck was selected based on the following rules.  
 
 <img src='public/readme/recommendDeck.JPG' width=50% height=50%>  
-<br><br>
+<br>
 
 The meta deck was sourced from the website at this link. (https://lolchess.gg/meta)  
 The meta deck is also recommended if it overlaps with at least 5 champions, and it takes priority over other recommended decks.  
@@ -149,15 +157,14 @@ Update plan
  1. Item statistics for champions. 
  2. Add items to the champion icons in the recommended decks.
  3. Add trait items informaiton.  
-<br>
 
 The image below is from the item analysis section of metaTFT, and it is expected to have a similar layout.  
 
 <img src='public/readme/championItem.JPG' width=70% >  
 
 ## 3.2. clean data  
-I will organize the champions, items, and various data as much as possible to avoid confusion.  
-
+1. I will organize the champions, items, and various data as much as possible to avoid confusion.  
+2. Many data changes with each update, and this will be improved to update automatically.
 
 
 
