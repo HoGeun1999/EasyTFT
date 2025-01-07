@@ -1,5 +1,17 @@
 .ItemBox{
     display: inline;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.ItemBox::-webkit-scrollbar{
+    width: 7px;
+
+}
+
+.ItemBox::-webkit-scrollbar-thumb {
+    background-color: #242322;
+    border-radius: 5px;
 }
 
 .ItemBoxButtonWrap{
