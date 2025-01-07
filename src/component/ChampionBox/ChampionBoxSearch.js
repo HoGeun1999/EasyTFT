@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ChampionBoxSearch.css';
 
 const ChampionBoxSearchBox = ({ inputValue, onInputChange }) => {

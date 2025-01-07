@@ -90,8 +90,6 @@ const TraitDiv = ({ data }) => {
     traitLevel = <div className="traitLevel">{data[1]} / {data[0].effects[0].minUnits}</div>;
   } else {
     traitLevel = data[0].effects.map((effect, index) => {
-      const isStyleMatch = data[2].includes(effect.style); // 스타일 일치 여부 확인
-      // 조건에 맞는 값에 대해 하이라이트 여부 확인
       const isInRange = data[1] >= effect.minUnits && data[1] <= effect.maxUnits;
     
       return (
@@ -152,11 +150,13 @@ const TraitDiv = ({ data }) => {
       return championAbilityDesc[`%i:${key}%`] || match;
     });
 
-    replacedDesc = replacedDesc.replace(/@([a-zA-Z0-9_]+(?:\*[\d\.]+)?)@/g, (match, key) => {
+    replacedDesc = replacedDesc.replace(
+      /@([a-zA-Z0-9_]+(?:\*[\d\.]+)?)@/g, // eslint-disable-line no-useless-escape
+      (match, key) => {
       const value = variableObject[key];
       const effects = data[0].effects;
-
-      const [_, multiplier] = key.split("*");
+ 
+      const [_, multiplier] = key.split("*"); // eslint-disable-line no-unused-vars
 
       const currentIndex = value[1];
       const currentKey = value[0];
@@ -225,6 +225,7 @@ const TraitDiv = ({ data }) => {
           <img
             src={`./traitImg/${traitName}.png`}
             className="TraitImg"
+            alt="traitImg"
           />
         </div>
         <div

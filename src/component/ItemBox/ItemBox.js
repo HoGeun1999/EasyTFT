@@ -90,7 +90,7 @@ const ItemBox = () => {
     );
   };
   
-  const ItemBoxOrnn_ItemsButton = () => {
+  const ItemBoxOrnnItemsButton = () => {
     return (
       <div className="buttonWrap">
         <button
@@ -128,7 +128,7 @@ const ItemBox = () => {
       <div className="ItemBoxButtonWrap">
             <ItemBoxStandardButton />
             <ItemBoxRadiantButton />
-            <ItemBoxOrnn_ItemsButton/>
+            <ItemBoxOrnnItemsButton/>
             <ItemBoxSupportItemsButton/>
         </div>
 

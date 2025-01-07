@@ -4,7 +4,6 @@ import ItemBox from './/component/ItemBox/ItemBox'
 import TraitBox from './component/TraitBox/TraitBox';
 import RecommendDeckBox from './component/RecommendDeckBox/RecommendDeckBox';
 import SetChampionBox from './component/SetChampionBox/SetChampionBox';
-import ChampionComponent from './component/ChampionComponent/ChampionComponent';
 import { useState, useEffect } from 'react';
 
 function App() {
