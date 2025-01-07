@@ -1,6 +1,8 @@
 #  EasyTFT
 This is LoL's(League of Legends) one of game mode TFT(Team Fight Tatics) user help website project.  
 You can use this website for get TFT related information and helped deck making.  
+if you want to use this website, click the link below.  
+https://hogeun1999.github.io/EasyTFT/  
 
 The picture below is the main screen of the website.  
 
