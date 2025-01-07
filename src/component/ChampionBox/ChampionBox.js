@@ -18,7 +18,7 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./TFTtraitsData.json'); 
+        const response = await fetch('./TFTtraitsData.json');     
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -196,6 +196,7 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
               )
               .map((championData) => (
                 <ChampionComponent 
+                  key={championData.id || championData.name}
                   data={championData} 
                   SetChampionBoxList={SetChampionBoxList} 
                   SettingChampionBoxList={SettingChampionBoxList} 
@@ -246,6 +247,7 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
                   )
                   .map((championData) => (
                     <ChampionComponent 
+                      key={championData.id || championData.name}
                       data={championData}
                       SetChampionBoxList={SetChampionBoxList}
                       SettingChampionBoxList={SettingChampionBoxList}
@@ -263,6 +265,7 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
         )
         .map(championData => (
           <ChampionComponent 
+            key={championData.id || championData.name}
             data={championData} 
             SetChampionBoxList={SetChampionBoxList} 
             SettingChampionBoxList={SettingChampionBoxList} 
