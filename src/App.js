@@ -15,7 +15,7 @@ function App() {
     // 비동기 함수 정의
     const fetchChampionData = async () => {
       try {
-        const response = await fetch('https://hogeun1999.github.io/EasyTFT/TFTchampionData.json');
+        const response = await fetch(`${process.env.PUBLIC_URL}/TFTchampionData.json`);
         const data = await response.json();  // JSON으로 변환
         const relocatedData = [...data].sort((a, b) => {
           return a.name.localeCompare(b.name, 'ko');
@@ -33,7 +33,7 @@ function App() {
     // 비동기 함수 정의
     const fetchTraitsData = async () => {
       try {
-        const response = await fetch('https://hogeun1999.github.io/EasyTFT/TFTtraitsData.json');
+        const response = await fetch(`${process.env.PUBLIC_URL}/TFTtraitsData.json`);
         const data = await response.json();  // JSON으로 파싱
         setTraitsData(data);  // 데이터를 상태에 저장
       } catch (error) {
