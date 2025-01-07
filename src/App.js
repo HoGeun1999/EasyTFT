@@ -12,7 +12,7 @@ function App() {
   const [traitsData, setTraitsData] = useState(null); // 데이터를 저장할 상태 변수
 
   useEffect(() => {
-    fetch('/TFTchampionData.json')  // '/'는 public 폴더의 루트 경로
+    fetch('https://hogeun1999.github.io/EasyTFT/TFTchampionData.json')  // '/'는 public 폴더의 루트 경로
       .then((response) => response.json())  // JSON으로 변환
       .then((data) => {
         const relocatedData = [...data].sort((a, b) => {
