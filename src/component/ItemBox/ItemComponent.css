@@ -1,6 +1,6 @@
 .ItemComponentWrap {
     position: relative;
-    display: inline-block;
+    display: inline-table;
     padding: 3px 3px 3px 3px;
   }
   

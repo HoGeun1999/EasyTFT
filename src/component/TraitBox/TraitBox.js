@@ -223,7 +223,7 @@ const TraitDiv = ({ data }) => {
           // onMouseLeave={handleMouseLeave} 
         >
           <img
-            src={`./traitImg/${traitName}.png`}
+            src={`${process.env.PUBLIC_URL}/traitImg/${traitName}.png`}
             className="TraitImg"
             alt="traitImg"
           />

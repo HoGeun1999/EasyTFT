@@ -9,7 +9,7 @@ const ItemBox = () => {
 
   const fetchData = async (type) => {
     try {
-      const response = await fetch(`/${type}.json`); 
+      const response = await fetch(`${process.env.PUBLIC_URL}/${type}.json`); 
       if (!response.ok) {
         throw new Error(`Failed to fetch ${type}.json`);
       }
@@ -133,12 +133,12 @@ const ItemBox = () => {
         </div>
 
       <div className="ItemDiv">
+        <div>
         {ItemDataList.map((itemData, index) => (
           <ItemComponent key={index} itemData={itemData} ItemType={ItemType}/>
         ))}
+        </div>
       </div>
-
-
 
     </div>
   );

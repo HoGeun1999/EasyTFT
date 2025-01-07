@@ -65,7 +65,7 @@ const ItemComponent = ({ itemData, ItemType }) => {
   useEffect(() => {
     const fetchItemData = async () => {
       try {
-        const response = await fetch(`/${ItemType}.json`);
+        const response = await fetch(`${process.env.PUBLIC_URL}/${ItemType}.json`);
         const data = await response.json();
         setItemList(data);
       } catch (error) {
@@ -125,7 +125,7 @@ const ItemComponent = ({ itemData, ItemType }) => {
                   <React.Fragment key={item.apiName}>
                     <div className="compositionWrap">
                       <img
-                        src={`/itemImg/${ItemType}/${item.name}.png`}
+                        src={`${process.env.PUBLIC_URL}/itemImg/${ItemType}/${item.name}.png`}
                         alt={item.name}
                         className="ItemCompositionIcon"
                       />
@@ -150,13 +150,14 @@ const ItemComponent = ({ itemData, ItemType }) => {
         onMouseLeave={handleMouseLeave}
       >
         <img
-          src={`/itemImg/${ItemType}/${itemData.name}.png`}
+          src={`${process.env.PUBLIC_URL}/itemImg/${ItemType}/${itemData.name}.png`}
           alt={itemData.name}
           className="ItemImage"
         />
       </div>
       {showUI && <ItemComponentUI />}
     </div>
+      
   );
 };
 

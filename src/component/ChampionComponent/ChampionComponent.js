@@ -116,7 +116,7 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
             <div>
               <img
                 className="championINFOtraitImg"
-                src={`/traitImg/${trait}.png`} 
+                src={`${process.env.PUBLIC_URL}/traitImg/${trait}.png`} 
                 alt={trait}
               />
               <span>{trait}</span>
@@ -127,7 +127,7 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
           <div className="skillWrap">
             <img
               className="championINFOskillImg"
-              src={`/img/${championData['ability']['name']}.png`} 
+              src={`${process.env.PUBLIC_URL}/img/${championData['ability']['name']}.png`} 
               alt={championData['ability']['name']}
             />
             <span>
@@ -181,7 +181,7 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
           onClick={handleClick}
         >
           <img
-            src={`./img/${championData.name}.png`}
+            src={`${process.env.PUBLIC_URL}/img/${championData.name}.png`}
             alt={championData.name}
           />
         </div>

@@ -18,7 +18,7 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./TFTtraitsData.json');     
+        const response = await fetch(`${process.env.PUBLIC_URL}/TFTtraitsData.json`);     
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -169,7 +169,7 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
                 <div className='TraitWrap'>
                   <div className='TraitImgWrap'>
                     <img
-                      src={`./traitImg/${key}.png`}
+                      src={`${process.env.PUBLIC_URL}/traitImg/${key}.png`}
                       className='TraitImg'
                       alt='traitImg'
                     />
@@ -219,7 +219,7 @@ const ChampionBox = ({championList,setChampionList,SetChampionBoxList,SettingCha
                     <div className='TraitWrap'>
                       <div className='TraitImgWrap'>
                         <img
-                          src={`./traitImg/${key}.png`}
+                          src={`${process.env.PUBLIC_URL}/traitImg/${key}.png`}
                           className='TraitImg'
                           alt='traitImg'
                         />

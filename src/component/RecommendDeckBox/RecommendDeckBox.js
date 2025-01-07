@@ -14,7 +14,7 @@ const RecommendDeckBox = ({ SetChampionBoxList, SettingChampionBoxList }) => {
     useEffect(() => {
         const fetchChampionData = async () => {
             try {
-                const response = await fetch("/TFTchampionData.json"); 
+                const response = await fetch(`${process.env.PUBLIC_URL}/TFTchampionData.json`); 
                 if (response.ok) {
                     const data = await response.json();
                     setChampionData(data); 
@@ -33,7 +33,7 @@ const RecommendDeckBox = ({ SetChampionBoxList, SettingChampionBoxList }) => {
     useEffect(() => {
         const fetchMetaDeckList = async () => {
             try {
-                const response = await fetch("/metaDeck.json");
+                const response = await fetch(`${process.env.PUBLIC_URL}/metaDeck.json`);
                 if (response.ok) {
                     const data = await response.json();
                     const processedDeckList = {};
@@ -64,7 +64,7 @@ const RecommendDeckBox = ({ SetChampionBoxList, SettingChampionBoxList }) => {
     useEffect(() => {
         const fetchFirstDeckList = async () => {
             try {
-                const response = await fetch("/firstDeckList.json"); 
+                const response = await fetch(`${process.env.PUBLIC_URL}/firstDeckList.json`); 
                 if (response.ok) {
                     const data = await response.json();
                     setFirstDeckList(data); 
