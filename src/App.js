@@ -10,9 +10,9 @@ function App() {
   const [SetChampionBoxList, SettingChampionBoxList] = useState([])
   const [championList, setChampionList] = useState([]);  // 사용자 상태를 관리
   const [traitsData, setTraitsData] = useState(null); // 데이터를 저장할 상태 변수
-
+  
   useEffect(() => {
-    fetch('https://hogeun1999.github.io/EasyTFT/TFTchampionData.json')  // '/'는 public 폴더의 루트 경로
+    fetch('https://hogeun1999.github.io/EasyTFT/TFTchampionData.json')
       .then((response) => response.json())  // JSON으로 변환
       .then((data) => {
         const relocatedData = [...data].sort((a, b) => {
