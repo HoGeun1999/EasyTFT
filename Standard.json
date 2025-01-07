@@ -1,0 +1,1065 @@
+[
+    {
+        "apiName": "TFT_Item_RabadonsDeathcap",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NeedlesslyLargeRod",
+            "TFT_Item_NeedlesslyLargeRod"
+        ],
+        "desc": "<tftitemrules>평범해 보이지만 우주를 창조하고 파괴할 수 있는 모자입니다.</tftitemrules>",
+        "effects": {
+            "AP": 50.0,
+            "BonusDamage": 0.15000000596046448,
+            "{1543aa48}": 0.15000000596046448
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Rabadons_Deathcap.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "라바돈의 죽음모자",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_InfinityEdge",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_BFSword",
+            "TFT_Item_SparringGloves"
+        ],
+        "desc": "스킬에 치명타 적용 가능<br><br>기본 스킬에 치명타 적용이 가능한 경우, 대신에 치명타 피해량이 @CritDamageToGive*100@% 증가",
+        "effects": {
+            "AD": 0.3499999940395355,
+            "CritChance": 35.0,
+            "CritDamageToGive": 0.10000000149011612
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Infinity_Edge.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "무한의 대검",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_FrozenHeart",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_TearOfTheGoddess",
+            "TFT_Item_ChainVest"
+        ],
+        "desc": "전투당 한 번, 체력이 @HealthThreshold@%일 때 최대 체력의 @ShieldHealthPercent@%에 해당하는 보호막 획득 후 @ShieldDuration@초 동안 유지. 동시에 방어력 @Stats@, 마법 저항력 @Stats@ 획득",
+        "effects": {
+            "Armor": 20.0,
+            "HealthThreshold": 40.0,
+            "Mana": 30.0,
+            "ShieldDuration": 5.0,
+            "ShieldHealthPercent": 25.0,
+            "Stats": 20.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Winters_Approach.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "수호자의 맹세",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Redemption",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_TearOfTheGoddess",
+            "TFT_Item_GiantsBelt"
+        ],
+        "desc": "@HealTickRate@초마다 1칸 내에 있는 아군의 체력을 대상이 잃은 체력의 @MissingHealthHeal@%만큼 회복. 또한 @HealTickRate@초 동안 내구력을 @AoEDamageReduction@% 획득 (이 효과는 중첩되지 않음)<br><br><TFTTrackerLabel>체력 회복량:</TFTTrackerLabel> <TFTHighlight>@TFTUnitProperty.item:TFT_Tracker_Value1@</TFTHighlight>",
+        "effects": {
+            "AoEDamageReduction": 10.0,
+            "HealTickRate": 5.0,
+            "Health": 150.0,
+            "HexRadius": 1.0,
+            "Mana": 15.0,
+            "MaxHeal": 1000.0,
+            "MissingHealthHeal": 15.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Redemption.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "구원",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_TacticiansRing",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_Spatula",
+            "TFT_Item_FryingPan"
+        ],
+        "desc": "아군의 최대 팀 규모 +@MaxArmySizeIncrease@ 증가.<br><br>전투 시작 시 @Timer@초 후 1골드를 획득할 확률 @PercentGoldChance@%<br><br><tftitemrules>'...그리고 약간의 행운.'</tftitemrules>",
+        "effects": {
+            "MaxArmySizeIncrease": 1.0,
+            "PercentGoldChance": 10.0,
+            "Timer": 10.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Tacticians_Ring.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "전략가의 망토",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_ThiefsGloves",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_SparringGloves",
+            "TFT_Item_SparringGloves"
+        ],
+        "desc": "매 라운드: 무작위 아이템 2개 장착<br><br><tftitemrules>[아이템 슬롯 3개 소모.]</tftitemrules>",
+        "effects": {
+            "CritChance": 20.0,
+            "Health": 150.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Thieves_Gloves.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "도적의 장갑",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_GuinsoosRageblade",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_RecurveBow",
+            "TFT_Item_NeedlesslyLargeRod"
+        ],
+        "desc": "공격 시 공격 속도가 @AttackSpeedPerStack@% 증가 (중첩 가능)",
+        "effects": {
+            "AP": 10.0,
+            "AS": 10.0,
+            "AttackSpeedPerStack": 5.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Guinsoos_Rageblade.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "구인수의 격노검",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_IonicSpark",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NeedlesslyLargeRod",
+            "TFT_Item_NegatronCloak"
+        ],
+        "desc": "@HexRange@칸 내 모든 적에게 <TFTKeyword>파쇄</TFTKeyword> @MRShred@% 적용. 해당 적이 스킬 사용 시 사용한 마나의 @ManaRatio@%에 해당하는 마법 피해를 입음<br><br><tftitemrules><tftbold>파쇄</tftbold>: 마법 저항력 감소</tftitemrules>",
+        "effects": {
+            "AP": 15.0,
+            "Damage": 250.0,
+            "Health": 100.0,
+            "HexRange": 2.0,
+            "MRShred": 30.0,
+            "MagicResist": 25.0,
+            "ManaRatio": 160.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Ionic_Spark.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "이온 충격기",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_SteraksGage",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_BFSword",
+            "TFT_Item_GiantsBelt"
+        ],
+        "desc": "전투당 한 번, 체력이 @HealthThreshold@%일 때 최대 체력 @BonusMaxHealthPerc@% 및 공격력 @BonusADToGive@% 증가",
+        "effects": {
+            "AD": 0.15000000596046448,
+            "BonusADToGive": 35.0,
+            "BonusMaxHealthPerc": 25.0,
+            "Health": 150.0,
+            "HealthThreshold": 60.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Steraks_Gage.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "스테락의 도전",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_DragonsClaw",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NegatronCloak",
+            "TFT_Item_NegatronCloak"
+        ],
+        "desc": "@PercentMaxHP*100@%의 최대 체력 획득<br><br>@HealthRegenInterval@초마다 최대 체력의 @PercentHealthDamage@% 회복",
+        "effects": {
+            "HealthRegenInterval": 2.0,
+            "ICD": 0.5,
+            "MagicResist": 75.0,
+            "PercentHealthDamage": 2.5,
+            "PercentMaxHP": 0.09000000357627869
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Dragons_Claw.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "용의 발톱",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_PowerGauntlet",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_GiantsBelt",
+            "TFT_Item_SparringGloves"
+        ],
+        "desc": "보호막 공격 후 @Duration@초 동안 피해 증폭 @DamageAmp*100@% 획득",
+        "effects": {
+            "AP": 10.0,
+            "AS": 20.0,
+            "CritChance": 20.0,
+            "DamageAmp": 0.25,
+            "DamageAmpPct": 25.0,
+            "Duration": 3.0,
+            "Health": 150.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Stridebreaker.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "방패파괴자",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_GargoyleStoneplate",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_ChainVest",
+            "TFT_Item_NegatronCloak"
+        ],
+        "desc": "적의 공격 대상이 되면 방어력이 @ArmorPerEnemy@, 마법 저항력이 @MRPerEnemy@ 증가. 공격하는 적이 늘어나면 중첩되어 적용",
+        "effects": {
+            "Armor": 25.0,
+            "ArmorPerEnemy": 10.0,
+            "Health": 100.0,
+            "MRPerEnemy": 10.0,
+            "MagicResist": 25.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Gargoyle_Stoneplate.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "가고일 돌갑옷",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_BrambleVest",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_ChainVest",
+            "TFT_Item_ChainVest"
+        ],
+        "desc": "@PercentMaxHP*100@%의 최대 체력 획득<br><br>기본 공격으로 받는 피해 @AutoDamageReduction*100@% 감소. 기본 공격에 맞을 경우 인접한 모든 적에게 <magicDamage>@1StarAoEDamage@의 마법 피해</magicDamage><br><br><tftitemrules>재사용 대기시간: @ICD@초</tftitemrules>",
+        "effects": {
+            "1StarAoEDamage": 100.0,
+            "2StarAoEDamage": 100.0,
+            "3StarAoEDamage": 100.0,
+            "Armor": 65.0,
+            "AutoDamageReduction": 0.07999999821186066,
+            "ICD": 2.0,
+            "PercentMaxHP": 0.05000000074505806,
+            "{6688a0d5}": 100.0,
+            "{b5c2a66b}": 100.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Bramble_Vest.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "덤불 조끼",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_ChainVest",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "방어력 +@Armor@",
+        "effects": {
+            "Armor": 20.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Chain_Vest.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "쇠사슬 조끼",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_RecurveBow",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "공격 속도 +@AS@%",
+        "effects": {
+            "AS": 10.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Recurve_Bow.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "곡궁",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_MadredsBloodrazor",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_BFSword",
+            "TFT_Item_RecurveBow"
+        ],
+        "desc": "최대 체력이 @HealthThreshold@ 이상인 적을 상대로 피해 증폭을 @DamageAmp*100@% 획득",
+        "effects": {
+            "AD": 0.25,
+            "AP": 25.0,
+            "AS": 10.0,
+            "DamageAmp": 0.25,
+            "HealthThreshold": 1750.0,
+            "LargeBonusPct": 25.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Giant_Slayer.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "거인 학살자",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_RedBuff",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_ChainVest",
+            "TFT_Item_GiantsBelt"
+        ],
+        "desc": "@ICD@초마다 @HexRange@칸 내에 있는 적 하나에게 @BurnDuration@초 동안 <TFTKeyword>불태우기</TFTKeyword>를 @BurnPercent@%, <TFTKeyword>상처</TFTKeyword>를 @GrievousWoundsPercent@% 적용<br><br><tftitemrules>[고유 - 중복 적용 불가]<br><tftbold>불태우기</tftbold>: 매초 대상 최대 체력의 일정 비율만큼 고정 피해<br><tftbold>상처</tftbold>: 체력 회복량 감소</tftitemrules>",
+        "effects": {
+            "Armor": 20.0,
+            "BurnDuration": 10.0,
+            "BurnPercent": 1.0,
+            "GrievousWoundsPercent": 33.0,
+            "Health": 250.0,
+            "HexRange": 2.0,
+            "ICD": 2.0,
+            "MonsterCap": 100.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Sunfire_Cape.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "태양불꽃 망토",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_UnstableConcoction",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_TearOfTheGoddess",
+            "TFT_Item_SparringGloves"
+        ],
+        "desc": "2가지 효과 획득:<li>공격력 @BaseAD*100@%, 주문력 @BaseSP@<li>모든 피해 흡혈 @Omnivamp*100@%<br><br>라운드마다 위 효과 중 1개 무작위로 2배 증가",
+        "effects": {
+            "BaseAD": 0.15000000596046448,
+            "BaseHeal": 15.0,
+            "BaseSP": 15.0,
+            "BonusADPercent": 0.15000000596046448,
+            "BonusSP": 15.0,
+            "CritChance": 20.0,
+            "Mana": 15.0,
+            "Omnivamp": 0.15000000596046448,
+            "{a60806db}": 66.66699981689453
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Hand_of_Justice.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "정의의 손길",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_GuardianAngel",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_BFSword",
+            "TFT_Item_ChainVest"
+        ],
+        "desc": "전투당 1회: 체력이 @HealthThreshold@%일 때 잠시 대상으로 지정할 수 없게 되며 해로운 효과 제거. 이후 추가 공격 속도 @AttackSpeed@% 획득<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AD": 0.10000000149011612,
+            "Armor": 20.0,
+            "AttackSpeed": 15.0,
+            "DamageReduction": 100.0,
+            "HealthThreshold": 60.0,
+            "StealthDuration": 1.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Edge_Of_Night.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "밤의 끝자락",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_SeraphsEmbrace",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "최대 마나 @ManaReduction@ 감소 <br><br>장착한 유닛이 처치 관여 시 @TakedownTimer@초 동안 @DamageAmp*100@%의 추가 피해<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AP": 10.0,
+            "Mana": 40.0,
+            "ManaOnTakedown": 10.0,
+            "ManaReduction": 10.0,
+            "TakedownTimer": 3.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Blue_Buff.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "푸른 파수꾼",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_TearOfTheGoddess",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "마나 +@Mana@",
+        "effects": {
+            "Mana": 15.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Tear_of_the_Goddess.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "여신의 눈물",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_NegatronCloak",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "마법 저항력 +@MagicResist@",
+        "effects": {
+            "MagicResist": 20.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Negatron_Cloak.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "음전자 망토",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_TitansResolve",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_ChainVest",
+            "TFT_Item_RecurveBow"
+        ],
+        "desc": "공격하거나 피해를 받으면 공격력 @StackingAD*100@%, 주문력 @StackingSP@ 증가 (최대 @StackCap@회 중첩)  <br><br>최대 중첩 시 방어력 @BonusResistsAtStackCap@ 및 마법 저항력 @BonusResistsAtStackCap@ 획득",
+        "effects": {
+            "AS": 10.0,
+            "Armor": 20.0,
+            "BonusResistsAtStackCap": 20.0,
+            "StackCap": 25.0,
+            "StackingAD": 0.019999999552965164,
+            "StackingSP": 2.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Titans_Resolve.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "거인의 결의",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_RunaansHurricane",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NegatronCloak",
+            "TFT_Item_RecurveBow"
+        ],
+        "desc": "기본 공격 시 주변 적 하나에게 탄환을 발사하여 공격력 %i:scaleAD%의 @MultiplierForDamage@%만큼 물리 피해",
+        "effects": {
+            "AD": 0.25,
+            "AS": 10.0,
+            "AdditionalTargets": 1.0,
+            "MagicResist": 20.0,
+            "MultiplierForDamage": 55.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Runaans_Hurricane.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "루난의 허리케인",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_SparringGloves",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "치명타 확률 +@CritChance@%",
+        "effects": {
+            "CritChance": 20.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Sparring_Gloves.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "연습용 장갑",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Bloodthirster",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_BFSword",
+            "TFT_Item_NegatronCloak"
+        ],
+        "desc": "전투당 한 번, 체력이 @HealthThreshold@%일 때 최대 체력의 @ShieldHealthPercent@%에 해당하는 보호막 획득 후 최대 @ShieldDuration@초까지 유지",
+        "effects": {
+            "AD": 0.15000000596046448,
+            "AP": 15.0,
+            "HealthThreshold": 40.0,
+            "LifeSteal": 20.0,
+            "MagicResist": 20.0,
+            "ShieldDuration": 5.0,
+            "ShieldHealthPercent": 25.0,
+            "StatOmnivamp": 0.20000000298023224
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Bloodthirster.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "피바라기",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_ArchangelsStaff",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NeedlesslyLargeRod",
+            "TFT_Item_TearOfTheGoddess"
+        ],
+        "desc": "전투 시작: 전투 중 @IntervalSeconds@초마다 주문력 @APPerInterval@ 증가",
+        "effects": {
+            "AP": 20.0,
+            "APPerInterval": 30.0,
+            "IntervalSeconds": 5.0,
+            "Mana": 15.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Archangel_Staff.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "대천사의 지팡이",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_SpearOfShojin",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_BFSword",
+            "TFT_Item_TearOfTheGoddess"
+        ],
+        "desc": "기본 공격 시 추가 마나 @FlatManaRestore@ 획득",
+        "effects": {
+            "AD": 0.15000000596046448,
+            "AP": 15.0,
+            "FlatManaRestore": 5.0,
+            "Mana": 15.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Spear_of_Shojin.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "쇼진의 창",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_SpectralGauntlet",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NegatronCloak",
+            "TFT_Item_GiantsBelt"
+        ],
+        "desc": "@HexRange@칸 내에 있는 적 @ARReductionAmount@% <TFTKeyword>파열</TFTKeyword> 전투 시작 후 @BonusResistDuration@초 동안 방어력과 마법 저항력 @BonusResists@ 증가<br><br><tftitemrules><tftbold>파열</tftbold>: 방어력 감소</tftitemrules>",
+        "effects": {
+            "ARReductionAmount": 30.0,
+            "BonusResistDuration": 10.0,
+            "BonusResists": 25.0,
+            "Health": 150.0,
+            "HexRange": 2.0,
+            "MagicResist": 20.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Evenshroud.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "저녁갑주",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Spatula",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "<tftitemrules>무슨 쓸모가 있을 텐데...</tftitemrules>",
+        "effects": {
+            "{fe9818ef}": 5.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Spatula.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "뒤집개",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Leviathan",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_RecurveBow",
+            "TFT_Item_GiantsBelt"
+        ],
+        "desc": "스킬 사용 후 @ASDuration@초 동안 공격 속도 @AttackSpeedToGive@% 증가",
+        "effects": {
+            "AP": 10.0,
+            "AS": 10.0,
+            "ASDuration": 5.0,
+            "AttackSpeedToGive": 60.0,
+            "Health": 150.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Nashors_Tooth.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "내셔의 이빨",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Morellonomicon",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NeedlesslyLargeRod",
+            "TFT_Item_GiantsBelt"
+        ],
+        "desc": "기본 공격 및 스킬이 @BurnDuration@초 동안 적에게 <TFTKeyword>불태우기</TFTKeyword>를 @BurnPercent@%, <TFTKeyword>상처</TFTKeyword>를 @GrievousWoundsPercent@% 적용<br><br><tftitemrules>[고유 - 중복 적용 불가]<br><tftbold>불태우기</tftbold>: 매초 대상 최대 체력의 일정 비율만큼 고정 피해<br><tftbold>상처</tftbold>: 체력 회복량 감소</tftitemrules>",
+        "effects": {
+            "AP": 25.0,
+            "AS": 10.0,
+            "BurnDuration": 10.0,
+            "BurnPercent": 1.0,
+            "GrievousWoundsPercent": 33.0,
+            "Health": 150.0,
+            "MonsterCap": 100.0,
+            "TicksPerSecond": 1.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Morellonomicon.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "모렐로노미콘",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_RapidFireCannon",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_RecurveBow",
+            "TFT_Item_RecurveBow"
+        ],
+        "desc": "기본 공격과 스킬이 @Duration@초 동안 적에게 <TFTKeyword>불태우기</TFTKeyword>를 @BurnPercent@%, <TFTKeyword>상처</TFTKeyword>를 @HealingReductionPct@% 적용<br><br><tftitemrules><tftbold>불태우기</tftbold>: 매초 대상 최대 체력의 일정 비율만큼 고정 피해<br><tftbold>상처</tftbold>: 체력 회복량 감소</tftitemrules>",
+        "effects": {
+            "AS": 35.0,
+            "BonusDamage": 0.05999999865889549,
+            "BurnPercent": 1.0,
+            "Duration": 5.0,
+            "HealingReductionPct": 33.0,
+            "HexRangeIncrease": 1.0,
+            "{1543aa48}": 0.029999999329447746,
+            "{9f5117db}": 100.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/RedBuff.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "붉은 덩굴정령",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Crownguard",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NeedlesslyLargeRod",
+            "TFT_Item_ChainVest"
+        ],
+        "desc": "전투 시작: @ShieldDuration@초 동안 최대 체력의 @ShieldSize@%에 해당하는 보호막 획득<br>보호막이 사라지면 주문력 @ShieldBonusAP@ 증가<br>",
+        "effects": {
+            "AP": 20.0,
+            "Armor": 20.0,
+            "ChillDuration": 4.0,
+            "Health": 100.0,
+            "HexRange": 2.0,
+            "ShieldBonusAP": 25.0,
+            "ShieldDuration": 8.0,
+            "ShieldSize": 25.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Crownguard.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "크라운가드",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_BFSword",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "공격력 +@AD*100@%",
+        "effects": {
+            "AD": 0.10000000149011612
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/BF_Sword.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "B.F. 대검",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_AdaptiveHelm",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NegatronCloak",
+            "TFT_Item_TearOfTheGoddess"
+        ],
+        "desc": "전투 시작: 시작 위치에 따라 추가 효과 획득<br><br>전방 2열: 방어력과 마법 저항력 @FrontRowBonusResists@. 기본 공격에 맞으면 마나 @FrontLineManaPerHit@ 획득<br><br>후방 2열: 주문력 @BackRowBonusAP@. @ManaTickrate@초마다 마나 @ManaPerTickrate@ 획득<br>",
+        "effects": {
+            "AP": 10.0,
+            "BackRowBonusAP": 15.0,
+            "FrontLineManaPerHit": 1.0,
+            "FrontRowBonusResists": 40.0,
+            "MagicResist": 20.0,
+            "Mana": 15.0,
+            "ManaPerTickrate": 10.0,
+            "ManaTickrate": 3.0,
+            "{d357c9f2}": null
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Adaptive_Helm.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "적응형 투구",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_BlueBuff",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_TearOfTheGoddess",
+            "TFT_Item_TearOfTheGoddess"
+        ],
+        "desc": "최대 마나 @ManaReduction@ 감소 <br><br>장착한 유닛이 처치 관여 시 @TakedownTimer@초 동안 @DamageAmp*100@%의 추가 피해<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AD": 0.15000000596046448,
+            "AP": 15.0,
+            "DamageAmp": 0.05000000074505806,
+            "Mana": 20.0,
+            "ManaReduction": 10.0,
+            "TakedownTimer": 8.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Blue_Buff.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "푸른 파수꾼",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_LastWhisper",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_RecurveBow",
+            "TFT_Item_SparringGloves"
+        ],
+        "desc": "물리 피해를 입힐 경우 @ArmorBreakDuration@초 동안 대상 @ArmorReductionPercent@% <TFTKeyword>파열</TFTKeyword> (중첩 불가)<br><br><tftitemrules>[고유 - 중복 적용 불가]<br><tftbold>파열</tftbold>: 방어력 감소</tftitemrules>",
+        "effects": {
+            "AD": 0.15000000596046448,
+            "AS": 20.0,
+            "ArmorBreakDuration": 3.0,
+            "ArmorReductionPercent": 30.0,
+            "CritChance": 20.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Last_Whisper.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "최후의 속삭임",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_JeweledGauntlet",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_NeedlesslyLargeRod",
+            "TFT_Item_SparringGloves"
+        ],
+        "desc": "스킬에 치명타 적용 가능<br><br>기본 스킬에 치명타 적용이 가능한 경우, 대신에 치명타 피해량이 @CritDamageToGive*100@% 증가",
+        "effects": {
+            "AP": 35.0,
+            "CritChance": 35.0,
+            "CritDamageToGive": 0.10000000149011612
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Jeweled_Guantlet.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "보석 건틀릿",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_GiantsBelt",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "체력 +@Health@",
+        "effects": {
+            "Health": 150.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Gaints_Belt.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "거인의 허리띠",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_NeedlesslyLargeRod",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "주문력 +@AP@",
+        "effects": {
+            "AP": 10.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Needlessly_Large_Rod.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "쓸데없이 큰 지팡이",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_NightHarvester",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_ChainVest",
+            "TFT_Item_SparringGloves"
+        ],
+        "desc": "내구력 @BaseDurability*100@% 획득. 체력이 @ThresholdForEmpower*100@%를 넘으면 대신 내구력 @EmpoweredDurability*100@% 획득",
+        "effects": {
+            "Armor": 20.0,
+            "BaseDamageReduction": 8.0,
+            "BaseDurability": 0.07999999821186066,
+            "CritChance": 20.0,
+            "EmpowerDamageReduction": 15.0,
+            "EmpoweredDurability": 0.15000000596046448,
+            "Health": 200.0,
+            "ThresholdForEmpower": 0.5
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Behemoth.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "굳건한 심장",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_FryingPan",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "<tftitemrules>... 이게 여기에 있는 이유가 달리 있을까요?</tftitemrules>",
+        "effects": {},
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Frying_Pan.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "프라이팬",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_ForceOfNature",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_Spatula",
+            "TFT_Item_Spatula"
+        ],
+        "desc": "아군의 최대 팀 규모 +@MaxArmySizeIncrease@ 증가.<br><br>전투 승리 시 1골드를 획득할 확률 @PercentGoldChance@%<br><br><tftitemrules>'...영웅의 심장...'</tftitemrules>",
+        "effects": {
+            "MaxArmySizeIncrease": 1.0,
+            "PercentGoldChance": 10.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Tacticians_Crown.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "전략가의 왕관",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_Quicksilver",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_SparringGloves",
+            "TFT_Item_NegatronCloak"
+        ],
+        "desc": "전투 시작: @SpellShieldDuration@초 동안 군중 제어 효과에 면역. 이 동안 @ProcInterval@초마다 @ProcAttackSpeed*100@%의 공격 속도 획득<br><br><tftitemrules>[고유 - 중복 적용 불가]</tftitemrules>",
+        "effects": {
+            "AS": 30.0,
+            "CritChance": 20.0,
+            "MagicResist": 20.0,
+            "ProcAttackSpeed": 0.03999999910593033,
+            "ProcInterval": 2.0,
+            "SpellShieldDuration": 14.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Quicksilver.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "수은",
+        "unique": true
+    },
+    {
+        "apiName": "TFT_Item_Deathblade",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_BFSword",
+            "TFT_Item_BFSword"
+        ],
+        "desc": "<tftitemrules>이 검의 주인은 더없는 평화와 안정을 찾게 됩니다. 주인의 적들도 마찬가지고요.</tftitemrules>",
+        "effects": {
+            "AD": 0.5,
+            "BonusDamage": 0.07999999821186066,
+            "{1543aa48}": 0.07999999821186066
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Death_Blade.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "죽음의 검",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_TacticiansScepter",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_FryingPan",
+            "TFT_Item_FryingPan"
+        ],
+        "desc": "아군의 최대 팀 규모 +@MaxArmySizeIncrease@ 증가.<br><br>장착 유닛 사망 시 1골드를 획득할 확률 @PercentGoldChance@%<br><br><tftitemrules>'철학자의 지혜가 깃들어 있습니다.'</tftitemrules>",
+        "effects": {
+            "MaxArmySizeIncrease": 1.0,
+            "PercentGoldChance": 10.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Tacticians_Scepter.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "전략가의 방패",
+        "unique": false
+    },
+    {
+        "apiName": "TFT11_Item_ThiefsGlovesSupport",
+        "associatedTraits": [],
+        "composition": [],
+        "desc": "매 라운드: 무작위 지원 아이템 2개 장착<br><br><tftitemrules>[아이템 슬롯 3개 차지]</tftitemrules>",
+        "effects": {
+            "CritChance": 20.0,
+            "Health": 150.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Thieves_Gloves.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "공범의 장갑",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_WarmogsArmor",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_GiantsBelt",
+            "TFT_Item_GiantsBelt"
+        ],
+        "desc": "@BonusPercentHP*100@%의 최대 체력 획득",
+        "effects": {
+            "BonusPercentHP": 0.11999999731779099,
+            "Health": 600.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Warmogs_Armor.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "워모그의 갑옷",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_StatikkShiv",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_RecurveBow",
+            "TFT_Item_TearOfTheGoddess"
+        ],
+        "desc": "3번째 기본 공격마다 적 @1StarBounces@명에게 @Damage@의 마법 피해를 입히고 @MRShredDuration@초 동안 @MRShred@% <TFTKeyword>파쇄</TFTKeyword><br><br><tftitemrules><tftbold>파쇄</tftbold>: 마법 저항력 감소</tftitemrules>",
+        "effects": {
+            "1StarBounces": 4.0,
+            "AP": 15.0,
+            "AS": 15.0,
+            "Damage": 35.0,
+            "MRShred": 30.0,
+            "MRShredDuration": 5.0,
+            "Mana": 15.0,
+            "{12a15e9e}": 4.0,
+            "{15144cec}": 4.0,
+            "{79e2ec7b}": 4.0
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Statikk_Shiv.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "스태틱의 단검",
+        "unique": false
+    },
+    {
+        "apiName": "TFT_Item_HextechGunblade",
+        "associatedTraits": [],
+        "composition": [
+            "TFT_Item_BFSword",
+            "TFT_Item_NeedlesslyLargeRod"
+        ],
+        "desc": "입힌 피해량의 @AllyHealing*100@%만큼 체력 비율이 가장 낮은 아군의 체력 회복<br><br><TFTTrackerLabel>아군 체력 회복량:</TFTTrackerLabel> <TFTHighlight>@TFTUnitProperty.item:TFT_Tracker_Value1@</TFTHighlight>",
+        "effects": {
+            "AD": 0.15000000596046448,
+            "AP": 15.0,
+            "AllyHealing": 0.20000000298023224,
+            "Omnivamp": 20.0,
+            "StatOmnivamp": 0.20000000298023224
+        },
+        "from": null,
+        "icon": "ASSETS/Maps/Particles/TFT/Item_Icons/Standard/Hextech_Gunblade.tex",
+        "id": null,
+        "incompatibleTraits": [],
+        "name": "마법공학 총검",
+        "unique": false
+    }
+]

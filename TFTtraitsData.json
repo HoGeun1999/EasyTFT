@@ -1,0 +1,1418 @@
+[
+    {
+        "apiName": "TFT13_Hextech",
+        "desc": "자동기계가 피해를 입힐 때 수정을 획득합니다. 수정이 @TriggerNumCrystals@개가 되면 현재 대상에게 폭발을 일으켜 마법 피해+이전 폭발 이후 입힌 피해량의 <magicDamage>@ConversionDamagePct*100@%</magicDamage>만큼 피해를 입히고 초기화됩니다. 또한 자동기계가 방어력 및 마법 저항력을 얻습니다.<br><br><expandRow>(@MinUnits@) <magicDamage>@MagicDamage@</magicDamage>의 피해, @Resists@ %i:scaleArmor%%i:scaleMR%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "ConversionDamagePct": 0.25,
+                    "MagicDamage": 150.0,
+                    "Resists": 25.0,
+                    "TriggerNumCrystals": 20.0,
+                    "{a142f31c}": 1.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "ConversionDamagePct": 0.25,
+                    "MagicDamage": 400.0,
+                    "Resists": 60.0,
+                    "TriggerNumCrystals": 20.0,
+                    "{a142f31c}": 1.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "ConversionDamagePct": 0.25,
+                    "MagicDamage": 1100.0,
+                    "Resists": 140.0,
+                    "TriggerNumCrystals": 20.0,
+                    "{a142f31c}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Automata.TFT_Set13.tex",
+        "name": "자동기계"
+    },
+    {
+        "apiName": "TFT13_Teamup_Menaces",
+        "desc": "파우더가 지배자 특성을 얻지만, 더 이상 가족 특성의 효과를 받지 않습니다. 파우더의 원숭이가 폭발하면 실코의 괴수 @NumMonstrosities@마리가 생성됩니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 2,
+                "style": 4,
+                "variables": {
+                    "NumMonstrosities": 3.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_Menaces.TFT_Set13.tex",
+        "name": "모략"
+    },
+    {
+        "apiName": "TFT13_Sorcerer",
+        "desc": "아군이 주문력을 @TeamAP@ 얻습니다. 마법사는 주문력을 더 얻습니다.<br><br><row>(@MinUnits@) @BaseAP@ %i:scaleAP%</row><br><row>(@MinUnits@) @BaseAP@ %i:scaleAP%</row><br><row>(@MinUnits@) @BaseAP@ %i:scaleAP%</row><br><row>(@MinUnits@) @BaseAP@ %i:scaleAP%, 스킬이 대상의 피해량을 @DamageDecreaseDuration@초 동안 @DamageDecrease*100@% 감소시킴</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BaseAP": 20.0,
+                    "TeamAP": 10.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BaseAP": 50.0,
+                    "TeamAP": 10.0
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BaseAP": 95.0,
+                    "TeamAP": 10.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "BaseAP": 110.0,
+                    "DamageDecrease": 0.25,
+                    "DamageDecreaseDuration": 3.0,
+                    "TeamAP": 10.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_3_Sorcerer.tex",
+        "name": "마법사"
+    },
+    {
+        "apiName": "TFT13_Scrap",
+        "desc": "전투 시작: 고물상 유닛이 장착한 조합 아이템이 일시적으로 완성 아이템으로 변합니다. 고물상 유닛은 완성 아이템으로 변한 조합 아이템을 포함해 아군이 장착한 조합 아이템 하나당 @ShieldDuration@초 동안 보호막을 얻습니다.<br><br><row>(@MinUnits@) 조합 아이템 @NumComponents@개, 보호막 @HPShieldAmount@</row><br><row>(@MinUnits@) 조합 아이템 @NumComponents@개, 보호막 @HPShieldAmount@</row><br><row>(@MinUnits@) 모든 조합 아이템, 완성 아이템에 행운이 깃듦! 보호막 @HPShieldAmount@</row><br><row>(@MinUnits@) 찬란한 아이템 생성! 보호막 @HPShieldAmount@</row><br><br><rules>보호막 흡수량: @TFTUnitProperty.:TFT13_Trait_Scrap_ShieldTotal@ </rules> <br>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "HPShieldAmount": 25.0,
+                    "NumComponents": 1.0,
+                    "ShieldDuration": 20.0,
+                    "{659aef8d}": null,
+                    "{7e2474c8}": null
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "HPShieldAmount": 35.0,
+                    "NumComponents": 3.0,
+                    "ShieldDuration": 20.0,
+                    "{659aef8d}": null,
+                    "{7e2474c8}": null
+                }
+            },
+            {
+                "maxUnits": 8,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "HPShieldAmount": 50.0,
+                    "NumComponents": 20.0,
+                    "ShieldDuration": 20.0,
+                    "{659aef8d}": 1.0,
+                    "{7e2474c8}": null
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 9,
+                "style": 5,
+                "variables": {
+                    "HPShieldAmount": 60.0,
+                    "NumComponents": 20.0,
+                    "ShieldDuration": 20.0,
+                    "{659aef8d}": 1.0,
+                    "{7e2474c8}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Scrap.tex",
+        "name": "고물상"
+    },
+    {
+        "apiName": "TFT13_MissMageTrait",
+        "desc": "처음 탈락하는 상황에 놓였을 때 멜이 이번 게임의 플레이어 대상 전투에서 스킬을 @MinimumCasts@회 사용했다면 멜이 플레이어를 구해 생존합니다. <br><br>이후 멜은 영구적으로 피해 증폭을 @ProcDamageAmp*100@% 얻습니다.<br><br>@TFTUnitProperty.:TFT13_MissMageTrait_TrackerTRA@",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "MinimumCasts": 12.0,
+                    "MinimumCastsDU": 12.0,
+                    "MinimumCastsHR": 6.0,
+                    "MissMageHealDU": 15.0,
+                    "ProcDamageAmp": 0.10000000149011612,
+                    "ProcDamageAmpDU": 0.10000000149011612,
+                    "ProcDamageAmpHR": 0.10000000149011612,
+                    "{00885e86}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_BanishedMage.TFT_Set13.tex",
+        "name": "추방된 마법사"
+    },
+    {
+        "apiName": "TFT13_Martialist",
+        "desc": "포수가 기본 공격 @NumOfAttacks@회마다 대상 주변에 공격력의 @PercentDamage*100@%만큼 피해를 입히는 로켓을 발사합니다. 또한 포수가 공격력을 얻습니다.<br><br><row>(@MinUnits@) @AD*100@% %i:scaleAD%</row><br><row>(@MinUnits@) @AD*100@% %i:scaleAD%</row><br><row>(@MinUnits@) @AD*100@% %i:scaleAD%, 기본 공격 @NumOfAttacks@회마다 피해를 두 배로 입히는 로켓 발사</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "AD": 0.10000000149011612,
+                    "NumOfAttacks": 5.0,
+                    "PercentDamage": 1.25
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "AD": 0.44999998807907104,
+                    "NumOfAttacks": 5.0,
+                    "PercentDamage": 1.25
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "AD": 0.6000000238418579,
+                    "NumOfAttacks": 4.0,
+                    "PercentDamage": 2.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Artillerist.TFT_Set13.tex",
+        "name": "포수"
+    },
+    {
+        "apiName": "TFT13_FormSwapper",
+        "desc": "고유: 형태전환자의 능력치 및 스킬이 위치(전방 또는 후방 가로 2열)에 따라 변경됩니다.<br><br>전방 형태전환자는 내구력을 얻습니다. 후방 형태전환자는 피해 증폭을 얻습니다.<br><br><expandRow>(@MinUnits@) @DR*100@% %i:scaleDR% 또는 @DA*100@% %i:scaleDA%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "DA": 0.20000000298023224,
+                    "DR": 0.15000000596046448
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "DA": 0.4000000059604645,
+                    "DR": 0.30000001192092896
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_FormSwapper.TFT_Set13.tex",
+        "name": "형태전환자"
+    },
+    {
+        "apiName": "TFT13_Ambassador",
+        "desc": "이 특성은 사절이 정확히 하나 또는 각기 다른 사절이 넷 있을 때 활성화됩니다. <br><br><row>(@MinUnits@) 해당 사절의 추가 효과 획득</row><br><row>(@MinUnits@) 모든 추가 효과 획득. 사절이 @BonusHealth@ %i:scaleHealth%, @SelfishDamageAmp*100@% 획득%i:scaleDA%</row><br><br><TFTGuildActive enabled=TFT13_Trait_Ambassador_ActiveDomina alternate=TFTGuildInactive>암베사: 아군이 승리한 상대 한 명당 방어력 및 마법 저항력을 @AmbessaArmor@ 얻습니다. (@TFTUnitProperty.trait:TFT13_Ambassador_PlayersDefeated@/7)</TFTGuildActive><br><br><TFTGuildActive enabled=TFT13_Trait_Ambassador_ActiveJarvan alternate=TFTGuildInactive>가렌: 전투 시작 시 가렌과 가렌 양옆 아군이 가렌 최대 체력의 @GarenHealthPercent*100@%를 얻습니다.</TFTGuildActive><br><br><TFTGuildActive enabled=TFT13_Trait_Ambassador_ActiveNami alternate=TFTGuildInactive>나미: 아군이 기본 공격 시 추가 마나를 @NamiMana@ 얻습니다.</TFTGuildActive><br><br><TFTGuildActive enabled=TFT13_Trait_Ambassador_ActiveTristana alternate=TFTGuildInactive>트리스타나: 아군이 별 레벨당 공격 속도를 @StarAS*100@% 얻습니다.</TFTGuildActive>",
+        "effects": [
+            {
+                "maxUnits": 1,
+                "minUnits": 1,
+                "style": 1,
+                "variables": {
+                    "AmbessaArmor": 2.0,
+                    "AmbessaArmor_PVE": 4.0,
+                    "BonusAS": null,
+                    "BonusHealth": 200.0,
+                    "CCImmuneDuration": 8.0,
+                    "GarenHealthPercent": 0.11999999731779099,
+                    "NamiMana": 2.0,
+                    "SelfishDamageAmp": 0.20000000298023224,
+                    "StarAS": 0.05999999865889549,
+                    "{3854f478}": 2.0,
+                    "{4b20f990}": null,
+                    "{845be53a}": 4.0
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "AmbessaArmor": 2.0,
+                    "AmbessaArmor_PVE": 4.0,
+                    "BonusAS": null,
+                    "BonusHealth": 200.0,
+                    "CCImmuneDuration": 8.0,
+                    "GarenHealthPercent": 0.11999999731779099,
+                    "NamiMana": 2.0,
+                    "SelfishDamageAmp": 0.20000000298023224,
+                    "StarAS": 0.05999999865889549,
+                    "{3854f478}": 2.0,
+                    "{4b20f990}": null,
+                    "{845be53a}": 4.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Diplomat.TFT_Set13.tex",
+        "name": "사절"
+    },
+    {
+        "apiName": "TFT13_Teamup_Mentorship",
+        "desc": "암베사가 스킬을 사용하면 케이틀린이 대상에게 강화된 공격을 발사해 @CaitAD*100@%의 피해를 입힙니다. 암베사가 케이틀린 공격력의 @ADShare*100@%를 얻습니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 2,
+                "style": 4,
+                "variables": {
+                    "ADShare": 0.25,
+                    "CaitAD": 2.25
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_Mentorship.TFT_Set13.tex",
+        "name": "계엄령"
+    },
+    {
+        "apiName": "TFT13_Titan",
+        "desc": "아군이 방어력 및 마법 저항력을 얻습니다. 감시자는 이 능력치를 세 배로 얻습니다.<br><br><expandRow>(@MinUnits@) @BonusArmor@ %i:scaleArmor%%i:scaleMR%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusArmor": 12.0,
+                    "{5921fc26}": 2.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BonusArmor": 25.0,
+                    "{5921fc26}": 2.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BonusArmor": 42.0,
+                    "{5921fc26}": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_10_Warden.tex",
+        "name": "감시자"
+    },
+    {
+        "apiName": "TFT13_Teamup_Reunion",
+        "desc": "바이가 스킬을 사용하면 에코가 바이의 대상에게 잔상 3개를 보내 각각 @EkkoAfterImageReducedDamage*100@%의 피해를 입힙니다. 에코가 스킬을 사용하면 바이가 에코의 대상에게 지진 강타를 사용해 @ViEarthquakeReducedDamage*100@%의 피해를 입힙니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 2,
+                "style": 4,
+                "variables": {
+                    "EkkoAfterImageReducedDamage": 0.5,
+                    "ViEarthquakeReducedDamage": 1.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_Reunion.TFT_Set13.tex",
+        "name": "재회"
+    },
+    {
+        "apiName": "TFT13_Family",
+        "desc": "가족 구성원들이 서로를 지원해 최대 마나를 감소시키고 추가 효과를 얻습니다.<br><br><row>(@MinUnits@) @ManaReduction*100@% 감소, @DamageReduction*100@% %i:scaleDR%</row><br><row>(@MinUnits@) @ManaReduction*100@% 감소, @AttackSpeed*100@% %i:scaleAS%</row><br><row>(@MinUnits@) @ManaReduction*100@% 감소, 윗동네 강탈! 전투 후 강탈을 진행하며 생존한 가족 구성원 한 명당 수치 증가!</row><br><br><rules>@TFTUnitProperty.trait:TFT13_JunkerKing_SelfDestructTRA@</rules>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 5,
+                "variables": {
+                    "AttackSpeed": 0.20000000298023224,
+                    "DamageReduction": 0.20000000298023224,
+                    "ManaReduction": 0.25
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "AttackSpeed": 0.20000000298023224,
+                    "DamageReduction": 0.20000000298023224,
+                    "ManaReduction": 0.30000001192092896
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "AttackSpeed": 0.20000000298023224,
+                    "DamageReduction": 0.20000000298023224,
+                    "ManaReduction": 0.4000000059604645,
+                    "{01fcc30b}": 0.75,
+                    "{217874f1}": 2.5,
+                    "{43cb93dd}": 1.25,
+                    "{46c3fc24}": 1.5,
+                    "{6fc9f267}": 17.0,
+                    "{8173be81}": 2.0,
+                    "{9000fe5b}": 2.0,
+                    "{92029cea}": 0.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Family.TFT_Set13.tex",
+        "name": "가족"
+    },
+    {
+        "apiName": "TFT13_Ambusher",
+        "desc": "매복자의 스킬 피해에 치명타가 적용될 수 있습니다. 또한 매복자가 추가 치명타 확률 및 치명타 피해량을 얻습니다.<br><br><row>(@MinUnits@) @CritChance*100@% %i:scaleCrit%, @CritDamage*100@% %i:scaleCritMult%</row><br><row>(@MinUnits@) @CritChance*100@% %i:scaleCrit%, @CritDamage*100@% %i:scaleCritMult%</row><br><row>(@MinUnits@) @CritChance*100@% %i:scaleCrit%, @CritDamage*100@% %i:scaleCritMult%</row><br><row>(@MinUnits@) @CritChance*100@% %i:scaleCrit%, @CritDamage*100@% %i:scaleCritMult%, 또한 내구력 @DamageReductionPct*100@% 획득</row>",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "CritChance": 0.25,
+                    "CritDamage": 0.10000000149011612
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 3,
+                "variables": {
+                    "CritChance": 0.3499999940395355,
+                    "CritDamage": 0.20000000298023224
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "CritChance": 0.44999998807907104,
+                    "CritDamage": 0.25
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "CritChance": 0.550000011920929,
+                    "CritDamage": 0.25,
+                    "DamageReductionPct": 0.15000000596046448
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Ambusher.TFT_Set13.tex",
+        "name": "매복자"
+    },
+    {
+        "apiName": "TFT13_Teamup_Sisters",
+        "desc": "징크스가 처치에 관여하면 바이가 @ViDuration@초 동안 추가 공격력을 @ADBuff*100@% 얻습니다. 바이가 처치에 관여하면 징크스가 @JinxDuration@초 동안 추가 공격 속도를 @ASBuff*100@% 얻습니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 2,
+                "style": 4,
+                "variables": {
+                    "ADBuff": 0.4000000059604645,
+                    "ASBuff": 0.75,
+                    "JinxDuration": 5.0,
+                    "ViDuration": 7.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_Sisters.TFT_Set13.tex",
+        "name": "자매"
+    },
+    {
+        "apiName": "TFT13_Invoker",
+        "desc": "선도자가 마나를 얻을 때마다 마나를 더 얻습니다.<br><br><row>(@MinUnits@) @EnlightenedBonusMana*100@% %i:scaleMana%</row><br><row>(@MinUnits@) @EnlightenedBonusMana*100@% %i:scaleMana%</row><br><row>(@MinUnits@) @EnlightenedBonusMana*100@% %i:scaleMana%</row><br><row>(@MinUnits@) @EnlightenedBonusMana*100@% %i:scaleMana%, 스킬로 입힌 피해량의 @AllyHealing*100@%만큼 아군 1명 체력 회복</row><br>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "EnlightenedBonusMana": 0.25
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "EnlightenedBonusMana": 0.5
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "EnlightenedBonusMana": 0.800000011920929
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "AllyHealing": 0.20000000298023224,
+                    "EnlightenedBonusMana": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Visionary.TFT_Set13.tex",
+        "name": "선도자"
+    },
+    {
+        "apiName": "TFT13_Sniper",
+        "desc": "저격수가 멀리 떨어진 적에게 추가 피해를 입힙니다.<br><br><row>(@MinUnits@) 칸 하나당 @PercentDamageIncrease@%의 피해량</row><br><row>(@MinUnits@) 칸 하나당 @PercentDamageIncrease@%의 피해량</row><br><row>(@MinUnits@) 칸 하나당 @PercentDamageIncrease@%의 피해량 및 사거리 +@BonusHexRangeIncrease@ 증가</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusHexRangeIncrease": null,
+                    "PercentDamageIncrease": 7.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "BonusHexRangeIncrease": null,
+                    "PercentDamageIncrease": 16.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BonusHexRangeIncrease": 5.0,
+                    "PercentDamageIncrease": 35.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Sniper.tex",
+        "name": "저격수"
+    },
+    {
+        "apiName": "TFT13_Warband",
+        "desc": "정복자의 처치 관여가 정복 중첩을 부여합니다. 정복 중첩을 충분히 얻으면 전리품이 든 군수품을 엽니다!<br><br>정복자는 공격력 및 주문력을 얻으며 이 수치는 개봉한 군수품 하나당 @PercentIncreasePerChest*100@% 증가합니다.<br><br><expandRow>(@MinUnits@) @ADAPBase*100@% %i:scaleAD%%i:scaleAP%, @StacksPerKill@x정복</expandRow><br><br><rules>개봉한 군수품: @TFTUnitProperty.trait:TFT13_Warband_ChestsCompleted@</rules><br><rules>현재 능력치: @TFTUnitProperty.trait:TFT13_Warband_CurrentADAP@% %i:scaleAD%%i:scaleAP%</rules><br>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "ADAPBase": 0.18000000715255737,
+                    "PercentIncreasePerChest": 0.029999999329447746,
+                    "StacksPerKill": 1.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "ADAPBase": 0.25,
+                    "PercentIncreasePerChest": 0.029999999329447746,
+                    "StacksPerKill": 3.0
+                }
+            },
+            {
+                "maxUnits": 8,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "ADAPBase": 0.4000000059604645,
+                    "PercentIncreasePerChest": 0.029999999329447746,
+                    "StacksPerKill": 6.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 9,
+                "style": 6,
+                "variables": {
+                    "ADAPBase": 1.0,
+                    "PercentIncreasePerChest": 0.029999999329447746,
+                    "StacksPerKill": 20.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Conqueror.TFT_Set13.tex",
+        "name": "정복자"
+    },
+    {
+        "apiName": "TFT13_RammusTrait",
+        "desc": "람머스는 어느 팀에서나 자신을 위한 자리를 만듭니다. <br><br>람머스가 팀에 있을 때 팀 규모가 +1 증가합니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {}
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_8_Threat.tex",
+        "name": "람머스"
+    },
+    {
+        "apiName": "TFT13_HighRoller",
+        "desc": "스킬 사용 시 세비카가 무작위로 자신의 스킬에 징크스 변형을 적용하고 @Duration@초 동안 내구력을 @Durability*100@% 얻습니다.<br><br>변형:<br>-로켓: 로켓을 @Bonus1NumRockets@개 발사해 각각 @Bonus1RocketDamage@의 물리 피해를 입힙니다.<br>-보호막: @Bonus2ShieldDuration@초 동안 보호막을 @Bonus2ShieldAmount@ 얻습니다.<br>-동전: @Bonus4Gold@골드를 획득합니다.<br>-트리플: 뽑힌 스킬을 강화합니다!",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "Bonus1NumRockets": 8.0,
+                    "Bonus1RocketDamage": 100.0,
+                    "Bonus2ShieldAmount": 500.0,
+                    "Bonus2ShieldDuration": 4.0,
+                    "Bonus4Gold": 3.0,
+                    "Durability": 0.800000011920929,
+                    "Duration": 1.5,
+                    "{01148678}": 0.3499999940395355,
+                    "{267deafa}": 0.3499999940395355,
+                    "{52aec87f}": 0.10000000149011612,
+                    "{592d23e5}": 0.3499999940395355,
+                    "{699f6a87}": 0.20000000298023224,
+                    "{9ad9e572}": 0.004999999888241291,
+                    "{9b22c5ec}": null,
+                    "{bcedb441}": 1.5,
+                    "{e1fc0fa1}": 0.24500000476837158,
+                    "{e640e05f}": 0.4000000059604645
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_HighRoller.TFT_Set13.tex",
+        "name": "도박꾼"
+    },
+    {
+        "apiName": "TFT13_Academy",
+        "desc": "아카데미가 게임마다 아이템을 3개 후원합니다.<br><br>후원 아이템의 복사본은 추가 최대 체력 및 피해 증폭을 부여합니다. 아카데미 유닛이 후원 아이템을 장착할 경우 효과가 두 배로 증가하며 추가로 체력 및 피해 증폭을 @BaseValues*100@% 얻습니다.<br><br><row>(@MinUnits@) @PercentIncreaseSponsored*100@% %i:scaleHealth% %i:scaleDA%<br>후원 아이템 1개 획득</row><br><row>(@MinUnits@) @PercentIncreaseSponsored*100@% %i:scaleHealth% %i:scaleDA%<br>후원 아이템 1개 획득</row><br><row>(@MinUnits@) @PercentIncreaseSponsored*100@% %i:scaleHealth% %i:scaleDA%<br>후원 아이템 1개 획득</row><br><row>(@MinUnits@) @PercentIncreaseSponsored*100@% %i:scaleHealth% %i:scaleDA%</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "BaseValues": 0.05000000074505806,
+                    "NumOfItems": 1.0,
+                    "PercentIncreaseSponsored": 0.019999999552965164
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BaseValues": 0.05000000074505806,
+                    "NumOfItems": 2.0,
+                    "PercentIncreaseSponsored": 0.029999999329447746
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "BaseValues": 0.05000000074505806,
+                    "NumOfItems": 3.0,
+                    "PercentIncreaseSponsored": 0.05000000074505806
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BaseValues": 0.05000000074505806,
+                    "NumOfItems": 3.0,
+                    "PercentIncreaseSponsored": 0.09000000357627869
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Academy.TFT_Set13.tex",
+        "name": "아카데미"
+    },
+    {
+        "apiName": "TFT13_Crime",
+        "desc": "플레이어 대상 전투를 마칠 때마다 시머를 획득합니다. 연패 횟수가 @MinStreakLength@ 이상이라면 추가로 획득합니다.<br><br>시머 중첩 @ShimmerBreakpoint@회마다 암시장에서 화공 남작만 사용할 수 있는 밀수품을 제시합니다. 화공 남작이 건너뛴 암시장마다 최대 체력을 얻습니다.<br><br><expandRow>(@MinUnits@) @ShimmerPerCombat@ 또는 @ShimmerPerCombatStreaking@, @HealthPerSkip@ %i:scaleHealth%</expandRow><br><br><rules>건너뛴 암시장: @TFTUnitProperty.trait:TFT13_Crime_PassedMarkets@</rules><br><rules>현재 체력: @TFTUnitProperty.trait:TFT13_Crime_CurrentHealth@ %i:scaleHealth%</rules>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "HealthPerSkip": 20.0,
+                    "MinStreakLength": 3.0,
+                    "ShimmerBreakpoint": 100.0,
+                    "ShimmerPerCombat": 15.0,
+                    "ShimmerPerCombatStreaking": 35.0,
+                    "ShimmerPerCombatStreaking_HR": 50.0,
+                    "ShimmerPerCombat_HR": 25.0,
+                    "ShimmerPerDeath_PVE": 1.0,
+                    "ShimmerPerRound_PVE": 15.0,
+                    "{ecbc38fd}": 1.0
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "HealthPerSkip": 60.0,
+                    "MinStreakLength": 3.0,
+                    "ShimmerBreakpoint": 100.0,
+                    "ShimmerPerCombat": 20.0,
+                    "ShimmerPerCombatStreaking": 45.0,
+                    "ShimmerPerCombatStreaking_HR": 60.0,
+                    "ShimmerPerCombat_HR": 30.0,
+                    "ShimmerPerDeath_PVE": 1.0,
+                    "ShimmerPerRound_PVE": 20.0,
+                    "{ecbc38fd}": 1.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "HealthPerSkip": 110.0,
+                    "MinStreakLength": 3.0,
+                    "ShimmerBreakpoint": 100.0,
+                    "ShimmerPerCombat": 20.0,
+                    "ShimmerPerCombatStreaking": 55.0,
+                    "ShimmerPerCombatStreaking_HR": 70.0,
+                    "ShimmerPerCombat_HR": 35.0,
+                    "ShimmerPerDeath_PVE": 2.0,
+                    "ShimmerPerRound_PVE": 30.0,
+                    "{ecbc38fd}": 1.0
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "HealthPerSkip": 160.0,
+                    "MinStreakLength": 3.0,
+                    "ShimmerBreakpoint": 100.0,
+                    "ShimmerPerCombat": 25.0,
+                    "ShimmerPerCombatStreaking": 70.0,
+                    "ShimmerPerCombatStreaking_HR": 90.0,
+                    "ShimmerPerCombat_HR": 45.0,
+                    "ShimmerPerDeath_PVE": 3.0,
+                    "ShimmerPerRound_PVE": 40.0,
+                    "{ecbc38fd}": 1.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "HealthPerSkip": 220.0,
+                    "MinStreakLength": 3.0,
+                    "ShimmerBreakpoint": 100.0,
+                    "ShimmerPerCombat": 30.0,
+                    "ShimmerPerCombatStreaking": 100.0,
+                    "ShimmerPerCombatStreaking_HR": 125.0,
+                    "ShimmerPerCombat_HR": 60.0,
+                    "ShimmerPerDeath_PVE": 15.0,
+                    "ShimmerPerRound_PVE": 65.0,
+                    "{ecbc38fd}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Crime.TFT_Set13.tex",
+        "name": "화공 남작"
+    },
+    {
+        "apiName": "TFT13_Rebel",
+        "desc": "반군이 최대 체력을 @MaxHealthIncrease*100@% 얻습니다.<br><br>아군이 체력을 @PercentHealthTrigger*100@% 잃으면 연막 신호가 나타나 반군에게 @BurstDuration@초 동안 공격 속도를 @BurstAS*100@% 부여하고 전투가 끝날 때까지 추가 능력을 제공합니다.<br><br><row>(@MinUnits@) @ADAP*100@% %i:scaleAD%%i:scaleAP%</row><br><row>(@MinUnits@) @ADAP*100@% %i:scaleAD%%i:scaleAP%, @PercentMaxHealthBonus*100@% %i:scaleHealth%</row><br><row>(@MinUnits@) @ADAP*100@% %i:scaleAD%%i:scaleAP%, @PercentMaxHealthBonus*100@% %i:scaleHealth%, 또한 모든 적을 @StunDuration@초 동안 기절시킴</row><br><row>(@MinUnits@) 연막 신호가 전투 시작 시 및 @ForceDuration@초마다 발동됨</row>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "ADAP": 0.20000000298023224,
+                    "BurstAS": 0.6000000238418579,
+                    "BurstDuration": 5.0,
+                    "ForceDuration": null,
+                    "MaxHealthIncrease": 0.11999999731779099,
+                    "PercentHealthTrigger": 0.25,
+                    "PercentMaxHealthBonus": null,
+                    "StunDuration": null,
+                    "{1ec59053}": null
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 3,
+                "variables": {
+                    "ADAP": 0.4000000059604645,
+                    "BurstAS": 0.6000000238418579,
+                    "BurstDuration": 5.0,
+                    "ForceDuration": null,
+                    "MaxHealthIncrease": 0.11999999731779099,
+                    "PercentHealthTrigger": 0.25,
+                    "PercentMaxHealthBonus": 0.11999999731779099,
+                    "StunDuration": null,
+                    "{1ec59053}": null
+                }
+            },
+            {
+                "maxUnits": 9,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "ADAP": 0.44999998807907104,
+                    "BurstAS": 0.6000000238418579,
+                    "BurstDuration": 5.0,
+                    "ForceDuration": null,
+                    "MaxHealthIncrease": 0.11999999731779099,
+                    "PercentHealthTrigger": 0.25,
+                    "PercentMaxHealthBonus": 0.15000000596046448,
+                    "StunDuration": 2.0,
+                    "{1ec59053}": null
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 10,
+                "style": 6,
+                "variables": {
+                    "ADAP": 0.5,
+                    "BurstAS": 0.6000000238418579,
+                    "BurstDuration": 5.0,
+                    "ForceDuration": 12.0,
+                    "MaxHealthIncrease": 0.11999999731779099,
+                    "PercentHealthTrigger": 0.25,
+                    "PercentMaxHealthBonus": 0.30000001192092896,
+                    "StunDuration": 2.0,
+                    "{1ec59053}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Rebel.TFT_Set13.tex",
+        "name": "반군"
+    },
+    {
+        "apiName": "TFT13_Infused",
+        "desc": "전투 시작: 지배자가 @ShieldDuration@초 동안 보호막을 얻습니다.<br><br>지배자가 스킬을 사용하면 마나 소모량에 따라 중첩되는 주문력을 얻습니다.<br><br><expandRow>(@MinUnits@) @ShieldAmount@의 보호막, @APPercent*100@% %i:scaleAP%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "APPercent": 0.25,
+                    "ShieldAmount": 350.0,
+                    "ShieldDuration": 15.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "APPercent": 0.44999998807907104,
+                    "ShieldAmount": 500.0,
+                    "ShieldDuration": 15.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "APPercent": 0.6499999761581421,
+                    "ShieldAmount": 700.0,
+                    "ShieldDuration": 15.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Dominator.TFT_Set13.tex",
+        "name": "지배자"
+    },
+    {
+        "apiName": "TFT13_Pugilist",
+        "desc": "투사가 모든 피해 흡혈을 @OmnivampPercent*100@% 얻고 추가 고정 피해를 입힙니다. 전투당 한 번 체력이 @HealthThreshold*100@%일 때 최대 체력의 일정 비율을 @Duration@초에 걸쳐 회복합니다.<br><br><expandRow>(@MinUnits@) 고정 피해 @TrueDamagePercent*100@%, @HealPercent*100@% %i:scaleHealth%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "Duration": 2.0,
+                    "HealPercent": 0.10000000149011612,
+                    "HealthThreshold": 0.5,
+                    "OmnivampPercent": 0.15000000596046448,
+                    "TrueDamagePercent": 0.05999999865889549
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "Duration": 2.0,
+                    "HealPercent": 0.25,
+                    "HealthThreshold": 0.5,
+                    "OmnivampPercent": 0.15000000596046448,
+                    "TrueDamagePercent": 0.11999999731779099
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "Duration": 2.0,
+                    "HealPercent": 0.4000000059604645,
+                    "HealthThreshold": 0.5,
+                    "OmnivampPercent": 0.15000000596046448,
+                    "TrueDamagePercent": 0.20000000298023224
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "Duration": 2.0,
+                    "HealPercent": 0.800000011920929,
+                    "HealthThreshold": 0.5,
+                    "OmnivampPercent": 0.15000000596046448,
+                    "TrueDamagePercent": 0.4000000059604645
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_PitFighter.TFT_Set13.tex",
+        "name": "투사"
+    },
+    {
+        "apiName": "TFT13_Teamup_BloodBrothers",
+        "desc": "실코가 스킬을 사용할 때마다 밴더가 영구적으로 최대 체력을 @TFTTrait.TFT13_Teamup_BloodBrothers.1:MaxHealthGainPerCast@ 얻습니다. 밴더가 사망할 때마다 실코가 영구적으로 주문력을 @TFTTrait.TFT13_Teamup_BloodBrothers.1:APGainPerDeath@ 얻습니다.<br><br>추가 효과: @TFTUnitProperty.trait:TFT13_Sidekick_BloodBrothers_HealthGained@ %i:scaleHealth% | @TFTUnitProperty.trait:TFT13_Sidekick_BloodBrothers_APGained@ %i:scaleAP%",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 2,
+                "style": 4,
+                "variables": {
+                    "APGainPerDeath": 6.0,
+                    "MaxHealthGainPerCast": 30.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_BloodBrothers.TFT_Set13.tex",
+        "name": "또 다른 결말"
+    },
+    {
+        "apiName": "TFT13_Squad",
+        "desc": "전투 시작: 집행자가 보호막 및 피해 증폭을 얻습니다. 체력이 가장 많은 적이 <i>현상수배!</i> 상태가 됩니다. <br><br>현상수배 상태인 적이 사망하면 집행자가 공격 속도를 @AttackSpeedPerWantedKill*100@% 얻습니다.<br><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 적 @NumOfWantedEnemies@명, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%</row><br><row>(@MinUnits@) 모든 적, @PercentMaxHealthShield*100@% %i:scaleHealth%, @BaseDA*100@% %i:scaleDA%, 전투 시작: 모든 적의 아이템을 압수함!</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "AttackSpeedPerWantedKill": 0.30000001192092896,
+                    "BaseDA": 0.11999999731779099,
+                    "NumOfWantedEnemies": 1.0,
+                    "PercentMaxHealthShield": 0.11999999731779099,
+                    "{36b1550f}": null,
+                    "{9edd4912}": null
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "AttackSpeedPerWantedKill": 0.30000001192092896,
+                    "BaseDA": 0.20000000298023224,
+                    "NumOfWantedEnemies": 2.0,
+                    "PercentMaxHealthShield": 0.20000000298023224,
+                    "{36b1550f}": null,
+                    "{9edd4912}": null
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "AttackSpeedPerWantedKill": 0.30000001192092896,
+                    "BaseDA": 0.33000001311302185,
+                    "NumOfWantedEnemies": 4.0,
+                    "PercentMaxHealthShield": 0.30000001192092896,
+                    "{36b1550f}": null,
+                    "{9edd4912}": null
+                }
+            },
+            {
+                "maxUnits": 9,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "AttackSpeedPerWantedKill": 0.30000001192092896,
+                    "BaseDA": 0.5,
+                    "NumOfWantedEnemies": 5.0,
+                    "PercentMaxHealthShield": 0.4000000059604645,
+                    "{36b1550f}": null,
+                    "{9edd4912}": null
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 10,
+                "style": 6,
+                "variables": {
+                    "AttackSpeedPerWantedKill": 0.30000001192092896,
+                    "BaseDA": 1.5,
+                    "NumOfWantedEnemies": 99.0,
+                    "PercentMaxHealthShield": 1.0,
+                    "{36b1550f}": null,
+                    "{9edd4912}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Squad.TFT_Set13.tex",
+        "name": "집행자"
+    },
+    {
+        "apiName": "TFT13_Hoverboard",
+        "desc": "@Duration@초마다 점화단이 돌진합니다. 점화단은 돌진하고 있을 때 사거리 제한 없이 공격하며 마지막 돌진 이후 받은 피해량의 일정 비율을 회복합니다.<br><br><row>(@MinUnits@) 받은 피해량의 @PercentDamageTakenHeal*100@%</row><br><row>(@MinUnits@) 받은 피해량의 @PercentDamageTakenHeal*100@%</row><br><row>(@MinUnits@) 받은 피해량의 @PercentDamageTakenHeal*100@%. 돌진 도중 공격 속도 대폭 상승</row>",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "Duration": 6.0,
+                    "PercentDamageTakenHeal": 0.20000000298023224,
+                    "{0a9a9714}": null,
+                    "{3c0d594a}": 1.0
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 5,
+                "variables": {
+                    "Duration": 6.0,
+                    "PercentDamageTakenHeal": 0.33000001311302185,
+                    "{0a9a9714}": null,
+                    "{3c0d594a}": 1.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "Duration": 6.0,
+                    "PercentDamageTakenHeal": 0.4000000059604645,
+                    "{0a9a9714}": 3.5,
+                    "{3c0d594a}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Hoverboard.TFT_Set13.tex",
+        "name": "점화단"
+    },
+    {
+        "apiName": "TFT13_Teamup_UnlikelyDuo",
+        "desc": "징크스와 세비카가 공격력을 @AD*100@%, 체력을 @Health@ 얻습니다. 둘 중 한 명이 스킬을 사용하면 다른 한 명이 마나를 @Mana@ 얻습니다. 세비카의 팔에 행운이 더 따릅니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 2,
+                "style": 4,
+                "variables": {
+                    "AD": 0.10000000149011612,
+                    "Health": 100,
+                    "Mana": 10,
+                    "{1e90fa01}": 0.10000000149011612
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_UnlikelyDuo.TFT_Set13.tex",
+        "name": "뜻밖의 2인조"
+    },
+    {
+        "apiName": "TFT13_Teamup_Betrayal",
+        "desc": "매디의 스킬 및 기본 공격은 항상 암베사의 대상을 대상으로 지정합니다. 매디 또는 암베사가 @NumKills@명 이상 처치한 라운드마다 매디를 1명 획득합니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 2,
+                "style": 4,
+                "variables": {
+                    "NumKills": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_Betrayal.TFT_Set13.tex",
+        "name": "배신"
+    },
+    {
+        "apiName": "TFT13_Experiment",
+        "desc": "전장에 실험실 칸이 생성됩니다.<br><br>전투 시작: 실험실 칸에 배치된 실험체가 실험실 칸에 있는 모든 실험체의 실험체 추가 효과를 얻습니다. 최대 체력도 추가로 얻습니다.<br><br><row>(@MinUnits@) 실험실 @NumLaboratory@개, @MaxHealth@ %i:scaleHealth%</row><br><row>(@MinUnits@) 실험실 @NumLaboratory@개, @MaxHealth@ %i:scaleHealth%</row><br><row>(@MinUnits@) 실험체 추가 효과 @ExperimentBonusIncrease*100@% 증가!</row>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "ExperimentBonusIncrease": null,
+                    "MaxHealth": 100.0,
+                    "NumLaboratory": 2.0,
+                    "{a02e81c2}": 1.149999976158142
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "ExperimentBonusIncrease": null,
+                    "MaxHealth": 300.0,
+                    "NumLaboratory": 3.0,
+                    "{a02e81c2}": 1.2999999523162842
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "ExperimentBonusIncrease": 1.0,
+                    "MaxHealth": 300.0,
+                    "NumLaboratory": 3.0,
+                    "{a02e81c2}": 1.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Experiment.TFT_Set13.tex",
+        "name": "실험체"
+    },
+    {
+        "apiName": "TFT13_MachineHerald",
+        "desc": "빅토르는 초당 @AS@회의 고정된 공격 속도를 가지며 모든 추가 공격력, 공격 속도 및 마나를 주문력으로 전환합니다. <br><br>마나 대신, 빅토르는 기본 공격당 혼돈 에너지를 1 얻으며 @MaxMana@에 도달 시 스킬을 사용합니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "AS": 0.550000011920929,
+                    "MaxMana": 8.0,
+                    "startingmana": 4.0,
+                    "{80af2f77}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_MachineHerald.TFT_Set13.tex",
+        "name": "기계화의 전령관"
+    },
+    {
+        "apiName": "TFT13_Bruiser",
+        "desc": "아군이 최대 체력을 @TeamFlatHealth@ 얻습니다. 난동꾼은 능력치를 더 얻습니다.<br><br><expandRow>(@MinUnits@) @BonusPercentHealth*100@% %i:scaleHealth%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusPercentHealth": 0.20000000298023224,
+                    "TeamFlatHealth": 100.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BonusPercentHealth": 0.44999998807907104,
+                    "TeamFlatHealth": 100.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BonusPercentHealth": 0.800000011920929,
+                    "TeamFlatHealth": 100.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Bruiser.tex",
+        "name": "난동꾼"
+    },
+    {
+        "apiName": "TFT13_BloodHunter",
+        "desc": "워윅이 체력이 @EnemyHealthPercentThreshold*100@% 아래로 떨어진 적을 집어삼켜 체력을 @DevourHealing@ 회복하고 마나를 @ManaPerKill@ 얻습니다.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "DevourHealing": 400.0,
+                    "EnemyHealthPercentThreshold": 0.15000000596046448,
+                    "ManaPerKill": 50.0,
+                    "{84534a47}": 5.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_BloodHunter.TFT_Set13.tex",
+        "name": "피의 사냥꾼"
+    },
+    {
+        "apiName": "TFT13_JunkerKing",
+        "desc": "@NumRounds1Star@라운드마다 무기고를 열어 가장 강한 아군 럼블 메크를 위한 영구적인 업그레이드를 구매합니다.<br><br><rules>업그레이드까지 남은 라운드: @TFTUnitProperty.trait:TFT13_JunkerKing_RoundsUntilOpening@</rules>",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "NumRounds1Star": 3.0,
+                    "NumRounds1Star_HR": 2.0,
+                    "{7b91cfd3}": 2.0,
+                    "{da177dfb}": 1.0,
+                    "{ea33712c}": 3.0,
+                    "{ed4fa85a}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_JunkerKing.TFT_Set13.tex",
+        "name": "고물의 왕"
+    },
+    {
+        "apiName": "TFT13_Cabal",
+        "desc": "<row>(@MinUnits@) 사슬에 묶인 사이온 1명 소환. 검은 장미단 유닛이 스킬을 @NumCastsToUnlock@회 사용하거나 사이온의 체력이 @PercentHealthUnlock*100@% 아래로 떨어지면 사이온이 해방됨</row><br><row>(@MinUnits@) 사이온이 더 강력해지며 적이 검은 장미단으로부터 받는 피해 증가</row><br><row>(@MinUnits@) 사이온이 해방될 때 암흑 마법을 방출해 체력을 최대로 회복함</row><br><row>(@MinUnits@) 사이온 사망 시 죽음을 초월하는 힘으로 부활함!</row><br><br><rules>검은 장미단 챔피언의 별 레벨에 따라 사이온이 더 강력해집니다.</rules>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "NumCastsToUnlock": 5.0,
+                    "PercentHealthPerStarLevel": 0.15000000596046448,
+                    "PercentHealthUnlock": 0.6499999761581421,
+                    "{2c6be05c}": 0.11999999731779099,
+                    "{2e45fc86}": 40.0,
+                    "{85b293ec}": 0.3499999940395355,
+                    "{92ef9cd7}": 4.0
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "NumCastsToUnlock": 5.0,
+                    "PercentHealthPerStarLevel": 0.15000000596046448,
+                    "PercentHealthUnlock": 0.6499999761581421,
+                    "{2c6be05c}": 0.11999999731779099,
+                    "{2e45fc86}": 45.0,
+                    "{85b293ec}": 0.3499999940395355,
+                    "{92ef9cd7}": 4.0
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "NumCastsToUnlock": 5.0,
+                    "PercentHealthPerStarLevel": 0.15000000596046448,
+                    "PercentHealthUnlock": 0.6499999761581421,
+                    "{2c6be05c}": 0.11999999731779099,
+                    "{2e45fc86}": 50.0,
+                    "{85b293ec}": 0.3499999940395355,
+                    "{92ef9cd7}": 4.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 7,
+                "style": 5,
+                "variables": {
+                    "NumCastsToUnlock": 5.0,
+                    "PercentHealthPerStarLevel": 0.15000000596046448,
+                    "PercentHealthUnlock": 0.6499999761581421,
+                    "{2c6be05c}": 0.11999999731779099,
+                    "{2e45fc86}": 100.0,
+                    "{85b293ec}": 0.3499999940395355,
+                    "{92ef9cd7}": 4.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Cabal.TFT_Set13.tex",
+        "name": "검은 장미단"
+    },
+    {
+        "apiName": "TFT13_Challenger",
+        "desc": "기동타격대가 더 빠르게 움직이며 대상이 잃은 체력에 따라 공격 속도를 얻습니다.<br><br><row>(@MinUnits@) @MinBonusAS*100@~@MaxBonusAS*100@% %i:scaleAS%</row><br><row>(@MinUnits@) @MinBonusAS*100@~@MaxBonusAS*100@% %i:scaleAS%</row><br><row>(@MinUnits@) @MinBonusAS*100@~@MaxBonusAS*100@% %i:scaleAS%. 대상이 사망할 경우 기동타격대는 새로운 대상에게 돌진하고 @ShieldDuration@초 동안 보호막을 @ShieldAmount@ 얻음</row>",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "MaxBonusAS": 0.6000000238418579,
+                    "MinBonusAS": 0.20000000298023224,
+                    "{0e9453af}": null,
+                    "{bdb9953b}": 200.0
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 3,
+                "variables": {
+                    "MaxBonusAS": 0.800000011920929,
+                    "MinBonusAS": 0.30000001192092896,
+                    "{0e9453af}": null,
+                    "{bdb9953b}": 200.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "MaxBonusAS": 1.0,
+                    "MinBonusAS": 0.4000000059604645,
+                    "ShieldAmount": 200.0,
+                    "ShieldDuration": 3.0,
+                    "{0e9453af}": null,
+                    "{bdb9953b}": 200.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Quickstriker.TFT_Set13.tex",
+        "name": "기동타격대"
+    },
+    {
+        "apiName": "TFT13_Teamup_Geniuses",
+        "desc": "하이머딩거가 스킬을 사용하면 에코가 잔상 @NumEkkoAfterImages@개를 내보내 각각 @ReducedEkkoDamage*100@%의 피해를 입힙니다. 에코가 스킬을 사용하면 하이머딩거가 미사일 @NumHeimerMissiles@개를 발사해 각각 @ReducedHeimerDamage*100@%의 피해를 입힙니다. ",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 2,
+                "style": 4,
+                "variables": {
+                    "NumEkkoAfterImages": 3.0,
+                    "NumHeimerMissiles": 3.0,
+                    "ReducedEkkoDamage": 0.33000001311302185,
+                    "ReducedHeimerDamage": 1.2000000476837158
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/TeamUp_Trait_Geniuses.TFT_Set13.tex",
+        "name": "천재"
+    },
+    {
+        "apiName": "TFT13_Watcher",
+        "desc": "주시자가 내구력을 얻으며 이 수치는 체력이 @HealthBreakpoint*100@%를 넘을 때 증가합니다.<br><br><expandRow>(@MinUnits@) @BaseDR*100@% 또는 @IncreasedDR*100@% %i:scaleDR%</expandRow><br>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BaseDR": 0.15000000596046448,
+                    "HealthBreakpoint": 0.5,
+                    "IncreasedDR": 0.30000001192092896
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BaseDR": 0.25,
+                    "HealthBreakpoint": 0.5,
+                    "IncreasedDR": 0.44999998807907104
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BaseDR": 0.3499999940395355,
+                    "HealthBreakpoint": 0.5,
+                    "IncreasedDR": 0.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_13_Watcher.TFT_Set13.tex",
+        "name": "주시자"
+    }
+]

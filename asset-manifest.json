@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EasyTFT/static/css/main.d82113fc.css",
+    "main.js": "/EasyTFT/static/js/main.e88f27be.js",
+    "index.html": "/EasyTFT/index.html",
+    "main.d82113fc.css.map": "/EasyTFT/static/css/main.d82113fc.css.map",
+    "main.e88f27be.js.map": "/EasyTFT/static/js/main.e88f27be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d82113fc.css",
+    "static/js/main.e88f27be.js"
+  ]
+}
