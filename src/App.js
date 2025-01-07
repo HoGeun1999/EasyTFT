@@ -11,6 +11,7 @@ function App() {
   const [championList, setChampionList] = useState([]);  // 사용자 상태를 관리
   const [traitsData, setTraitsData] = useState(null); // 데이터를 저장할 상태 변수
   
+  console.log('check build log')
   useEffect(() => {
     // 비동기 함수 정의
     const fetchChampionData = async () => {
