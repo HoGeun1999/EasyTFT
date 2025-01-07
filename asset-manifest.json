@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/EasyTFT/static/css/main.d82113fc.css",
-    "main.js": "/EasyTFT/static/js/main.b14aceb5.js",
+    "main.css": "/EasyTFT/static/css/main.7360515b.css",
+    "main.js": "/EasyTFT/static/js/main.de11b981.js",
     "index.html": "/EasyTFT/index.html",
-    "main.d82113fc.css.map": "/EasyTFT/static/css/main.d82113fc.css.map",
-    "main.b14aceb5.js.map": "/EasyTFT/static/js/main.b14aceb5.js.map"
+    "main.7360515b.css.map": "/EasyTFT/static/css/main.7360515b.css.map",
+    "main.de11b981.js.map": "/EasyTFT/static/js/main.de11b981.js.map"
   },
   "entrypoints": [
-    "static/css/main.d82113fc.css",
-    "static/js/main.b14aceb5.js"
+    "static/css/main.7360515b.css",
+    "static/js/main.de11b981.js"
   ]
 }
