@@ -124,22 +124,23 @@ const ItemBox = () => {
   
 
   return (
-    <div className="ItemBox">
+    <div className="ItemBoxWrap">
       <div className="ItemBoxButtonWrap">
-            <ItemBoxStandardButton />
-            <ItemBoxRadiantButton />
-            <ItemBoxOrnnItemsButton/>
-            <ItemBoxSupportItemsButton/>
-        </div>
-
-      <div className="ItemDiv">
-        <div>
-        {ItemDataList.map((itemData, index) => (
-          <ItemComponent key={index} itemData={itemData} ItemType={ItemType}/>
-        ))}
-        </div>
+        <ItemBoxStandardButton />
+        <ItemBoxRadiantButton />
+        <ItemBoxOrnnItemsButton/>
+        <ItemBoxSupportItemsButton/>
       </div>
+      <div className="ItemBox">
+        <div className="ItemDiv">
+          <div>
+          {ItemDataList.map((itemData, index) => (
+            <ItemComponent key={index} itemData={itemData} ItemType={ItemType}/>
+          ))}
+          </div>
+        </div>
 
+      </div>
     </div>
   );
 };

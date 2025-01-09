@@ -1,6 +1,8 @@
 #  EasyTFT
 This is LoL's(League of Legends) one of game mode TFT(Team Fight Tatics) user help website project.  
 You can use this website for get TFT related information and helped deck making.  
+if you want to use this website, click the link below.  
+https://hogeun1999.github.io/EasyTFT/  
 
 The picture below is the main screen of the website.  
 
@@ -20,17 +22,10 @@ If you want to know Champion skill & ability or Item stats, just move your mouse
 You can change the champion arrangement  by click the button on the champion box.  
 Item boxes have the same function.  
 
-<<<<<<< HEAD
-
-<img src="public/readme/championInfo.JPG" alt="championInfo" width="350" style="margin-right: 10px;"/>
-<img src="public/readme/itemInfo.JPG" alt="itemInfo" width="350" style=" margin-left: 10px;"/>
-
-=======
 <div>
   <img src="public/readme/championInfo.JPG" alt="championInfo" width="350" height="300" style="margin-right: 10px;"/>
   <img src="public/readme/itemInfo.JPG" alt="itemInfo" width="350" height="300" style=" margin-left: 10px;"/>
 </div>
->>>>>>> cf23dc43aadbf81764408343f0773e131d75c2c2
 <br>  
 
 If you want to know the traits information, click champion in chPampion box.  

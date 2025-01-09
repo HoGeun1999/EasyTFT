@@ -16,22 +16,23 @@
 }
 
 .championName{
+  margin-top: 0px;
+  margin-bottom: 0px;
   text-align: center;
 	position: relative;
 	left: 50%;
-	transform: translate( -48%, -25px );
+	transform: translate( -48%, -20px );
   font-weight: bold;
   color: white;
-  font-size: 13px;
+  font-size: 12px;
   width: 70px;
-  height: 5px;
+  height: 0px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
 }
 
 .long{
   font-size: 12px;
-  transform: translate( -48%,  -35px );
+  transform: translate( -48%,  -30px );
 }
 
 .cost-1 {
@@ -67,11 +68,11 @@ background-color: rgb(224, 171, 224);
 .championINFO {
   position: absolute;
   width: 380px;
-  background-color: rgba(0, 0, 0, 0.9);  /* 검은색 배경, 투명도 */
-  color: white;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
   z-index: 10;
 }
 
@@ -137,7 +138,7 @@ background-color: rgb(224, 171, 224);
 }
 
 .skillINFO{
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 15px;
   margin-bottom: 15px;
 }

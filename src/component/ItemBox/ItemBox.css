@@ -1,5 +1,12 @@
-.ItemBox{
+.ItemBoxWrap{
     display: inline;
+}
+
+
+.ItemBox{
+    width: 100%;
+    height: 90%;
+    overflow: auto;
 }
 
 .ItemBox::-webkit-scrollbar{
@@ -15,7 +22,6 @@
 .ItemBoxButtonWrap{
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
 }
 
 .button{

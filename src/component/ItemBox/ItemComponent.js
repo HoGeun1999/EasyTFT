@@ -57,6 +57,7 @@ const ItemComponent = ({ itemData, ItemType }) => {
       y: rect.y,
     });
   };
+  
   const handleMouseLeave = () => {
     setShowUI(false);
   };
@@ -157,7 +158,6 @@ const ItemComponent = ({ itemData, ItemType }) => {
       </div>
       {showUI && <ItemComponentUI />}
     </div>
-      
   );
 };
 

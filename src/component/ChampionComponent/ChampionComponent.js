@@ -30,15 +30,21 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
     const infoDivHeight = 200 + brCount*14 + descHeight*15
     let newX = rect.right - 230
     let newY = rect.top
-    if(newY+infoDivHeight>=840){
-      newY = newY - infoDivHeight*0.80 - 80
+    if(newX>1350 && newY+infoDivHeight>=840){
+      newY = newY - infoDivHeight*0.70 - 100
+      newX = newX - 100
     }
-    else if(newX>1400){
+    else if(newY+infoDivHeight>=840){
+      newY = newY - infoDivHeight*0.70 - 100
+    }
+    else if(newX>1350){
       newX = newX - 100
       newY = rect.top + infoDivHeight*0.12 + 60
     }
+
     else{
       newY = rect.top + infoDivHeight*0.12 + 60
+
     }
     setInfoPosition({
       x: newX,
@@ -166,7 +172,7 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
   const championCost = `cost-${championData.cost}`;
   const championNameLen = championData?.name ? championData.name.length : 0;
   let championNameClass = '';
-  if (championNameLen >= 5) {
+  if (championNameLen >= 7) {
     championNameClass = 'long';
   }
   return (
@@ -184,13 +190,14 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
             src={`${process.env.PUBLIC_URL}/img/${championData.name}.png`}
             alt={championData.name}
           />
+          <p className={`championName ${championNameClass}`}>
+            {championData.name}
+          </p>
         </div>
+        
       ) : (
         <p>No user found</p>
       )}
-      <div className={`championName ${championNameClass}`}>
-        {championData.name}
-      </div>
       {showChampionInfo && <ChampionMouseOverINFO />}
     </div>
   );
