@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from 'react';
 import './ChampionComponent.css';
 
-const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, className }) => {
+const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, className, uniqueId }) => {
   const championData = data;
   const [showChampionInfo, setShowChampionInfo] = useState(false);
   const [infoPosition, setInfoPosition] = useState({ x: 0, y: 0 });
@@ -155,7 +155,7 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
 
     SettingChampionBoxList((currentList) => {
       if (isGrandParentSetChampionBox) {
-        const index = currentList.findIndex((item) => item === championData);
+        const index = currentList.findIndex((item) => item.uniqueId === uniqueId);
         if (index > -1) {
           return [
             ...currentList.slice(0, index),
@@ -164,7 +164,11 @@ const ChampionComponent = ({ data, SetChampionBoxList, SettingChampionBoxList, c
         }
         return currentList;
       } else {
-        return [...currentList, championData];
+        const uniqueId = `key-id-${Date.now()}-${Math.floor(Math.random() * 10000)}`;
+        return [...currentList, {
+          ...championData,
+          uniqueId,
+        }];
       }
     });
   };
