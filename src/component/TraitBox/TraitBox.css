@@ -18,8 +18,10 @@
   
 /* 6각형 모양의 div */
 .TraitImgContainer {
-  width: 45px;
-  height: 45px;
+  /* width: 45px;
+  height: 45px; */
+  width: 25%;
+  height: 80%;
   background-color: gray; /* 배경색 */
   clip-path: polygon(
     50% 0%,
